@@ -4,14 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: f2ecc7a54e884fd4e9481ad2f95903e7
-  - enabled: 1
-    path: Assets/Scenes/UI_Playground.unity
-    guid: d1628fcf0327af04a9f40f0012bfb273
-  - enabled: 1
-    path: Assets/Scenes/BasicMovementAndAnim.unity
-    guid: a52f6b18f22744b43ac183af67ecc507
+  m_Scenes: [{enabled: 1, path: Assets/Scenes/MainMenu.unity, guid: f2ecc7a54e884fd4e9481ad2f95903e7},
+    {enabled: 1, path: Assets/Scenes/UI_Playground.unity, guid: d1628fcf0327af04a9f40f0012bfb273},
+    {enabled: 1, path: Assets/Scenes/BasicMovementAndAnim.unity, guid: a52f6b18f22744b43ac183af67ecc507},
+    {enabled: 1, path: Assets/Scenes/BasicMovementAndAnim.unity, guid: a52f6b18f22744b43ac183af67ecc507}]
   m_configObjects: {}
