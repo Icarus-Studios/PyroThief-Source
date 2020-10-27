@@ -1,0 +1,764 @@
+fileFormatVersion: 2
+guid: c90e761729348ec46bbae392d11c0ce3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1683058509859099451
+    second: player-Sprite-Sheet-Movement 1_0
+  - first:
+      213: -1996116041106231641
+    second: player-Sprite-Sheet-Movement 1_1
+  - first:
+      213: 645266231645228729
+    second: player-Sprite-Sheet-Movement 1_2
+  - first:
+      213: -4718114522666366496
+    second: player-Sprite-Sheet-Movement 1_3
+  - first:
+      213: -3279476552276944060
+    second: player-Sprite-Sheet-Movement 1_4
+  - first:
+      213: -5669372403427991658
+    second: player-Sprite-Sheet-Movement 1_5
+  - first:
+      213: 893587291869603797
+    second: player-Sprite-Sheet-Movement 1_6
+  - first:
+      213: 379537028290062171
+    second: player-Sprite-Sheet-Movement 1_7
+  - first:
+      213: -9189592867059192990
+    second: player-Sprite-Sheet-Movement 1_8
+  - first:
+      213: -1491333559823437418
+    second: player-Sprite-Sheet-Movement 1_9
+  - first:
+      213: 7722096677247032314
+    second: player-Sprite-Sheet-Movement 1_10
+  - first:
+      213: 3059828953190853711
+    second: player-Sprite-Sheet-Movement 1_11
+  - first:
+      213: -6139234356913210131
+    second: player-Sprite-Sheet-Movement 1_12
+  - first:
+      213: -2690123719287381838
+    second: player-Sprite-Sheet-Movement 1_13
+  - first:
+      213: 1133386058753394351
+    second: player-Sprite-Sheet-Movement 1_14
+  - first:
+      213: 650794531063776495
+    second: player-Sprite-Sheet-Movement 1_15
+  - first:
+      213: 1714871747971240739
+    second: player-Sprite-Sheet-Movement 1_16
+  - first:
+      213: -6942968226302848143
+    second: player-Sprite-Sheet-Movement 1_17
+  - first:
+      213: 3406549090708278302
+    second: player-Sprite-Sheet-Movement 1_18
+  - first:
+      213: 5998127519189943505
+    second: player-Sprite-Sheet-Movement 1_19
+  - first:
+      213: -658804952008446696
+    second: player-Sprite-Sheet-Movement 1_20
+  - first:
+      213: 3131139500800812524
+    second: player-Sprite-Sheet-Movement 1_21
+  - first:
+      213: 2510894741470244665
+    second: player-Sprite-Sheet-Movement 1_22
+  - first:
+      213: -6881039874537405433
+    second: player-Sprite-Sheet-Movement 1_23
+  - first:
+      213: 4231386994328777642
+    second: player-Sprite-Sheet-Movement 1_0
+  - first:
+      213: 7831178786182006356
+    second: player-Sprite-Sheet-Movement 1_1
+  - first:
+      213: -3662890441464524234
+    second: player-Sprite-Sheet-Movement 1_2
+  - first:
+      213: -3305479274205413952
+    second: player-Sprite-Sheet-Movement 1_3
+  - first:
+      213: -8509485805052464545
+    second: player-Sprite-Sheet-Movement 1_4
+  - first:
+      213: -5877302012125447739
+    second: player-Sprite-Sheet-Movement 1_5
+  - first:
+      213: -9214935781571820609
+    second: player-Sprite-Sheet-Movement 1_6
+  - first:
+      213: -3448800274641685662
+    second: player-Sprite-Sheet-Movement 1_7
+  - first:
+      213: -5677843319417208757
+    second: player-Sprite-Sheet-Movement 1_8
+  - first:
+      213: -1574557872791359197
+    second: player-Sprite-Sheet-Movement 1_9
+  - first:
+      213: 1082175835136137137
+    second: player-Sprite-Sheet-Movement 1_10
+  - first:
+      213: -3033601647915816894
+    second: player-Sprite-Sheet-Movement 1_11
+  - first:
+      213: 236756222332729434
+    second: player-Sprite-Sheet-Movement 1_12
+  - first:
+      213: -2084460640249524958
+    second: player-Sprite-Sheet-Movement 1_13
+  - first:
+      213: -2466944106058259260
+    second: player-Sprite-Sheet-Movement 1_14
+  - first:
+      213: -4529016497980712049
+    second: player-Sprite-Sheet-Movement 1_15
+  - first:
+      213: 897151083214268844
+    second: player-Sprite-Sheet-Movement 1_16
+  - first:
+      213: -2865951238964863563
+    second: player-Sprite-Sheet-Movement 1_17
+  - first:
+      213: -5575797476033475920
+    second: player-Sprite-Sheet-Movement 1_18
+  - first:
+      213: 5269972490031187279
+    second: player-Sprite-Sheet-Movement 1_19
+  - first:
+      213: 7049186820221933020
+    second: player-Sprite-Sheet-Movement 1_20
+  - first:
+      213: 7181246654968115318
+    second: player-Sprite-Sheet-Movement 1_21
+  - first:
+      213: -776919599022703451
+    second: player-Sprite-Sheet-Movement 1_22
+  - first:
+      213: -4031397137765758438
+    second: player-Sprite-Sheet-Movement 1_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: player-Sprite-Sheet-Movement 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 450
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa3bc207d08e8ba30800000000000000
+      internalID: 4231386994328777642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-Sprite-Sheet-Movement 1_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 450
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45604fa5d9fedac60800000000000000
+      internalID: 7831178786182006356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-Sprite-Sheet-Movement 1_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 450
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6325551ec8cca2dc0800000000000000
+      internalID: -3662890441464524234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-Sprite-Sheet-Movement 1_3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 450
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cdf1900d149022d0800000000000000
+      internalID: -3305479274205413952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-Sprite-Sheet-Movement 1_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 450
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f527e98debb38e980800000000000000
+      internalID: -8509485805052464545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-Sprite-Sheet-Movement 1_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 450
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c9f29195f0af6ea0800000000000000
+      internalID: -5877302012125447739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-Sprite-Sheet-Movement 1_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb3006fbab8fd1080800000000000000
+      internalID: -9214935781571820609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-Sprite-Sheet-Movement 1_7
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 400
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26376b83c666320d0800000000000000
+      internalID: -3448800274641685662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-Sprite-Sheet-Movement 1_8
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 400
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4000df559f3431b0800000000000000
+      internalID: -5677843319417208757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-Sprite-Sheet-Movement 1_9
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 400
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 321f9f105fb062ae0800000000000000
+      internalID: -1574557872791359197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-Sprite-Sheet-Movement 1_10
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 400
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b71dcd3039a40f00800000000000000
+      internalID: 1082175835136137137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-Sprite-Sheet-Movement 1_11
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 400
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24820f9bf5b76e5d0800000000000000
+      internalID: -3033601647915816894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-Sprite-Sheet-Movement 1_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 350
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a587182a780294300800000000000000
+      internalID: 236756222332729434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-Sprite-Sheet-Movement 1_13
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 350
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22dc4a577128213e0800000000000000
+      internalID: -2084460640249524958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-Sprite-Sheet-Movement 1_14
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 350
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c467ade767a3cdd0800000000000000
+      internalID: -2466944106058259260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-Sprite-Sheet-Movement 1_15
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 350
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8bd9f7ad73b521c0800000000000000
+      internalID: -4529016497980712049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-Sprite-Sheet-Movement 1_16
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 350
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca9e7d82822537c00800000000000000
+      internalID: 897151083214268844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-Sprite-Sheet-Movement 1_17
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 350
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd98e958881a38d0800000000000000
+      internalID: -2865951238964863563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-Sprite-Sheet-Movement 1_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba4185ccb9ce92b0800000000000000
+      internalID: -5575797476033475920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-Sprite-Sheet-Movement 1_19
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 300
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f45c364ee04b22940800000000000000
+      internalID: 5269972490031187279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-Sprite-Sheet-Movement 1_20
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 300
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd591b6901eb3d160800000000000000
+      internalID: 7049186820221933020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-Sprite-Sheet-Movement 1_21
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 300
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67036d9e8c9e8a360800000000000000
+      internalID: 7181246654968115318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-Sprite-Sheet-Movement 1_22
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 300
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac7631bdb3d735f0800000000000000
+      internalID: -776919599022703451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-Sprite-Sheet-Movement 1_23
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 300
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a02f699a99d08c0800000000000000
+      internalID: -4031397137765758438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

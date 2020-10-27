@@ -8,6 +8,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float attackDelay = 0.4f;
 
+    [SerializeField]
+    private float walkingSpeed = 1.0f;
+
     private new Animator animation;
     private GameObject crossHair;
     private string currentAnimaton;
@@ -31,8 +34,13 @@ public class PlayerController : MonoBehaviour
         mousePosition = UtilsClass.GetMouseWorldPosition();
         //Form vector from character to mouse cursor
         aimDirection = (mousePosition - transform.position);
-        //Get WSAD keyboard input
-        movement = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0.0f);
+        //Get WSAD keyboard input.GetAxis applies smoothing and makes character feel like he's sliding around
+        movement = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0.0f);
+        //Since Diagonal movement is faster than non-diagonal movement, we have to normalzie the movement vector
+        if(movement.magnitude > 1.0f)
+        {
+            movement.Normalize();
+        }
         //Check if attacking
         if (Input.GetMouseButtonDown(0))
         {
@@ -125,7 +133,9 @@ public class PlayerController : MonoBehaviour
             }
 
         }
-        transform.position += movement * Time.deltaTime;
+        
+        transform.position += movement * Time.deltaTime * walkingSpeed;
+     
 
     }
 

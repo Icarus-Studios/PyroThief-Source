@@ -1,0 +1,908 @@
+fileFormatVersion: 2
+guid: add83afd305327549b19288fc8b69430
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -135104681648273326
+    second: mob-Soldier-Sprite-Sheet-Attack_0
+  - first:
+      213: 4837895678986488893
+    second: mob-Soldier-Sprite-Sheet-Attack_1
+  - first:
+      213: -8257039727684557360
+    second: mob-Soldier-Sprite-Sheet-Attack_2
+  - first:
+      213: -1710039757572452916
+    second: mob-Soldier-Sprite-Sheet-Attack_3
+  - first:
+      213: 7808444642027414047
+    second: mob-Soldier-Sprite-Sheet-Attack_4
+  - first:
+      213: -7559395426508581747
+    second: mob-Soldier-Sprite-Sheet-Attack_5
+  - first:
+      213: 1613760316774683229
+    second: mob-Soldier-Sprite-Sheet-Attack_6
+  - first:
+      213: 1653211544074486027
+    second: mob-Soldier-Sprite-Sheet-Attack_7
+  - first:
+      213: -3074587694335402072
+    second: mob-Soldier-Sprite-Sheet-Attack_8
+  - first:
+      213: -7660244947470536573
+    second: mob-Soldier-Sprite-Sheet-Attack_9
+  - first:
+      213: -2735065756364797703
+    second: mob-Soldier-Sprite-Sheet-Attack_10
+  - first:
+      213: 5340635825915978197
+    second: mob-Soldier-Sprite-Sheet-Attack_11
+  - first:
+      213: 1894678421529984608
+    second: mob-Soldier-Sprite-Sheet-Attack_12
+  - first:
+      213: -6018576681216678815
+    second: mob-Soldier-Sprite-Sheet-Attack_13
+  - first:
+      213: -8530688935326755007
+    second: mob-Soldier-Sprite-Sheet-Attack_14
+  - first:
+      213: -8431154917928340584
+    second: mob-Soldier-Sprite-Sheet-Attack_15
+  - first:
+      213: -2203595242100348264
+    second: mob-Soldier-Sprite-Sheet-Attack_16
+  - first:
+      213: -8713198017934095066
+    second: mob-Soldier-Sprite-Sheet-Attack_17
+  - first:
+      213: 8523379359853741258
+    second: mob-Soldier-Sprite-Sheet-Attack_18
+  - first:
+      213: 737579352968525627
+    second: mob-Soldier-Sprite-Sheet-Attack_19
+  - first:
+      213: -7842973273881812341
+    second: mob-Soldier-Sprite-Sheet-Attack_20
+  - first:
+      213: -2361413708974608775
+    second: mob-Soldier-Sprite-Sheet-Attack_21
+  - first:
+      213: -3716156600842984934
+    second: mob-Soldier-Sprite-Sheet-Attack_22
+  - first:
+      213: -8215674499685028310
+    second: mob-Soldier-Sprite-Sheet-Attack_23
+  - first:
+      213: -1576339562925515218
+    second: mob-Soldier-Sprite-Sheet-Attack_24
+  - first:
+      213: -5658140368791081744
+    second: mob-Soldier-Sprite-Sheet-Attack_25
+  - first:
+      213: -227333185399711140
+    second: mob-Soldier-Sprite-Sheet-Attack_26
+  - first:
+      213: 3757764025463722132
+    second: mob-Soldier-Sprite-Sheet-Attack_27
+  - first:
+      213: 4912796076614641601
+    second: mob-Soldier-Sprite-Sheet-Attack_28
+  - first:
+      213: 4847947840889925223
+    second: mob-Soldier-Sprite-Sheet-Attack_29
+  - first:
+      213: -6472803226891950189
+    second: mob-Soldier-Sprite-Sheet-Attack_30
+  - first:
+      213: -5366771932277591341
+    second: mob-Soldier-Sprite-Sheet-Attack_31
+  - first:
+      213: -6939806186687587678
+    second: mob-Soldier-Sprite-Sheet-Attack_32
+  - first:
+      213: 5494800496248830902
+    second: mob-Soldier-Sprite-Sheet-Attack_33
+  - first:
+      213: 1996823230022679961
+    second: mob-Soldier-Sprite-Sheet-Attack_34
+  - first:
+      213: 2324418139724966135
+    second: mob-Soldier-Sprite-Sheet-Attack_35
+  - first:
+      213: 6293456639548498742
+    second: mob-Soldier-Sprite-Sheet-Attack_36
+  - first:
+      213: -4979993808790494302
+    second: mob-Soldier-Sprite-Sheet-Attack_37
+  - first:
+      213: -4101787466365658630
+    second: mob-Soldier-Sprite-Sheet-Attack_38
+  - first:
+      213: 2029249300176271595
+    second: mob-Soldier-Sprite-Sheet-Attack_39
+  - first:
+      213: 8412106889189982637
+    second: mob-Soldier-Sprite-Sheet-Attack_40
+  - first:
+      213: 3599183610573216026
+    second: mob-Soldier-Sprite-Sheet-Attack_41
+  - first:
+      213: -7108356703954250047
+    second: mob-Soldier-Sprite-Sheet-Attack_42
+  - first:
+      213: -1877207454046792808
+    second: mob-Soldier-Sprite-Sheet-Attack_43
+  - first:
+      213: -994383298939139189
+    second: mob-Soldier-Sprite-Sheet-Attack_44
+  - first:
+      213: 6717753897019518637
+    second: mob-Soldier-Sprite-Sheet-Attack_45
+  - first:
+      213: -7993044288947188729
+    second: mob-Soldier-Sprite-Sheet-Attack_46
+  - first:
+      213: -4013062241169359238
+    second: mob-Soldier-Sprite-Sheet-Attack_47
+  - first:
+      213: -1572047814895222359
+    second: mob-Soldier-Sprite-Sheet-Attack_48
+  - first:
+      213: 2937995587933995304
+    second: mob-Soldier-Sprite-Sheet-Attack_49
+  - first:
+      213: 8926295951603171761
+    second: mob-Soldier-Sprite-Sheet-Attack_50
+  - first:
+      213: -5108159673843270477
+    second: mob-Soldier-Sprite-Sheet-Attack_51
+  - first:
+      213: -6651516522186213345
+    second: mob-Soldier-Sprite-Sheet-Attack_52
+  - first:
+      213: -4514452774570653890
+    second: mob-Soldier-Sprite-Sheet-Attack_53
+  - first:
+      213: 4382769914482564961
+    second: mob-Soldier-Sprite-Sheet-Attack_54
+  - first:
+      213: 6446027083794678148
+    second: mob-Soldier-Sprite-Sheet-Attack_55
+  - first:
+      213: 5359433870656661246
+    second: mob-Soldier-Sprite-Sheet-Attack_56
+  - first:
+      213: -3994859819866176215
+    second: mob-Soldier-Sprite-Sheet-Attack_57
+  - first:
+      213: -6080869779536871726
+    second: mob-Soldier-Sprite-Sheet-Attack_58
+  - first:
+      213: -4924305612189789824
+    second: mob-Soldier-Sprite-Sheet-Attack_59
+  - first:
+      213: -4245852870154838813
+    second: mob-Soldier-Sprite-Sheet-Attack_60
+  - first:
+      213: 2150533047715519644
+    second: mob-Soldier-Sprite-Sheet-Attack_61
+  - first:
+      213: -8454569189062424641
+    second: mob-Soldier-Sprite-Sheet-Attack_62
+  - first:
+      213: -6445946442821404932
+    second: mob-Soldier-Sprite-Sheet-Attack_63
+  - first:
+      213: -4897426889778898557
+    second: mob-Soldier-Sprite-Sheet-Attack_64
+  - first:
+      213: 1738029710514246303
+    second: mob-Soldier-Sprite-Sheet-Attack_65
+  - first:
+      213: -1723794455323308905
+    second: mob-Soldier-Sprite-Sheet-Attack_66
+  - first:
+      213: -8328972889044254226
+    second: mob-Soldier-Sprite-Sheet-Attack_67
+  - first:
+      213: 1413012719023486412
+    second: mob-Soldier-Sprite-Sheet-Attack_68
+  - first:
+      213: 1964984467739595120
+    second: mob-Soldier-Sprite-Sheet-Attack_69
+  - first:
+      213: -2647000057228199733
+    second: mob-Soldier-Sprite-Sheet-Attack_70
+  - first:
+      213: -7320570525192260546
+    second: mob-Soldier-Sprite-Sheet-Attack_71
+  - first:
+      213: 8821287274924810962
+    second: mob-Soldier-Sprite-Sheet-Attack_72
+  - first:
+      213: -2661224899023132722
+    second: mob-Soldier-Sprite-Sheet-Attack_73
+  - first:
+      213: -3472284048928376910
+    second: mob-Soldier-Sprite-Sheet-Attack_74
+  - first:
+      213: -1669394271480306142
+    second: mob-Soldier-Sprite-Sheet-Attack_75
+  - first:
+      213: 5400918412469336263
+    second: mob-Soldier-Sprite-Sheet-Attack_76
+  - first:
+      213: 4033838304518439353
+    second: mob-Soldier-Sprite-Sheet-Attack_77
+  - first:
+      213: -2390635619915220621
+    second: mob-Soldier-Sprite-Sheet-Attack_78
+  - first:
+      213: 5456597860066515708
+    second: mob-Soldier-Sprite-Sheet-Attack_79
+  - first:
+      213: 7598828168119608277
+    second: mob-Soldier-Sprite-Sheet-Attack_80
+  - first:
+      213: 2113994530014449992
+    second: mob-Soldier-Sprite-Sheet-Attack_81
+  - first:
+      213: -2118748650515459278
+    second: mob-Soldier-Sprite-Sheet-Attack_82
+  - first:
+      213: 8895670558399975099
+    second: mob-Soldier-Sprite-Sheet-Attack_83
+  - first:
+      213: -8791687633739833070
+    second: mob-Soldier-Sprite-Sheet-Attack_84
+  - first:
+      213: -7953790291741579093
+    second: mob-Soldier-Sprite-Sheet-Attack_85
+  - first:
+      213: -6042262601311285309
+    second: mob-Soldier-Sprite-Sheet-Attack_86
+  - first:
+      213: -6385212280961341914
+    second: mob-Soldier-Sprite-Sheet-Attack_87
+  - first:
+      213: -6689822460897297137
+    second: mob-Soldier-Sprite-Sheet-Attack_88
+  - first:
+      213: 4779052081789341450
+    second: mob-Soldier-Sprite-Sheet-Attack_89
+  - first:
+      213: 8809944947514903250
+    second: mob-Soldier-Sprite-Sheet-Attack_90
+  - first:
+      213: 2723741630857701465
+    second: mob-Soldier-Sprite-Sheet-Attack_91
+  - first:
+      213: 1504813431784891010
+    second: mob-Soldier-Sprite-Sheet-Attack_92
+  - first:
+      213: 1067196450153063246
+    second: mob-Soldier-Sprite-Sheet-Attack_93
+  - first:
+      213: -19751175058902750
+    second: mob-Soldier-Sprite-Sheet-Attack_94
+  - first:
+      213: -2739976953619158184
+    second: mob-Soldier-Sprite-Sheet-Attack_95
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Attack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258ccd20203002ef0800000000000000
+      internalID: -135104681648273326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Attack_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c036edc78a32340800000000000000
+      internalID: 4837895678986488893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Attack_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d5e2178d1a196d80800000000000000
+      internalID: -8257039727684557360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Attack_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd491296e7b448e0800000000000000
+      internalID: -1710039757572452916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Attack_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12a850f70b2d5c60800000000000000
+      internalID: 7808444642027414047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Attack_5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 900
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d845e3639e1a71790800000000000000
+      internalID: -7559395426508581747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Attack_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d521af1457a356610800000000000000
+      internalID: 1613760316774683229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Attack_7
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b018227e32361f610800000000000000
+      internalID: 1653211544074486027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Attack_8
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8afd95828ced455d0800000000000000
+      internalID: -3074587694335402072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Attack_9
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380b9855ec751b590800000000000000
+      internalID: -7660244947470536573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Attack_10
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f88a828f281b0ad0800000000000000
+      internalID: -2735065756364797703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Attack_11
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d1627edcffbd1a40800000000000000
+      internalID: 5340635825915978197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Attack_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06e74e66cff3b4a10800000000000000
+      internalID: 1894678421529984608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Attack_13
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16461ae6568b97ca0800000000000000
+      internalID: -6018576681216678815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Attack_14
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1475e706c97ec9980800000000000000
+      internalID: -8530688935326755007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Attack_15
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 893f796b5458efa80800000000000000
+      internalID: -8431154917928340584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Attack_16
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a2edd6dc14b61e0800000000000000
+      internalID: -2203595242100348264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Attack_17
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 700
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d86633190841780800000000000000
+      internalID: -8713198017934095066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Attack_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac48af57e50294670800000000000000
+      internalID: 8523379359853741258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Attack_19
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b37f95f73886c3a00800000000000000
+      internalID: 737579352968525627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Attack_20
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b82646b7c59282390800000000000000
+      internalID: -7842973273881812341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Attack_21
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97ea4d43eb29a3fd0800000000000000
+      internalID: -2361413708974608775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Attack_22
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12e705b24f8d6cc0800000000000000
+      internalID: -3716156600842984934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Attack_23
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 600
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ee900329f0cfd80800000000000000
+      internalID: -8215674499685028310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

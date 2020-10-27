@@ -38,6 +38,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Base Layer
+    uniqueID: 1523517617
+    locked: 0
+  - name: Floor Items
+    uniqueID: 1049036415
+    locked: 0
+  - name: Ceiling Borders
+    uniqueID: 1440631523
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
