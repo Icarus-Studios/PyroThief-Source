@@ -47,6 +47,9 @@ TagManager:
   - name: Ceiling Borders
     uniqueID: 1440631523
     locked: 0
+  - name: character
+    uniqueID: 1575769681
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
