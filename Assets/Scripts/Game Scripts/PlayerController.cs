@@ -5,13 +5,13 @@ using Mouse.Utils;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField]
-    private float attackDelay = 0.4f;
-
-    [SerializeField]
-    private float walkingSpeed = 1.0f;
+    [Header("Character Attributes:")]
+    [SerializeField] private float attackDelay = 0.4f;
+    [SerializeField] private float walkingSpeed = 1.0f;
+    [Space]
 
     private new Animator animation;
+    private Rigidbody2D rb;
     private GameObject crossHair;
     private string currentAnimaton;
     private Vector3 movement;
@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
         Cursor.visible = false;
         crossHair = GameObject.Find("CrossHair");
         animation = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
@@ -133,8 +134,9 @@ public class PlayerController : MonoBehaviour
             }
 
         }
-        
-        transform.position += movement * Time.deltaTime * walkingSpeed;
+
+        //transform.position += movement * Time.deltaTime * walkingSpeed;
+        rb.velocity = new Vector2(movement.x * walkingSpeed, movement.y * walkingSpeed);
      
 
     }
