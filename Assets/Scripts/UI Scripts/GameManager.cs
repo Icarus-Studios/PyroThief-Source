@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
 {
     private int rounds = 0;
     private int playerLevel = 1;
+    private float experience = 0f;
+    private float xpForNextLevel = 100f;
     private float minutes, seconds;
     public int goldAmount = 0;
     private Text roundsSurvived;
@@ -21,6 +23,24 @@ public class GameManager : MonoBehaviour
     public Sprite swordSelected;
     public Sprite bowSelected;
     private bool swordActive = true;
+
+
+    public Image circleBar;
+    public Image extraHealth;
+    public Image expBar;
+
+    public float currentHealth = 0;
+    public float maxHealth = 100;
+
+    private ShakeBehavior cameraShake;
+
+    //How much of the whole health bar is the circular part
+    public float circlePercent = 0.3f;
+    //How much of the circle part is used in the HealthBar
+    private const float circleFillAmount = 0.75f;
+
+    private ParticleSystem hpRegained;
+    private Image tint;
 
     // Start is called before the first frame update
     void Start()
@@ -37,12 +57,20 @@ public class GameManager : MonoBehaviour
         weaponSelect = GameObject.Find("weaponSelect").GetComponent<Image>();
         weaponSelect.sprite = swordSelected;
 
+        cameraShake = GameObject.Find("Main Camera").GetComponent<ShakeBehavior>();
+        hpRegained = GameObject.Find("HPRecoveryParticles").GetComponent<ParticleSystem>();
+        tint = GameObject.Find("GreenTint").GetComponent<Image>();
+        tint.enabled = false;
+        expBar.fillAmount = experience;
+
     }
 
     // Update is called once per frame
     void Update()
     {
         updateTime();
+        circleFill();
+        extraFill();
 
     }
 
@@ -63,6 +91,23 @@ public class GameManager : MonoBehaviour
     {
         playerLevel++;
         playerLvl.text = "Lv. " + playerLevel;
+    }
+
+    public void addExperince(int expAmount)
+    {
+        experience += expAmount;
+        
+        if (experience >= xpForNextLevel)
+        {
+            updatePlayerLevel();
+            //xpForNextLevel = Mathf.Abs((playerLevel ^ 2 + playerLevel) / 2 * 100 - (playerLevel * 100));
+            xpForNextLevel = (playerLevel / 10 + playerLevel % 10) * 100 * Mathf.Pow(10, playerLevel / 10);
+            experience = 0;
+            
+        }
+        float expFill = experience / xpForNextLevel;
+        expBar.fillAmount = expFill;
+        //Debug.Log("Experience:" + experience + ", XPforNextLevel: " + xpForNextLevel + ", expFill: " + expFill.ToString());
     }
 
     public void addGold(int amount)
@@ -90,4 +135,68 @@ public class GameManager : MonoBehaviour
             weaponSelect.sprite = swordSelected;
         }
     }
+
+    void circleFill()
+    {
+        float healthPercent = currentHealth / maxHealth;
+        float circleFill = healthPercent / circlePercent;
+        circleFill *= circleFillAmount;
+        circleFill = Mathf.Clamp(circleFill, 0, circleFillAmount);
+        circleBar.fillAmount = circleFill;
+    }
+
+    void extraFill()
+    {
+        float circleAmount = circlePercent * maxHealth;
+        float barHealth = currentHealth - circleAmount;
+        float barTotalHealth = maxHealth - circleAmount;
+        float barFill = barHealth / barTotalHealth;
+        barFill = Mathf.Clamp(barFill, 0, 1);
+        extraHealth.fillAmount = barFill;
+    }
+
+    public void updateHP(float amount)
+    {
+        currentHealth += amount;
+        currentHealth = Mathf.Clamp(currentHealth, 0, 100);
+        if (amount < 0)
+            cameraShake.TriggerShake();
+        else
+        {
+            tint.enabled = true;
+            StartCoroutine(FadeImage(false));
+            hpRegained.Play();
+            StartCoroutine(FadeImage(true));
+        }
+    }
+
+    IEnumerator FadeImage(bool fadeAway)
+    {
+        // fade from opaque to transparent
+        if (fadeAway)
+        {
+            // loop over 5 second backwards
+            for (float i = 5; i >= 0; i -= Time.deltaTime)
+            {
+                // set color with i as alpha
+                tint.color = new Color(1, 1, 1, i);
+                yield return null;
+            }
+        }
+        // fade from transparent to opaque
+        else
+        {
+            // loop over 5 second
+            for (float i = 0; i <= 5; i += Time.deltaTime)
+            {
+                // set color with i as alpha
+                tint.color = new Color(1, 1, 1, i);
+                yield return null;
+            }
+        }
+    }
 }
+
+
+
+
