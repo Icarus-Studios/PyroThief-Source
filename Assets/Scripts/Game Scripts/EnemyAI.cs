@@ -10,7 +10,8 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float walkingSpeed = 1.0f;
     //The distance the enemy has to be from the next waypoint to shift to the next waypoint
     [SerializeField] private float nextWaypointDistance = 3.0f;
-
+    private ParticleSystem blood;
+    public float health = 100f;
     Path path;
     //Index of currently targeted waypoint
     int currentWaypoint = 0;
@@ -24,6 +25,7 @@ public class EnemyAI : MonoBehaviour
     {
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
+        blood = gameObject.GetComponentInChildren(typeof(ParticleSystem), true) as ParticleSystem;
 
         //Generates a path from the enemy to the character using modified Dijkstra's Algo.
         //Once a path is generated, a function callback occurs passing in the new path obj.
@@ -43,5 +45,29 @@ public class EnemyAI : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log(collision.gameObject.tag.ToString());
+        if (collision.gameObject.tag != "Enemy")
+        {
+            blood.Play();
+
+            health -= 10;
+            if (health <= 0)
+            {
+                Destroy(this.gameObject);
+            }
+        }
+
+        if (collision.gameObject.tag == "Player")
+        {
+            Vector2 direction;
+            Transform target = gameObject.transform;
+            Vector2 targetPos = target.position;
+            direction = targetPos - (Vector2)transform.position;
+            gameObject.GetComponent<Rigidbody2D>().AddForce(direction * 2000);
+        }
     }
 }
