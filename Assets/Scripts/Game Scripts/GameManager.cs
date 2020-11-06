@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -11,11 +12,11 @@ public class GameManager : MonoBehaviour
     private float experience = 0f;
     private float xpForNextLevel = 100f;
     private float minutes, seconds;
-    public int goldAmount = 0;
+    public static int goldAmount = 0;
     private Text roundsSurvived;
     private Text timePlayed;
     private Text playerLvl;
-    private Text goldText;
+    private static Text goldText;
 
 
     //these probably should go in their own script but I'm putting them here now as a UI proof of concept
@@ -32,6 +33,9 @@ public class GameManager : MonoBehaviour
     public float currentHealth = 0;
     public float maxHealth = 100;
 
+    public static bool isPaused = false;
+    public GameObject pauseMenuUI;
+    public GameObject settingsUI;
     private ShakeBehavior cameraShake;
 
     //How much of the whole health bar is the circular part
@@ -41,6 +45,8 @@ public class GameManager : MonoBehaviour
 
     private ParticleSystem hpRegained;
     private Image tint;
+
+    public static GameManager instance = null;
 
     // Start is called before the first frame update
     void Start()
@@ -63,6 +69,8 @@ public class GameManager : MonoBehaviour
         tint.enabled = false;
         expBar.fillAmount = experience;
 
+        pauseMenuUI.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -72,6 +80,36 @@ public class GameManager : MonoBehaviour
         circleFill();
         extraFill();
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (isPaused)
+                Resume();
+            else
+                Pause();
+        }
+
+    }
+
+    void OnEnable()
+    {
+        Resume();
+    }
+
+    public void Resume()
+    {
+        Cursor.visible = false;
+        pauseMenuUI.SetActive(false);
+        settingsUI.SetActive(false);
+        Time.timeScale = 1f;
+        isPaused = false;
+    }
+
+    public void Pause()
+    {
+        pauseMenuUI.SetActive(true);
+        Time.timeScale = 0f;
+        isPaused = true;
+        Cursor.visible = true;
     }
 
     void updateTime()
@@ -110,13 +148,15 @@ public class GameManager : MonoBehaviour
         //Debug.Log("Experience:" + experience + ", XPforNextLevel: " + xpForNextLevel + ", expFill: " + expFill.ToString());
     }
 
-    public void addGold(int amount)
+   
+
+    public static void addGold(int amount)
     {
         goldAmount += amount;
         goldText.text = goldAmount.ToString();
     }
 
-    public void addGold()
+    public static void addGold()
     {
         goldAmount ++;
         goldText.text = goldAmount.ToString();

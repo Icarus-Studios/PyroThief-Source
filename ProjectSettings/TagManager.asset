@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: [Enemy]
+  tags:
+  - Enemy
+  - Boundries
+  - Item
   layers:
   - Default
   - TransparentFX
@@ -15,7 +18,7 @@ TagManager:
   - 
   - MiniMap
   - Obstacles
-  - 
+  - Enemy
   - 
   - 
   - 

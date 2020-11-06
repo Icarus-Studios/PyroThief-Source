@@ -14,12 +14,16 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private GameObject crossHair;
     private string currentAnimaton;
-    private Vector3 movement;
+    public static Vector3 movement;
     private Vector3 mousePosition;
-    private Vector3 aimDirection;
-    private bool isAttacking;
+    public static Vector3 aimDirection;
+    public static bool isAttacking;
     private bool isAttackPressed;
 
+    public Transform attackPoint;
+    public float attackRange = 1f;
+    public LayerMask enemyLayers;
+    private GameObject SFX;
 
     private void Start()
     {
@@ -27,6 +31,8 @@ public class PlayerController : MonoBehaviour
         crossHair = GameObject.Find("CrossHair");
         animation = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        SFX = GameObject.Find("SFX");
+
     }
 
     void Update()
@@ -38,7 +44,7 @@ public class PlayerController : MonoBehaviour
         //Get WSAD keyboard input.GetAxis applies smoothing and makes character feel like he's sliding around
         movement = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0.0f);
         //Since Diagonal movement is faster than non-diagonal movement, we have to normalzie the movement vector
-        if(movement.magnitude > 1.0f)
+        if (movement.magnitude > 1.0f)
         {
             movement.Normalize();
         }
@@ -47,6 +53,7 @@ public class PlayerController : MonoBehaviour
         {
             isAttackPressed = true;
             Debug.Log("Pressed primary button.");
+            Attack();
         }
 
     }
@@ -56,17 +63,28 @@ public class PlayerController : MonoBehaviour
         MoveCharacter();
 
     }
+
+    public void Attack()
+    {
+        SFX.GetComponent<SFX>().PlaySwordSwing();
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            enemy.GetComponent<EnemyAI>().takeDamage(10);
+            //enemy.GetComponent<SpriteRenderer>().color = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f));
+        }
+    }
     private void MoveCharacter()
     {
         crossHair.transform.localPosition = aimDirection;
 
-        float angle = Mathf.Atan2(aimDirection.y,aimDirection.x) * Mathf.Rad2Deg;
+        float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
 
-        if(angle < 0.0f) { angle += 360f; }
+        if (angle < 0.0f) { angle += 360f; }
 
-        if(movement.magnitude < 0.001f && !isAttacking)
+        if (movement.magnitude < 0.001f && !isAttacking)
         {
-            if(angle > 45f && angle <= 135f)
+            if (angle > 45f && angle <= 135f)
             {
                 ChangeAnimationState("IdleFront");
             }
@@ -83,7 +101,7 @@ public class PlayerController : MonoBehaviour
                 ChangeAnimationState("IdleRight");
             }
         }
-        else if(!isAttacking)
+        else if (!isAttacking)
         {
             if (angle > 45f && angle <= 135f)
             {
@@ -128,8 +146,11 @@ public class PlayerController : MonoBehaviour
                     ChangeAnimationState("AttackRight");
                 }
 
+                
+
                 //This let's the attack animation play out completely
                 Invoke("AttackComplete", attackDelay);
+
 
             }
 
@@ -137,13 +158,27 @@ public class PlayerController : MonoBehaviour
 
         //transform.position += movement * Time.deltaTime * walkingSpeed;
         rb.velocity = new Vector2(movement.x * walkingSpeed, movement.y * walkingSpeed);
-     
 
+
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 
     void AttackComplete()
     {
         isAttacking = false;
+    }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("Item"))
+        {
+            Destroy(other.gameObject);
+            GameManager.addGold(1);
+        }
     }
 
 
