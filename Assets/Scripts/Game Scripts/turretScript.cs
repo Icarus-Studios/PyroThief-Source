@@ -69,7 +69,7 @@ public class turretScript : MonoBehaviour
                     if (detected == false)
                     {
                         detected = true;
-                        turret.GetComponent<SpriteRenderer>().sprite = active;
+                        //turret.GetComponent<SpriteRenderer>().sprite = active;
                     }
                 }
                 else
@@ -77,7 +77,7 @@ public class turretScript : MonoBehaviour
                     if (detected == true)
                     {
                         detected = false;
-                        turret.GetComponent<SpriteRenderer>().sprite = inactive;
+                        //turret.GetComponent<SpriteRenderer>().sprite = inactive;
 
                     }
                 }
@@ -86,7 +86,7 @@ public class turretScript : MonoBehaviour
         catch
         {
             detected = false;
-            turret.GetComponent<SpriteRenderer>().sprite = inactive;
+            //turret.GetComponent<SpriteRenderer>().sprite = inactive;
         }
         
 
@@ -94,7 +94,7 @@ public class turretScript : MonoBehaviour
 
         if(detected)
         {
-            turret.transform.up = direction;
+            gun.transform.up = direction;
             if (Time.time > nextTimeToFire)
             {
                 nextTimeToFire = Time.time + 1 / fireRate;
