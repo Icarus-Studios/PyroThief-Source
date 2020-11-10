@@ -43,33 +43,27 @@ public class EnemyAI : MonoBehaviour
         target = GameObject.Find("Promethesus").transform;
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
-        //animation = GetComponent<Animator>();
         animation = GetComponentInChildren<Animator>();
         blood = gameObject.GetComponentInChildren(typeof(ParticleSystem), true) as ParticleSystem;
         localScale = healthBar.transform.localScale;
         SFX = GameObject.Find("SFX");
 
-        //gameObject.GetComponent<Renderer>().enabled = false;
-        //gameObject.GetComponent<SpriteRenderer>().enabled = true;
-        InvokeRepeating("UpdatePath", 0f, .5f);
+        InvokeRepeating("UpdatePath", 0f, .1f);
     }
 
     public void OnPathComplete(Path p)
     {
         if (!p.error)
         {
-            //Debug.Log("Path seems okay!");
             path = p;
+
             //Once a new path is generated, reset the index of the first waypoint
             currentWaypoint = 0;
         }
-        //else { Debug.Log("Path error!"); }
     }
 
     void UpdatePath()
     {
-        //Debug.Log("UpdatingPath");
-
         //Generates a path from the enemy to the character using modified Dijkstra's Algo.
         //Once a path is generated, a function callback occurs passing in the new path obj.
         if (seeker.IsDone())
@@ -89,10 +83,7 @@ public class EnemyAI : MonoBehaviour
     }
     private void MoveCharacter()
     {
-        if (path == null)
-        { //Debug.Log("No Path!"); 
-            return; 
-        }
+        if (path == null){ return; }
         if (currentWaypoint >= path.vectorPath.Count)
         {
             reachedEndOfPath = true;
@@ -115,7 +106,7 @@ public class EnemyAI : MonoBehaviour
         float angle = Mathf.Atan2(directionEnd.y, directionEnd.x) * Mathf.Rad2Deg;
         if (angle < 0.0f) { angle += 360f; }
 
-        Debug.Log("Angle: " + angle);
+        //Debug.Log("Angle: " + angle);
         //ChangeAnimationState("RunForward");
 
         //if (force.magnitude < 0.001f && !isAttacking)

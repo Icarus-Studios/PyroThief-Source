@@ -35,7 +35,6 @@ public class PlayerController : MonoBehaviour
         animation = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         SFX = GameObject.Find("SFX");
-
     }
 
     void Update()
@@ -58,7 +57,6 @@ public class PlayerController : MonoBehaviour
             {
                 isAttackPressed = true;
                 //Debug.Log("Pressed primary button.");
-                Attack();
             }
             
         }
@@ -119,7 +117,6 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         MoveCharacter();
-
     }
 
     public void Attack()
@@ -190,18 +187,26 @@ public class PlayerController : MonoBehaviour
                 if (angle > 45f && angle <= 135f)
                 {
                     ChangeAnimationState("AttackFront");
+                    attackPoint.transform.localPosition = new Vector3(0, 1.5f, 0);
+                    Attack();
                 }
                 else if (angle > 135f && angle <= 225f)
                 {
                     ChangeAnimationState("AttackLeft");
+                    attackPoint.transform.localPosition = new Vector3(-1, 1, 0);
+                    Attack();
                 }
                 else if (angle > 225f && angle <= 315f)
                 {
                     ChangeAnimationState("AttackBack");
+                    attackPoint.transform.localPosition = new Vector3(0, -1.0f, 0);
+                    Attack();
                 }
                 else if (angle > 315f || angle <= 45)
                 {
                     ChangeAnimationState("AttackRight");
+                    attackPoint.transform.localPosition = new Vector3(1, 1, 0);
+                    Attack();
                 }
 
                 
