@@ -1,0 +1,764 @@
+fileFormatVersion: 2
+guid: 0dbd022a4f7ee0a459c76b5af52ae064
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4879234949400047497
+    second: mob-Soldier-Sprite-Sheet-Movement 1_0
+  - first:
+      213: 3862486588207809822
+    second: mob-Soldier-Sprite-Sheet-Movement 1_1
+  - first:
+      213: -1402214250294810806
+    second: mob-Soldier-Sprite-Sheet-Movement 1_2
+  - first:
+      213: 6247991022027628551
+    second: mob-Soldier-Sprite-Sheet-Movement 1_3
+  - first:
+      213: -2962439629963422419
+    second: mob-Soldier-Sprite-Sheet-Movement 1_4
+  - first:
+      213: 7053858404061490779
+    second: mob-Soldier-Sprite-Sheet-Movement 1_5
+  - first:
+      213: 5397651815594469299
+    second: mob-Soldier-Sprite-Sheet-Movement 1_6
+  - first:
+      213: 8490823649243865622
+    second: mob-Soldier-Sprite-Sheet-Movement 1_7
+  - first:
+      213: 2442704563174222139
+    second: mob-Soldier-Sprite-Sheet-Movement 1_8
+  - first:
+      213: 885702664012935629
+    second: mob-Soldier-Sprite-Sheet-Movement 1_9
+  - first:
+      213: 998798897091580351
+    second: mob-Soldier-Sprite-Sheet-Movement 1_10
+  - first:
+      213: 6461567696727509838
+    second: mob-Soldier-Sprite-Sheet-Movement 1_11
+  - first:
+      213: 9098149762752657002
+    second: mob-Soldier-Sprite-Sheet-Movement 1_12
+  - first:
+      213: -8410553089080172742
+    second: mob-Soldier-Sprite-Sheet-Movement 1_13
+  - first:
+      213: 3054360507965514262
+    second: mob-Soldier-Sprite-Sheet-Movement 1_14
+  - first:
+      213: -6462931524679977506
+    second: mob-Soldier-Sprite-Sheet-Movement 1_15
+  - first:
+      213: 7964418504826031214
+    second: mob-Soldier-Sprite-Sheet-Movement 1_16
+  - first:
+      213: 6980562259854850327
+    second: mob-Soldier-Sprite-Sheet-Movement 1_17
+  - first:
+      213: -7876952480135467601
+    second: mob-Soldier-Sprite-Sheet-Movement 1_18
+  - first:
+      213: -8622153891557607892
+    second: mob-Soldier-Sprite-Sheet-Movement 1_19
+  - first:
+      213: 5710244117172035983
+    second: mob-Soldier-Sprite-Sheet-Movement 1_20
+  - first:
+      213: -3124684315519452921
+    second: mob-Soldier-Sprite-Sheet-Movement 1_21
+  - first:
+      213: -7134596013302534679
+    second: mob-Soldier-Sprite-Sheet-Movement 1_22
+  - first:
+      213: -5337134883014692116
+    second: mob-Soldier-Sprite-Sheet-Movement 1_23
+  - first:
+      213: -7029295293682659244
+    second: mob-Soldier-Sprite-Sheet-Movement 1_0
+  - first:
+      213: 4929648476685616805
+    second: mob-Soldier-Sprite-Sheet-Movement 1_1
+  - first:
+      213: -1128593895025988314
+    second: mob-Soldier-Sprite-Sheet-Movement 1_2
+  - first:
+      213: -1507494641776503237
+    second: mob-Soldier-Sprite-Sheet-Movement 1_3
+  - first:
+      213: -8159035215640847696
+    second: mob-Soldier-Sprite-Sheet-Movement 1_4
+  - first:
+      213: 7125397760104120133
+    second: mob-Soldier-Sprite-Sheet-Movement 1_5
+  - first:
+      213: -5234314491913669119
+    second: mob-Soldier-Sprite-Sheet-Movement 1_6
+  - first:
+      213: -7686359840358547182
+    second: mob-Soldier-Sprite-Sheet-Movement 1_7
+  - first:
+      213: 3897507900960623836
+    second: mob-Soldier-Sprite-Sheet-Movement 1_8
+  - first:
+      213: -6334640929368682480
+    second: mob-Soldier-Sprite-Sheet-Movement 1_9
+  - first:
+      213: -8309480413143818175
+    second: mob-Soldier-Sprite-Sheet-Movement 1_10
+  - first:
+      213: -2378601267606298194
+    second: mob-Soldier-Sprite-Sheet-Movement 1_11
+  - first:
+      213: 8560625943426282786
+    second: mob-Soldier-Sprite-Sheet-Movement 1_12
+  - first:
+      213: -1844869429344552619
+    second: mob-Soldier-Sprite-Sheet-Movement 1_13
+  - first:
+      213: 1241135513204900420
+    second: mob-Soldier-Sprite-Sheet-Movement 1_14
+  - first:
+      213: 8748779698587383132
+    second: mob-Soldier-Sprite-Sheet-Movement 1_15
+  - first:
+      213: 7154403173212627872
+    second: mob-Soldier-Sprite-Sheet-Movement 1_16
+  - first:
+      213: 3628797019909175215
+    second: mob-Soldier-Sprite-Sheet-Movement 1_17
+  - first:
+      213: -307869714095789740
+    second: mob-Soldier-Sprite-Sheet-Movement 1_18
+  - first:
+      213: 5286214117482317837
+    second: mob-Soldier-Sprite-Sheet-Movement 1_19
+  - first:
+      213: 7428432246676593490
+    second: mob-Soldier-Sprite-Sheet-Movement 1_20
+  - first:
+      213: 353388786098730158
+    second: mob-Soldier-Sprite-Sheet-Movement 1_21
+  - first:
+      213: 5900443139320353104
+    second: mob-Soldier-Sprite-Sheet-Movement 1_22
+  - first:
+      213: -1897013063237732377
+    second: mob-Soldier-Sprite-Sheet-Movement 1_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Movement 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 450
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45058b65c2de27e90800000000000000
+      internalID: -7029295293682659244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Movement 1_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 450
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a64460db21a96440800000000000000
+      internalID: 4929648476685616805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Movement 1_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 450
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d2d4ff4dd6650f0800000000000000
+      internalID: -1128593895025988314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Movement 1_3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 450
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b365b104c9d441be0800000000000000
+      internalID: -1507494641776503237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Movement 1_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 450
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba13d523b845ce80800000000000000
+      internalID: -8159035215640847696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Movement 1_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 450
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54fbe56c28f72e260800000000000000
+      internalID: 7125397760104120133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Movement 1_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1067ec2c3bafb57b0800000000000000
+      internalID: -5234314491913669119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Movement 1_7
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 400
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 211c9930370945590800000000000000
+      internalID: -7686359840358547182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Movement 1_8
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 400
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc490a39cab61630800000000000000
+      internalID: 3897507900960623836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Movement 1_9
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 400
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 010545913a5d618a0800000000000000
+      internalID: -6334640929368682480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Movement 1_10
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 400
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1402f7af69bceac80800000000000000
+      internalID: -8309480413143818175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Movement 1_11
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 400
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea1680edfb28dfed0800000000000000
+      internalID: -2378601267606298194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Movement 1_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 350
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225baec70f37dc670800000000000000
+      internalID: 8560625943426282786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Movement 1_13
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 350
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 559b0fe4705b566e0800000000000000
+      internalID: -1844869429344552619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Movement 1_14
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 350
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44243b66c26693110800000000000000
+      internalID: 1241135513204900420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Movement 1_15
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 350
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55337868c8e96970800000000000000
+      internalID: 8748779698587383132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Movement 1_16
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 350
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a32447c7cb894360800000000000000
+      internalID: 7154403173212627872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Movement 1_17
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 350
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa7bea5d9a31c5230800000000000000
+      internalID: 3628797019909175215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Movement 1_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 459283e402a3abbf0800000000000000
+      internalID: -307869714095789740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Movement 1_19
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 300
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0840377bb76c5940800000000000000
+      internalID: 5286214117482317837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Movement 1_20
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 300
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b173555c7171760800000000000000
+      internalID: 7428432246676593490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Movement 1_21
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 300
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea475078a3d77e400800000000000000
+      internalID: 353388786098730158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Movement 1_22
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 300
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0519498f5c592e150800000000000000
+      internalID: 5900443139320353104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Soldier-Sprite-Sheet-Movement 1_23
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 300
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e770777ba47ca5e0800000000000000
+      internalID: -1897013063237732377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -7,16 +7,17 @@ public class EnemyAI : MonoBehaviour
 {
     [Header("Character Attributes:")]
     [SerializeField] private Transform target;
+    //Transform target;
     [SerializeField] private float walkingSpeed = 1.0f;
     //The distance the enemy has to be from the next waypoint to shift to the next waypoint
     [SerializeField] private float nextWaypointDistance = 3.0f;
+    [SerializeField] private float attackDelay = 0.4f;
     private ParticleSystem blood;
     public float health = 100f;
     public SpriteRenderer healthBar;
     Path path;
     //Index of currently targeted waypoint
     int currentWaypoint = 0;
-
     bool reachedEndOfPath = false;
 
     Seeker seeker;
@@ -24,28 +25,46 @@ public class EnemyAI : MonoBehaviour
     Vector3 localScale;
     public GameObject reward;
     private GameObject SFX;
+    private new Animator animation;
+    private string currentAnimaton;
+    public static bool isAttacking;
+
 
     void Start()
     {
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
+        //animation = GetComponent<Animator>();
+        animation = GetComponentInChildren<Animator>();
         blood = gameObject.GetComponentInChildren(typeof(ParticleSystem), true) as ParticleSystem;
-        localScale = healthBar.transform.localScale;
+        //localScale = healthBar.transform.localScale;
         SFX = GameObject.Find("SFX");
 
-        //Generates a path from the enemy to the character using modified Dijkstra's Algo.
-        //Once a path is generated, a function callback occurs passing in the new path obj.
-        seeker.StartPath(rb.position, target.position, OnPathComplete);
+        //gameObject.GetComponent<Renderer>().enabled = false;
+        //gameObject.GetComponent<SpriteRenderer>().enabled = true;
+        InvokeRepeating("UpdatePath", 0f, .5f);
     }
 
-    void OnPathComplete(Path p)
+    public void OnPathComplete(Path p)
     {
         if (!p.error)
         {
+            //Debug.Log("Path seems okay!");
             path = p;
             //Once a new path is generated, reset the index of the first waypoint
             currentWaypoint = 0;
         }
+        //else { Debug.Log("Path error!"); }
+    }
+
+    void UpdatePath()
+    {
+        //Debug.Log("UpdatingPath");
+
+        //Generates a path from the enemy to the character using modified Dijkstra's Algo.
+        //Once a path is generated, a function callback occurs passing in the new path obj.
+        if (seeker.IsDone())
+            seeker.StartPath(rb.position, target.position, OnPathComplete);
     }
 
     void Update()
@@ -54,6 +73,169 @@ public class EnemyAI : MonoBehaviour
         healthBar.transform.localScale = localScale;
     }
 
+    private void FixedUpdate()
+    {
+        MoveCharacter();
+
+    }
+    private void MoveCharacter()
+    {
+        if (path == null)
+        { //Debug.Log("No Path!"); 
+            return; 
+        }
+        if (currentWaypoint >= path.vectorPath.Count)
+        {
+            reachedEndOfPath = true;
+            return;
+        }
+        else { reachedEndOfPath = false; }
+
+        Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
+        Vector2 force = direction * walkingSpeed;
+        //Debug.Log("Force: " + force);
+
+        float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
+
+        if (distance < nextWaypointDistance)
+        {
+            ++currentWaypoint;
+        }
+
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        if (angle < 0.0f) { angle += 360f; }
+
+        Debug.Log("Angle: " + angle);
+        //ChangeAnimationState("RunForward");
+
+        //if (force.magnitude < 0.001f && !isAttacking)
+        //{
+        //    Debug.Log("Idling");
+        //    if (angle > 45f && angle <= 135f)
+        //    {
+        //        ChangeAnimationState("IdleFront");
+        //    }
+        //    else if (angle > 135f && angle <= 225f)
+        //    {
+        //        ChangeAnimationState("IdleLeft");
+        //    }
+        //    else if (angle > 225f && angle <= 315f)
+        //    {
+        //        ChangeAnimationState("IdleBack");
+        //    }
+        //    else if (angle > 315f || angle <= 45)
+        //    {
+        //        ChangeAnimationState("IdleRight");
+        //    }
+        //}
+        //else if (!isAttacking)
+        //{
+        //    Debug.Log("Running");
+        //    if (angle > 45f && angle <= 135f)
+        //    {
+        //        ChangeAnimationState("RunForward");
+        //    }
+        //    else if (angle > 135f && angle <= 225f)
+        //    {
+        //        ChangeAnimationState("RunLeft");
+        //    }
+        //    else if (angle > 225f && angle <= 315f)
+        //    {
+        //        ChangeAnimationState("RunBackward");
+        //    }
+        //    else if (angle > 315f || angle <= 45)
+        //    {
+        //        ChangeAnimationState("RunRight");
+        //    }
+        //}
+        if (angle > 45f && angle <= 135f)
+        {
+            Debug.Log("Running Up");
+            ChangeAnimationState("RunForward");
+        }
+        else if (angle > 135f && angle <= 225f)
+        {
+            Debug.Log("Running Left");
+            ChangeAnimationState("RunLeft");
+        }
+        else if (angle > 225f && angle <= 315f)
+        {
+            Debug.Log("Running Down");
+            ChangeAnimationState("RunBackward");
+        }
+        else if (angle > 315f || angle <= 45)
+        {
+            Debug.Log("Running Right");
+            ChangeAnimationState("RunRight");
+        }
+
+
+        //if (isAttacking)
+        //{
+        //    //isAttacking = true;
+
+        //    if (angle > 45f && angle <= 135f)
+        //    {
+        //        ChangeAnimationState("AttackFront");
+        //    }
+        //    else if (angle > 135f && angle <= 225f)
+        //    {
+        //        ChangeAnimationState("AttackLeft");
+        //    }
+        //    else if (angle > 225f && angle <= 315f)
+        //    {
+        //        ChangeAnimationState("AttackBack");
+        //    }
+        //    else if (angle > 315f || angle <= 45)
+        //    {
+        //        ChangeAnimationState("AttackRight");
+        //    }
+        //    //This let's the attack animation play out completely
+        //    Invoke("AttackComplete", attackDelay);
+        //}
+
+
+        //if (isAttackPressed)
+        //{
+        //    isAttackPressed = false;
+
+        //    if (!isAttacking)
+        //    {
+        //        isAttacking = true;
+
+        //        if (angle > 45f && angle <= 135f)
+        //        {
+        //            ChangeAnimationState("AttackFront");
+        //        }
+        //        else if (angle > 135f && angle <= 225f)
+        //        {
+        //            ChangeAnimationState("AttackLeft");
+        //        }
+        //        else if (angle > 225f && angle <= 315f)
+        //        {
+        //            ChangeAnimationState("AttackBack");
+        //        }
+        //        else if (angle > 315f || angle <= 45)
+        //        {
+        //            ChangeAnimationState("AttackRight");
+        //        }
+
+
+
+        //        //This let's the attack animation play out completely
+        //        Invoke("AttackComplete", attackDelay);
+
+
+        //    }
+
+        //}
+
+    }
+
+    void AttackComplete()
+    {
+        isAttacking = false;
+    }
     public void takeDamage(int damage)
     {
 
@@ -108,5 +290,13 @@ public class EnemyAI : MonoBehaviour
                 }
             */
         }
+    }
+
+    void ChangeAnimationState(string newAnimation)
+    {
+        if (currentAnimaton == newAnimation) return;
+
+        animation.Play(newAnimation);
+        currentAnimaton = newAnimation;
     }
 }
