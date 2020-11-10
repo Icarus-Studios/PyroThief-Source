@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Mouse.Utils;
+using System;
 
 public class PlayerController : MonoBehaviour
 {
@@ -14,19 +15,21 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private GameObject crossHair;
     private string currentAnimaton;
-    public static Vector3 movement;
+    public Vector3 movement;
     private Vector3 mousePosition;
-    public static Vector3 aimDirection;
-    public static bool isAttacking;
+    public Vector3 aimDirection;
+    public bool isAttacking;
     private bool isAttackPressed;
 
     public Transform attackPoint;
     public float attackRange = 1f;
     public LayerMask enemyLayers;
     private GameObject SFX;
-
+    public GameObject turret;
+    public static PlayerController Instance { get; private set; }
     private void Start()
     {
+        Instance = this;
         Cursor.visible = false;
         crossHair = GameObject.Find("CrossHair");
         animation = GetComponent<Animator>();
@@ -51,11 +54,66 @@ public class PlayerController : MonoBehaviour
         //Check if attacking
         if (Input.GetMouseButtonDown(0))
         {
-            isAttackPressed = true;
-            Debug.Log("Pressed primary button.");
-            Attack();
+            if(!GameManager.isPaused)
+            {
+                isAttackPressed = true;
+                //Debug.Log("Pressed primary button.");
+                Attack();
+            }
+            
         }
 
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            addTurret();  
+        }
+
+    }
+
+    private void addTurret()
+    {
+        if(GameManager.Instance.goldAmount >= 20)
+        {
+            GameManager.Instance.addGold(-20);
+            Vector3 playerPos = transform.position;
+            Vector3 playerDirection = transform.forward;
+            Quaternion playerRotation = transform.rotation;
+
+
+            crossHair.transform.localPosition = aimDirection;
+
+            float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
+
+            if (angle < 0.0f) { angle += 360f; }
+
+            if (movement.magnitude < 0.001f)
+            {
+                if (angle > 45f && angle <= 135f)
+                {
+                    playerPos.y += 4;
+                }
+                else if (angle > 135f && angle <= 225f)
+                {
+                    playerPos.x -= 4;
+                }
+                else if (angle > 225f && angle <= 315f)
+                {
+                    playerPos.y -= 4;
+                }
+                else if (angle > 315f || angle <= 45)
+                {
+                    playerPos.x += 4;
+                }
+            }
+            Vector3 spawnPos = playerPos + playerDirection;
+            Instantiate(turret, spawnPos, playerRotation);
+        }
+        else
+        {
+            SFX.GetComponent<SFX>().PlayErrorSound();
+            CinemachineShake.Instance.ShakeCamera(10f, .3f);
+        }
+        
     }
 
     private void FixedUpdate()
@@ -174,10 +232,17 @@ public class PlayerController : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.CompareTag("Item"))
+        if(other.gameObject.CompareTag("Gold"))
         {
+            SFX.GetComponent<SFX>().PlayPickupSound();
             Destroy(other.gameObject);
-            GameManager.addGold(1);
+            other.gameObject.GetComponent<addGoldAmount>().addGoldToCount();
+        }
+        else if (other.gameObject.CompareTag("Heart"))
+        {
+            SFX.GetComponent<SFX>().PlayPickupSound();
+            Destroy(other.gameObject);
+            other.gameObject.GetComponent<addHPAmount>().addHPToCount();
         }
     }
 

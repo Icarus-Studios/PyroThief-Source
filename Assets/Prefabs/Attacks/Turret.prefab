@@ -214,6 +214,6 @@ MonoBehaviour:
   projectile: {fileID: 2851958491069969170, guid: 1441ecf962251704b9f6e23c9b442faf,
     type: 3}
   ShootPoint: {fileID: 3033046264620458197}
-  projectileForce: 500
+  projectileForce: 250
   fireRate: 5
   gun: {fileID: 3033046264540133743}

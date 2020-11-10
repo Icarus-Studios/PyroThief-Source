@@ -7,16 +7,18 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance { get; private set; }
     private int rounds = 0;
     private int playerLevel = 1;
     private float experience = 0f;
     private float xpForNextLevel = 100f;
     private float minutes, seconds;
-    public static int goldAmount = 0;
+    public int goldAmount = 100;
     private Text roundsSurvived;
     private Text timePlayed;
     private Text playerLvl;
     private static Text goldText;
+    private Image UITurretPrompt;
 
 
     //these probably should go in their own script but I'm putting them here now as a UI proof of concept
@@ -36,6 +38,7 @@ public class GameManager : MonoBehaviour
     public static bool isPaused = false;
     public GameObject pauseMenuUI;
     public GameObject settingsUI;
+    public GameObject gameOverScreen;
     private ShakeBehavior cameraShake;
 
     //How much of the whole health bar is the circular part
@@ -51,6 +54,9 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Instance = this;
+        tint = GameObject.Find("GreenTint").GetComponent<Image>();
+        tint.enabled = false;
         roundsSurvived = GameObject.Find("roundsSurvived").GetComponent<Text>();
         timePlayed = GameObject.Find("timePlayed").GetComponent<Text>();
         playerLvl = GameObject.Find("playerLevel").GetComponent<Text>();
@@ -65,9 +71,11 @@ public class GameManager : MonoBehaviour
 
         cameraShake = GameObject.Find("Main Camera").GetComponent<ShakeBehavior>();
         hpRegained = GameObject.Find("HPRecoveryParticles").GetComponent<ParticleSystem>();
-        tint = GameObject.Find("GreenTint").GetComponent<Image>();
-        tint.enabled = false;
+       
         expBar.fillAmount = experience;
+
+        UITurretPrompt = GameObject.Find("TurretPrompt").GetComponent<Image>();
+
 
         pauseMenuUI.SetActive(false);
 
@@ -119,11 +127,15 @@ public class GameManager : MonoBehaviour
         timePlayed.text = "Time Played: " + minutes.ToString("00") + ":" + seconds.ToString("00");
     }
 
+    public string getTimePlayed() { return timePlayed.text; }
+
     public void updateRounds()
     {
         rounds++;
         roundsSurvived.text = "Rounds Survived: " + rounds;
     }
+
+    public int getRounds() { return rounds; }
 
     public void updatePlayerLevel()
     {
@@ -150,13 +162,24 @@ public class GameManager : MonoBehaviour
 
    
 
-    public static void addGold(int amount)
+    public void addGold(int amount)
     {
         goldAmount += amount;
         goldText.text = goldAmount.ToString();
+
+        if(amount <= 0)
+        {
+            if (goldAmount < 20)
+                UITurretPrompt.GetComponent<Image>().color = new Color32(54, 54, 54, 255);
+        }
+        else
+        {
+            if (goldAmount >= 20)
+                UITurretPrompt.GetComponent<Image>().color = Color.white;
+        }
     }
 
-    public static void addGold()
+    public void addGold()
     {
         goldAmount ++;
         goldText.text = goldAmount.ToString();
@@ -197,16 +220,29 @@ public class GameManager : MonoBehaviour
 
     public void updateHP(float amount)
     {
-        currentHealth += amount;
-        currentHealth = Mathf.Clamp(currentHealth, 0, 100);
+        
         if (amount < 0)
-            cameraShake.TriggerShake();
+            CinemachineShake.Instance.ShakeCamera(10f, .3f);
         else
         {
-            tint.enabled = true;
-            StartCoroutine(FadeImage(false));
-            hpRegained.Play();
-            StartCoroutine(FadeImage(true));
+            if(currentHealth < 100)
+            {
+                tint.enabled = true;
+                StartCoroutine(FadeImage(false));
+                hpRegained.Play();
+                StartCoroutine(FadeImage(true));
+            }   
+        }
+
+        currentHealth += amount;
+        currentHealth = Mathf.Clamp(currentHealth, 0, 100);
+
+        if (currentHealth <= 0)
+        {
+            Time.timeScale = 0f;
+            Cursor.visible = true;
+            gameOverScreen.SetActive(true);
+            isPaused = true;
         }
     }
 

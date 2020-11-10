@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - Boundries
   - Item
+  - Gold
+  - Heart
   layers:
   - Default
   - TransparentFX

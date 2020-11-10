@@ -23,7 +23,15 @@ public class EnemyAI : MonoBehaviour
     Seeker seeker;
     Rigidbody2D rb;
     Vector3 localScale;
-    public GameObject reward;
+    public GameObject plusOneReward;
+    public GameObject plusFiveReward;
+    public GameObject plusTenReward;
+    public GameObject plusTwentyReward;
+    public GameObject plusFiftyReward;
+    public GameObject plus100Reward;
+    public GameObject plus500Reward;
+    public GameObject plus10Health;
+    public GameObject plus50Health;
     private GameObject SFX;
     private new Animator animation;
     private string currentAnimaton;
@@ -32,12 +40,13 @@ public class EnemyAI : MonoBehaviour
 
     void Start()
     {
+        target = GameObject.Find("Promethesus").transform;
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
         //animation = GetComponent<Animator>();
         animation = GetComponentInChildren<Animator>();
         blood = gameObject.GetComponentInChildren(typeof(ParticleSystem), true) as ParticleSystem;
-        //localScale = healthBar.transform.localScale;
+        localScale = healthBar.transform.localScale;
         SFX = GameObject.Find("SFX");
 
         //gameObject.GetComponent<Renderer>().enabled = false;
@@ -245,13 +254,50 @@ public class EnemyAI : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
-            Debug.Log("Enemy died!");
-
-            GameObject gold = Instantiate(reward, transform.position, Quaternion.identity);
+           // Debug.Log("Enemy died!");
+            dropItem();
 
             Destroy(this.gameObject);
         }
     
+    }
+
+    public void dropItem()
+    {
+        int dropNum = Random.Range(1, 10);
+        GameObject gold;
+        switch (dropNum)
+        {
+            case 1:
+                gold = Instantiate(plus10Health, transform.position, Quaternion.identity);
+                break;
+            case 2:
+                gold = Instantiate(plus50Health, transform.position, Quaternion.identity);
+                break;
+            case 3:
+                gold = Instantiate(plusTenReward, transform.position, Quaternion.identity);
+                break;
+            case 4:
+                gold = Instantiate(plusTwentyReward, transform.position, Quaternion.identity);
+                break;
+            case 5:
+                gold = Instantiate(plusFiftyReward, transform.position, Quaternion.identity);
+                break;
+            case 6:
+                gold = Instantiate(plus100Reward, transform.position, Quaternion.identity);
+                break;
+            case 10:
+                gold = Instantiate(plus500Reward, transform.position, Quaternion.identity);
+                break;
+
+            default:
+                gold = Instantiate(plusFiveReward, transform.position, Quaternion.identity);
+                break;
+
+        }
+
+
+        //Debug.Log(dropNum.ToString());
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -261,35 +307,7 @@ public class EnemyAI : MonoBehaviour
        
         if (collision.gameObject.name == "Bullet(Clone)")
         {
-
             takeDamage(10);
-
-            /*
-            if(PlayerController.isAttacking || collision.gameObject.name == "Bullet(Clone)")
-            {
-                
-                blood.Play();
-                health -= 10;
-                if (health <= 0)
-                {
-                    Destroy(this.gameObject);
-                }
-
-                if(PlayerController.isAttacking)
-                {
-                    Vector2 playerPos = (Vector2)PlayerController.movement;
-                    Vector2 direction = (Vector2)PlayerController.aimDirection;
-                    Vector2 pushForce = new Vector2(50 * direction.x, 50 * direction.y);
-                    Vector2 enemyPos = transform.position;
-
-                    if (playerPos.x > enemyPos.x)
-                    {
-                        pushForce.x = -pushForce.x;
-                    }
-
-                    rb.AddForce(pushForce);
-                }
-            */
         }
     }
 
