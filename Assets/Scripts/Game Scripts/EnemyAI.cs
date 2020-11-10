@@ -101,18 +101,18 @@ public class EnemyAI : MonoBehaviour
         else { reachedEndOfPath = false; }
 
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
+        Vector2 directionEnd = ((Vector2)path.vectorPath[path.vectorPath.Count - 1] - rb.position).normalized;
         Vector2 force = direction * walkingSpeed;
-        //Debug.Log("Force: " + force);
 
         rb.AddForce(force);
-        float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
 
+        float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
         if (distance < nextWaypointDistance)
         {
             ++currentWaypoint;
         }
 
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        float angle = Mathf.Atan2(directionEnd.y, directionEnd.x) * Mathf.Rad2Deg;
         if (angle < 0.0f) { angle += 360f; }
 
         Debug.Log("Angle: " + angle);
