@@ -95,6 +95,7 @@ public class EnemyAI : MonoBehaviour
         Vector2 force = direction * walkingSpeed;
         //Debug.Log("Force: " + force);
 
+        rb.AddForce(force);
         float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
 
         if (distance < nextWaypointDistance)
