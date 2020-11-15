@@ -8,7 +8,7 @@ public class SFX : MonoBehaviour
     public AudioSource damageSound;
     public AudioSource errorSound;
     public AudioSource pickupSound;
-
+    public AudioSource horn;
     public void PlaySwordSwing()
     {
        swordSwing.Play();
@@ -27,6 +27,11 @@ public class SFX : MonoBehaviour
     public void PlayPickupSound()
     {
         pickupSound.Play();
+    }
+
+    public void PlayHorn()
+    {
+        horn.Play();
     }
 
 
