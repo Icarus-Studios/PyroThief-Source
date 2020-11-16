@@ -34,7 +34,7 @@ public class EnemyAI : MonoBehaviour
     public GameObject plus50Health;
     private GameObject SFX;
     private new Animator animation;
-    private string currentAnimaton;
+    private string currentAnimation;
     public static bool isAttacking;
 
 
@@ -304,9 +304,9 @@ public class EnemyAI : MonoBehaviour
 
     void ChangeAnimationState(string newAnimation)
     {
-        if (currentAnimaton == newAnimation) return;
+        if (currentAnimation == newAnimation) return;
 
         animation.Play(newAnimation);
-        currentAnimaton = newAnimation;
+        currentAnimation = newAnimation;
     }
 }
