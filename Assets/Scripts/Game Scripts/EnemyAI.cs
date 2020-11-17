@@ -16,7 +16,9 @@ public class EnemyAI : MonoBehaviour
 
     private ParticleSystem blood;
     public SpriteRenderer healthBar;
-    
+    public Transform attackPoint;
+    public float attackRange = 1f;
+
     Path path;
     //Index of currently targeted waypoint
     int currentWaypoint = 0;
@@ -114,10 +116,16 @@ public class EnemyAI : MonoBehaviour
 
         float distanceToTarget = Vector2.Distance(rb.position, target.position);
         Debug.Log("Distance to target:" + distanceToTarget);
-        if(distanceToTarget < 2f)
+        if(distanceToTarget < 2.5f)
         {
-            Debug.Log("Attacking");
-            animation.SetTrigger("IsAttacking");
+            if(!isAttacking)
+            {
+                Debug.Log("Attacking");
+                animation.SetTrigger("IsAttacking");
+                isAttacking = true;
+                Attack();
+            }
+            
         }
 
         
@@ -135,22 +143,55 @@ public class EnemyAI : MonoBehaviour
         if (angle > 45f && angle <= 135f)
         {
             animation.SetInteger("angle", 1);
+            attackPoint.transform.localPosition = new Vector3(0, .8f, 0);
         }
         //Facing left
         else if (angle > 135f && angle <= 225f)
         {
             animation.SetInteger("angle", 2);
+            attackPoint.transform.localPosition = new Vector3(-1.1f, 0, 0);
         }
         //Facing down
         else if (angle > 225f && angle <= 315f)
         {
             animation.SetInteger("angle", 3);
+            attackPoint.transform.localPosition = new Vector3(0, -1.0f, 0);
         }
         //Facing right
         else if (angle > 315f || angle <= 45)
         {
             animation.SetInteger("angle", 4);
+            attackPoint.transform.localPosition = new Vector3(1.1f, 0, 0);
         }
+    }
+
+    void AttackComplete()
+    {
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(attackPoint.position, attackRange);
+        foreach (Collider2D hit in hitColliders)
+        {
+            if (hit.CompareTag("Player"))
+            {
+                GameManager.Instance.updateHP(-10);
+            }
+        }
+        SFX.GetComponent<SFX>().PlaySwordSwing();
+        isAttacking = false;
+    }
+
+    public void Attack()
+    {
+        if(isAttacking)
+        {
+            Invoke("AttackComplete", attackDelay);
+        }
+        
+
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 
     public void takeDamage(int damage)

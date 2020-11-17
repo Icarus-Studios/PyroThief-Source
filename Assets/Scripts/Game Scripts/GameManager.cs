@@ -225,7 +225,7 @@ public class GameManager : MonoBehaviour
     {
         
         if (amount < 0)
-            CinemachineShake.Instance.ShakeCamera(10f, .3f);
+            CinemachineShake.Instance.ShakeCamera(5f, .3f);
         else
         {
             if(currentHealth < 100)

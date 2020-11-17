@@ -60,6 +60,13 @@ public class DialougeManager : MonoBehaviour
         {
             enemy.GetComponent<EnemyAI>().enabled = false;
             enemy.GetComponentInChildren<Animator>().enabled = false;
+            foreach (SpriteRenderer sr in enemy.GetComponentsInChildren<SpriteRenderer>())
+            {
+                if (sr.gameObject.name == "MiniMapIndicator")
+                {
+                    sr.enabled = false;
+                }
+            }
         }
 
         GameObject[] player = GameObject.FindGameObjectsWithTag("Player");
@@ -120,8 +127,8 @@ public class DialougeManager : MonoBehaviour
             {
                 enemy.GetComponent<EnemyAI>().enabled = true;
                 enemy.GetComponentInChildren<Animator>().enabled = true;
+                
             }
-
             GameObject[] player = GameObject.FindGameObjectsWithTag("Player");
             foreach (GameObject p in player)
             {
@@ -149,6 +156,17 @@ public class DialougeManager : MonoBehaviour
                         GameObject.Find("throneRoomFire").SetActive(false);
                         SFX.GetComponent<SFX>().PlayHorn();
                         switchCamera.GetComponent<Animator>().SetBool("cutscene1", true);
+                        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+                        foreach (GameObject enemy in enemies)
+                        {
+                            foreach (SpriteRenderer sr in enemy.GetComponentsInChildren<SpriteRenderer>())
+                            {
+                                if (sr.gameObject.name == "MiniMapIndicator")
+                                {
+                                    sr.enabled = true;
+                                }
+                            }
+                        }
                     }
                         
                 }
