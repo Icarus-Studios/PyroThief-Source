@@ -12,9 +12,11 @@ public class EnemyAI : MonoBehaviour
     //The distance the enemy has to be from the next waypoint to shift to the next waypoint
     [SerializeField] private float nextWaypointDistance = 3.0f;
     [SerializeField] private float attackDelay = 0.4f;
+    [SerializeField] private float health = 100f;
+
     private ParticleSystem blood;
-    public float health = 100f;
     public SpriteRenderer healthBar;
+    
     Path path;
     //Index of currently targeted waypoint
     int currentWaypoint = 0;
@@ -33,6 +35,7 @@ public class EnemyAI : MonoBehaviour
     public GameObject plus10Health;
     public GameObject plus50Health;
     private GameObject SFX;
+
     private new Animator animation;
     private string currentAnimation;
     public static bool isAttacking;
@@ -56,7 +59,6 @@ public class EnemyAI : MonoBehaviour
         if (!p.error)
         {
             path = p;
-
             //Once a new path is generated, reset the index of the first waypoint
             currentWaypoint = 0;
         }
@@ -79,26 +81,49 @@ public class EnemyAI : MonoBehaviour
     private void FixedUpdate()
     {
         MoveCharacter();
-
     }
     private void MoveCharacter()
     {
         if (path == null){ return; }
-        if (currentWaypoint >= path.vectorPath.Count)
+        if (currentWaypoint >= path.vectorPath.Count - 1)
         {
+            //Debug.Log("Current waypoint: " + currentWaypoint + "  VectorPath.Count: " + path.vectorPath.Count);
             reachedEndOfPath = true;
             return;
         }
-        else { reachedEndOfPath = false; }
+        else { Debug.Log("Set false"); reachedEndOfPath = false; }
+
 
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
         Vector2 directionEnd = ((Vector2)path.vectorPath[path.vectorPath.Count - 1] - rb.position).normalized;
-        Vector2 force = direction * walkingSpeed;
+        //Vector2 force = direction * walkingSpeed;
 
-        rb.AddForce(force);
 
-        float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
-        if (distance < nextWaypointDistance)
+        Debug.Log("Direction mag: " + direction.magnitude);
+        if (direction.magnitude > 0.001f)
+        {
+            animation.SetBool("IsMoving", true);
+        }
+        else
+        {
+            animation.SetBool("IsMoving", false);
+        }
+
+        //rb.AddForce(force);
+        rb.MovePosition((Vector2)transform.position + (direction * walkingSpeed * Time.deltaTime));
+
+        float distanceToTarget = Vector2.Distance(rb.position, target.position);
+        Debug.Log("Distance to target:" + distanceToTarget);
+        if(distanceToTarget < 2f)
+        {
+            Debug.Log("Attacking");
+            animation.SetTrigger("IsAttacking");
+        }
+
+        
+
+        float distanceToWaypoint = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
+        if (distanceToWaypoint < nextWaypointDistance)
         {
             ++currentWaypoint;
         }
@@ -106,140 +131,30 @@ public class EnemyAI : MonoBehaviour
         float angle = Mathf.Atan2(directionEnd.y, directionEnd.x) * Mathf.Rad2Deg;
         if (angle < 0.0f) { angle += 360f; }
 
-        //Debug.Log("Angle: " + angle);
-        //ChangeAnimationState("RunForward");
-
-        //if (force.magnitude < 0.001f && !isAttacking)
-        //{
-        //    Debug.Log("Idling");
-        //    if (angle > 45f && angle <= 135f)
-        //    {
-        //        ChangeAnimationState("IdleFront");
-        //    }
-        //    else if (angle > 135f && angle <= 225f)
-        //    {
-        //        ChangeAnimationState("IdleLeft");
-        //    }
-        //    else if (angle > 225f && angle <= 315f)
-        //    {
-        //        ChangeAnimationState("IdleBack");
-        //    }
-        //    else if (angle > 315f || angle <= 45)
-        //    {
-        //        ChangeAnimationState("IdleRight");
-        //    }
-        //}
-        //else if (!isAttacking)
-        //{
-        //    Debug.Log("Running");
-        //    if (angle > 45f && angle <= 135f)
-        //    {
-        //        ChangeAnimationState("RunForward");
-        //    }
-        //    else if (angle > 135f && angle <= 225f)
-        //    {
-        //        ChangeAnimationState("RunLeft");
-        //    }
-        //    else if (angle > 225f && angle <= 315f)
-        //    {
-        //        ChangeAnimationState("RunBackward");
-        //    }
-        //    else if (angle > 315f || angle <= 45)
-        //    {
-        //        ChangeAnimationState("RunRight");
-        //    }
-        //}
+        //Facing up
         if (angle > 45f && angle <= 135f)
         {
-            Debug.Log("Running Up");
-            ChangeAnimationState("RunForward");
+            animation.SetInteger("angle", 1);
         }
+        //Facing left
         else if (angle > 135f && angle <= 225f)
         {
-            Debug.Log("Running Left");
-            ChangeAnimationState("RunLeft");
+            animation.SetInteger("angle", 2);
         }
+        //Facing down
         else if (angle > 225f && angle <= 315f)
         {
-            Debug.Log("Running Down");
-            ChangeAnimationState("RunBackward");
+            animation.SetInteger("angle", 3);
         }
+        //Facing right
         else if (angle > 315f || angle <= 45)
         {
-            Debug.Log("Running Right");
-            ChangeAnimationState("RunRight");
+            animation.SetInteger("angle", 4);
         }
-
-
-        //if (isAttacking)
-        //{
-        //    //isAttacking = true;
-
-        //    if (angle > 45f && angle <= 135f)
-        //    {
-        //        ChangeAnimationState("AttackFront");
-        //    }
-        //    else if (angle > 135f && angle <= 225f)
-        //    {
-        //        ChangeAnimationState("AttackLeft");
-        //    }
-        //    else if (angle > 225f && angle <= 315f)
-        //    {
-        //        ChangeAnimationState("AttackBack");
-        //    }
-        //    else if (angle > 315f || angle <= 45)
-        //    {
-        //        ChangeAnimationState("AttackRight");
-        //    }
-        //    //This let's the attack animation play out completely
-        //    Invoke("AttackComplete", attackDelay);
-        //}
-
-
-        //if (isAttackPressed)
-        //{
-        //    isAttackPressed = false;
-
-        //    if (!isAttacking)
-        //    {
-        //        isAttacking = true;
-
-        //        if (angle > 45f && angle <= 135f)
-        //        {
-        //            ChangeAnimationState("AttackFront");
-        //        }
-        //        else if (angle > 135f && angle <= 225f)
-        //        {
-        //            ChangeAnimationState("AttackLeft");
-        //        }
-        //        else if (angle > 225f && angle <= 315f)
-        //        {
-        //            ChangeAnimationState("AttackBack");
-        //        }
-        //        else if (angle > 315f || angle <= 45)
-        //        {
-        //            ChangeAnimationState("AttackRight");
-        //        }
-
-
-
-        //        //This let's the attack animation play out completely
-        //        Invoke("AttackComplete", attackDelay);
-
-
-        //    }
-
-        //}
-
     }
 
-    void AttackComplete()
-    {
-        isAttacking = false;
-    }
     public void takeDamage(int damage)
     {
-
         blood.Play();
         SFX.GetComponent<SFX>().PlayDamageSound();
         health -= damage;
@@ -250,7 +165,6 @@ public class EnemyAI : MonoBehaviour
 
             Destroy(this.gameObject);
         }
-    
     }
 
     public void dropItem()
@@ -284,10 +198,7 @@ public class EnemyAI : MonoBehaviour
             default:
                 gold = Instantiate(plusFiveReward, transform.position, Quaternion.identity);
                 break;
-
         }
-
-
         //Debug.Log(dropNum.ToString());
     }
 
@@ -300,13 +211,5 @@ public class EnemyAI : MonoBehaviour
         {
             takeDamage(10);
         }
-    }
-
-    void ChangeAnimationState(string newAnimation)
-    {
-        if (currentAnimation == newAnimation) return;
-
-        animation.Play(newAnimation);
-        currentAnimation = newAnimation;
     }
 }

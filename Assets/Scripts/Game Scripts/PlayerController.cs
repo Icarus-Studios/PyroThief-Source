@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     [Header("Character Attributes:")]
     [SerializeField] private float attackDelay = 0.4f;
     [SerializeField] private float walkingSpeed = 1.0f;
+    [SerializeField] private int attackDamage = 35;
+
     [Space]
 
     private new Animator animation;
@@ -125,7 +127,7 @@ public class PlayerController : MonoBehaviour
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
         foreach (Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<EnemyAI>().takeDamage(35);
+            enemy.GetComponent<EnemyAI>().takeDamage(attackDamage);
             //enemy.GetComponent<SpriteRenderer>().color = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f));
         }
     }
@@ -187,13 +189,13 @@ public class PlayerController : MonoBehaviour
                 if (angle > 45f && angle <= 135f)
                 {
                     ChangeAnimationState("AttackFront");
-                    attackPoint.transform.localPosition = new Vector3(0, 1.5f, 0);
+                    attackPoint.transform.localPosition = new Vector3(0, .8f, 0);
                     Attack();
                 }
                 else if (angle > 135f && angle <= 225f)
                 {
                     ChangeAnimationState("AttackLeft");
-                    attackPoint.transform.localPosition = new Vector3(-1, 1, 0);
+                    attackPoint.transform.localPosition = new Vector3(-1.1f, 0, 0);
                     Attack();
                 }
                 else if (angle > 225f && angle <= 315f)
@@ -205,7 +207,7 @@ public class PlayerController : MonoBehaviour
                 else if (angle > 315f || angle <= 45)
                 {
                     ChangeAnimationState("AttackRight");
-                    attackPoint.transform.localPosition = new Vector3(1, 1, 0);
+                    attackPoint.transform.localPosition = new Vector3(1.1f, 0, 0);
                     Attack();
                 }
 
