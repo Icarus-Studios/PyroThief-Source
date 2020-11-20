@@ -139,7 +139,7 @@ namespace Pathfinding {
 		public Quaternion rotation { get { return updateRotation ? tr.rotation : simulatedRotation; } }
 
 		/// <summary>Accumulated movement deltas from the <see cref="Move"/> method</summary>
-		Vector3 accumulatedMovementDelta = Vector3.zero;
+		protected Vector3 accumulatedMovementDelta = Vector3.zero;
 
 		/// <summary>
 		/// Current desired velocity of the agent (does not include local avoidance and physics).
@@ -379,6 +379,7 @@ namespace Pathfinding {
 			// Note that the gravity can contain NaN's, which is why the comparison uses !(a==b) instead of just a!=b.
 			usingGravity = !(gravity == Vector3.zero) && (!updatePosition || ((rigid == null || rigid.isKinematic) && (rigid2D == null || rigid2D.isKinematic)));
 			if (rigid == null && rigid2D == null && canMove) {
+				Debug.Log("No rigidbody to scrub!");
 				Vector3 nextPosition;
 				Quaternion nextRotation;
 				MovementUpdate(Time.deltaTime, out nextPosition, out nextRotation);
@@ -582,7 +583,7 @@ namespace Pathfinding {
 			}
 		}
 
-		void FinalizePosition (Vector3 nextPosition) {
+		protected virtual void FinalizePosition (Vector3 nextPosition) {
 			// Use a local variable, it is significantly faster
 			Vector3 currentPosition = simulatedPosition;
 			bool positionDirty1 = false;

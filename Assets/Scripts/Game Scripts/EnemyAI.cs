@@ -125,7 +125,6 @@ public class EnemyAI : MonoBehaviour
                 isAttacking = true;
                 Attack();
             }
-            
         }
 
         
@@ -185,8 +184,6 @@ public class EnemyAI : MonoBehaviour
         {
             Invoke("AttackComplete", attackDelay);
         }
-        
-
     }
 
     private void OnDrawGizmosSelected()
