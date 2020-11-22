@@ -252,6 +252,12 @@ public class PlayerController : MonoBehaviour
             Destroy(other.gameObject);
             other.gameObject.GetComponent<addHPAmount>().addHPToCount();
         }
+        else if (other.gameObject.CompareTag("Key"))
+        {
+            SFX.GetComponent<SFX>().PlayPickupSound();
+            Destroy(other.gameObject);
+            GameManager.Instance.updateRounds();
+        }
     }
     void ChangeAnimationState(string newAnimation)
     {

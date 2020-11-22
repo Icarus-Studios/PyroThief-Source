@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     private Text playerLvl;
     private static Text goldText;
     private Image UITurretPrompt;
-
+    public int enemiesActive = 0;
 
     //these probably should go in their own script but I'm putting them here now as a UI proof of concept
     private Image weaponSelect;
@@ -62,7 +62,7 @@ public class GameManager : MonoBehaviour
         timePlayed = GameObject.Find("timePlayed").GetComponent<Text>();
         playerLvl = GameObject.Find("playerLevel").GetComponent<Text>();
         goldText = GameObject.Find("goldAmount").GetComponent<Text>();
-        roundsSurvived.text = "Rounds Survived: " + rounds;
+        roundsSurvived.text = "Keys Collected: " + rounds;
         timePlayed.text = "Time Played: 00:00";
         playerLvl.text = "Lv. " + playerLevel;
         goldText.text = goldAmount.ToString();
@@ -80,6 +80,12 @@ public class GameManager : MonoBehaviour
 
         pauseMenuUI.SetActive(false);
 
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject enemy in enemies)
+        {
+            enemiesActive++;
+        }
+
     }
 
     // Update is called once per frame
@@ -96,7 +102,7 @@ public class GameManager : MonoBehaviour
             else
                 Pause();
         }
-
+        //Debug.LogWarning("Enemies Active: " + enemiesActive);
     }
 
     
@@ -135,7 +141,7 @@ public class GameManager : MonoBehaviour
     public void updateRounds()
     {
         rounds++;
-        roundsSurvived.text = "Rounds Survived: " + rounds;
+        roundsSurvived.text = "Keys Collected: " + rounds;
     }
 
     public int getRounds() { return rounds; }

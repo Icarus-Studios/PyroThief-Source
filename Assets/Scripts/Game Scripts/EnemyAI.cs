@@ -56,6 +56,8 @@ public class EnemyAI : MonoBehaviour
         InvokeRepeating("UpdatePath", 0f, .1f);
     }
 
+
+
     public void OnPathComplete(Path p)
     {
         if (!p.error)
@@ -116,7 +118,7 @@ public class EnemyAI : MonoBehaviour
 
         float distanceToTarget = Vector2.Distance(rb.position, target.position);
         Debug.Log("Distance to target:" + distanceToTarget);
-        if(distanceToTarget < 2.5f)
+        if(distanceToTarget < 4f)
         {
             if(!isAttacking)
             {

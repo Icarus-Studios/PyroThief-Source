@@ -9,6 +9,7 @@ TagManager:
   - Item
   - Gold
   - Heart
+  - Key
   layers:
   - Default
   - TransparentFX

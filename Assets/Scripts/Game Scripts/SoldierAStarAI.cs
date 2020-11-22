@@ -6,6 +6,7 @@ using Pathfinding;
 public class SoldierAStarAI : MonoBehaviour
 {
     [Header("Character Attributes:")]
+    [SerializeField] private int attackDamage = 10;
     [SerializeField] private float attackDelay = 0.4f;
     [SerializeField] private float health = 100f;
     [SerializeField] private AIPath AIPath;
@@ -38,6 +39,7 @@ public class SoldierAStarAI : MonoBehaviour
         blood = gameObject.GetComponentInChildren(typeof(ParticleSystem), true) as ParticleSystem;
         localScale = healthBar.transform.localScale;
         SFX = GameObject.Find("SFX");
+        isAttacking = false;
     }
 
     void Update()
@@ -123,11 +125,12 @@ public class SoldierAStarAI : MonoBehaviour
         {
             if (hit.CompareTag("Player"))
             {
-                GameManager.Instance.updateHP(-10);
+                GameManager.Instance.updateHP(-attackDamage);
             }
         }
         SFX.GetComponent<SFX>().PlaySwordSwing();
         isAttacking = false;
+
     }
 
     public void Attack()
@@ -135,6 +138,7 @@ public class SoldierAStarAI : MonoBehaviour
         if (isAttacking)
         {
             Invoke("AttackComplete", attackDelay);
+            
         }
     }
 
@@ -145,7 +149,7 @@ public class SoldierAStarAI : MonoBehaviour
 
     public void takeDamage(int damage)
     {
-        Debug.Log("Enemy was attacked!");
+        //Debug.Log("Enemy was attacked!");
         blood.Play();
         SFX.GetComponent<SFX>().PlayDamageSound();
         health -= damage;
@@ -153,7 +157,7 @@ public class SoldierAStarAI : MonoBehaviour
         {
             // Debug.Log("Enemy died!");
             dropItem();
-
+            GameManager.Instance.enemiesActive--;
             Destroy(this.gameObject);
         }
     }

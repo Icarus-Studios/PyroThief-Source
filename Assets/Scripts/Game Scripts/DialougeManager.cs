@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Pathfinding;
 
 public class DialougeManager : MonoBehaviour
 {
@@ -58,7 +59,8 @@ public class DialougeManager : MonoBehaviour
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
         foreach (GameObject enemy in enemies)
         {
-            enemy.GetComponent<EnemyAI>().enabled = false;
+            enemy.GetComponent<AIPath>().enabled = false;
+            enemy.GetComponent<SoldierAStarAI>().enabled = false;
             enemy.GetComponentInChildren<Animator>().enabled = false;
             foreach (SpriteRenderer sr in enemy.GetComponentsInChildren<SpriteRenderer>())
             {
@@ -116,7 +118,6 @@ public class DialougeManager : MonoBehaviour
 
             if (gameObject.name.Equals("FirstCutscene"))
             {
-                switchCamera.GetComponent<Animator>().SetBool("cutscene1", false);
                 OST.GetComponent<OST>().PlayBattleTheme();
             }
                 
@@ -125,7 +126,8 @@ public class DialougeManager : MonoBehaviour
             GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
             foreach (GameObject enemy in enemies)
             {
-                enemy.GetComponent<EnemyAI>().enabled = true;
+                enemy.GetComponent<AIPath>().enabled = true;
+                enemy.GetComponent<SoldierAStarAI>().enabled = true;
                 enemy.GetComponentInChildren<Animator>().enabled = true;
                 
             }
@@ -167,6 +169,12 @@ public class DialougeManager : MonoBehaviour
                                 }
                             }
                         }
+                    }
+
+                    else if(index == 3)
+                    {
+                        switchCamera.GetComponent<Animator>().SetBool("cutscene1", false);
+                        
                     }
                         
                 }

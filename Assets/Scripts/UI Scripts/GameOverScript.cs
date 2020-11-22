@@ -13,7 +13,7 @@ public class GameOverScript : MonoBehaviour
     {
         roundsSurvived = GameObject.Find("RoundsSurvivedText").GetComponent<Text>();
         timePlayed = GameObject.Find("TimePlayedText").GetComponent<Text>();
-        roundsSurvived.text = "Rounds Survived: " + GameManager.Instance.getRounds();
+        roundsSurvived.text = "Keys Collected: " + GameManager.Instance.getRounds();
         timePlayed.text = GameManager.Instance.getTimePlayed();
     }
 }
