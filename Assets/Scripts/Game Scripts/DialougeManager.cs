@@ -30,6 +30,7 @@ public class DialougeManager : MonoBehaviour
     private GameObject SFX;
     private GameObject OST;
     private GameObject switchCamera;
+    public GameObject controlScreen;
 
 
     public void Start()
@@ -114,13 +115,14 @@ public class DialougeManager : MonoBehaviour
             dialougeText.text = string.Empty;
 
             Cursor.visible = false;
-            speechBubbleAnimator.SetTrigger("Close");
 
             if (gameObject.name.Equals("FirstCutscene"))
             {
+                controlScreen.SetActive(false);
                 OST.GetComponent<OST>().PlayBattleTheme();
             }
-                
+            else
+                speechBubbleAnimator.SetTrigger("Close");
 
 
             GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
@@ -174,7 +176,8 @@ public class DialougeManager : MonoBehaviour
                     else if(index == 3)
                     {
                         switchCamera.GetComponent<Animator>().SetBool("cutscene1", false);
-                        
+                        speechBubbleAnimator.SetTrigger("Close");
+                        controlScreen.SetActive(true);
                     }
                         
                 }

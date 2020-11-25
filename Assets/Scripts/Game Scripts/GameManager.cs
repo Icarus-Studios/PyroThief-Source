@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     private Text timePlayed;
     private Text playerLvl;
     private static Text goldText;
-    private Image UITurretPrompt;
+    public Image UITurretPrompt;
     public int enemiesActive = 0;
 
     //these probably should go in their own script but I'm putting them here now as a UI proof of concept
@@ -75,7 +75,7 @@ public class GameManager : MonoBehaviour
        
         expBar.fillAmount = experience;
 
-        UITurretPrompt = GameObject.Find("TurretPrompt").GetComponent<Image>();
+        //UITurretPrompt = GameObject.Find("TurretPrompt").GetComponent<Image>();
 
 
         pauseMenuUI.SetActive(false);
@@ -234,7 +234,7 @@ public class GameManager : MonoBehaviour
             CinemachineShake.Instance.ShakeCamera(5f, .3f);
         else
         {
-            if(currentHealth < 100)
+            if(currentHealth < maxHealth)
             {
                 tint.enabled = true;
                 StartCoroutine(FadeImage(false));
@@ -244,7 +244,7 @@ public class GameManager : MonoBehaviour
         }
 
         currentHealth += amount;
-        currentHealth = Mathf.Clamp(currentHealth, 0, 100);
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
 
         if (currentHealth <= 0)
         {

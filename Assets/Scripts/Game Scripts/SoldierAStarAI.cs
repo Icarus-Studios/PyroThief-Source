@@ -204,7 +204,7 @@ public class SoldierAStarAI : MonoBehaviour
 
         if (collision.gameObject.name == "Bullet(Clone)")
         {
-            takeDamage(10);
+            takeDamage(PlayerController.Instance.turretDamage);
         }
     }
 }

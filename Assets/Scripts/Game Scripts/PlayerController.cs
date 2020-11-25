@@ -9,7 +9,8 @@ public class PlayerController : MonoBehaviour
     [Header("Character Attributes:")]
     [SerializeField] private float attackDelay = 0.4f;
     [SerializeField] private float walkingSpeed = 1.0f;
-    [SerializeField] private int attackDamage = 35;
+    [SerializeField] public int attackDamage = 35;
+    public int turretDamage = 10;
 
     [Space]
 
@@ -28,6 +29,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask enemyLayers;
     private GameObject SFX;
     public GameObject turret;
+    public GameObject TurretUI;
     public static PlayerController Instance { get; private set; }
     private void Start()
     {
@@ -65,7 +67,8 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.R))
         {
-            addTurret();  
+            if(TurretUI.activeInHierarchy)
+                addTurret();  
         }
 
     }
@@ -266,4 +269,6 @@ public class PlayerController : MonoBehaviour
         animation.Play(newAnimation);
         currentAnimaton = newAnimation;
     }
+
+    public int getTurretDamage() { return turretDamage; }
 }
