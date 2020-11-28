@@ -43,6 +43,25 @@ public class KeyHolder : MonoBehaviour
             {
                 keyDoor.OpenDoor();
             }
+            else
+            {
+                string room = keyDoor.GetKeyType().ToString();
+                if (room.Equals("room1"))
+                    room = "Room 1";
+                else if (room.Equals("room2"))
+                    room = "Room 2";
+                else if (room.Equals("room3"))
+                    room = "Room 3";
+                else if (room.Equals("room4"))
+                    room = "Room 4";
+                else if (room.Equals("Hades"))
+                    room = "Hades";
+                else
+                    room = "ERROR";
+
+                Toast.Instance.Show("You need the key for " + room + "!", 5f);
+            }
         }
+        
     }
 }

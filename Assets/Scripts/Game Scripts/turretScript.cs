@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class turretScript : MonoBehaviour
 {
-
+    float counter = 0f;
     public float range;
     private Transform target;
     bool detected = false;
@@ -16,9 +16,12 @@ public class turretScript : MonoBehaviour
     public Transform ShootPoint;
     public float projectileForce;
     public float fireRate;
+    public float timeActive;
     float nextTimeToFire = 0;
+    private bool finished = false;
 
     public GameObject gun;
+    public ParticleSystem clouds;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,51 +59,65 @@ public class turretScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        try
+        counter += Time.deltaTime;
+        if (counter > timeActive && finished == false)
         {
-            Vector2 targetPos = target.position;
-            direction = targetPos - (Vector2)transform.position;
-            RaycastHit2D rayInfo = Physics2D.Raycast(transform.position, direction, range);
-
-            if (rayInfo)
+            Destroy(gun);
+            clouds.Play();
+            finished = true;
+            float totalDuration = clouds.duration;
+            gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            Destroy(gameObject, totalDuration);
+        }
+        else
+        {
+            try
             {
-                if (rayInfo.collider.gameObject.tag == "Enemy")
-                {
-                    if (detected == false)
-                    {
-                        detected = true;
-                        //turret.GetComponent<SpriteRenderer>().sprite = active;
-                    }
-                }
-                else
-                {
-                    if (detected == true)
-                    {
-                        detected = false;
-                        //turret.GetComponent<SpriteRenderer>().sprite = inactive;
+                Vector2 targetPos = target.position;
+                direction = targetPos - (Vector2)transform.position;
+                RaycastHit2D rayInfo = Physics2D.Raycast(transform.position, direction, range);
 
+                if (rayInfo)
+                {
+                    if (rayInfo.collider.gameObject.tag == "Enemy")
+                    {
+                        if (detected == false)
+                        {
+                            detected = true;
+                            //turret.GetComponent<SpriteRenderer>().sprite = active;
+                        }
+                    }
+                    else
+                    {
+                        if (detected == true)
+                        {
+                            detected = false;
+                            //turret.GetComponent<SpriteRenderer>().sprite = inactive;
+
+                        }
                     }
                 }
             }
-        }
-        catch
-        {
-            detected = false;
-            //turret.GetComponent<SpriteRenderer>().sprite = inactive;
+            catch
+            {
+                detected = false;
+                //turret.GetComponent<SpriteRenderer>().sprite = inactive;
+            }
+
+
+            if (detected)
+            {
+                gun.transform.up = direction;
+                if (Time.time > nextTimeToFire)
+                {
+                    nextTimeToFire = Time.time + 1 / fireRate;
+                    shoot();
+                }
+            }
         }
         
 
-       
-
-        if(detected)
-        {
-            gun.transform.up = direction;
-            if (Time.time > nextTimeToFire)
-            {
-                nextTimeToFire = Time.time + 1 / fireRate;
-                shoot();
-            }
-        }
+        
        
     }
 
