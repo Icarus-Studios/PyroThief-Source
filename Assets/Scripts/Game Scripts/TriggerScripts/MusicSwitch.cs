@@ -13,6 +13,7 @@ public class MusicSwitch : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        OST.GetComponent<OST>().switchMusic();
+        if (collision.gameObject.tag == "Player")
+            OST.GetComponent<OST>().switchMusic();
     }
 }

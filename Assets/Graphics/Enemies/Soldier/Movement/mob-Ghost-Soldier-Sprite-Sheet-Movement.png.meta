@@ -1,0 +1,680 @@
+fileFormatVersion: 2
+guid: f3340b3e0180dcd4196e2c3d690c3d3d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -725121975014040920
+    second: mob-Ghost-Soldier-Sprite-Sheet-Movement_0
+  - first:
+      213: -5197016516879338182
+    second: mob-Ghost-Soldier-Sprite-Sheet-Movement_1
+  - first:
+      213: -3384718372091375799
+    second: mob-Ghost-Soldier-Sprite-Sheet-Movement_2
+  - first:
+      213: -4782705458807386084
+    second: mob-Ghost-Soldier-Sprite-Sheet-Movement_3
+  - first:
+      213: 9165870568426974067
+    second: mob-Ghost-Soldier-Sprite-Sheet-Movement_4
+  - first:
+      213: 6532575575050741956
+    second: mob-Ghost-Soldier-Sprite-Sheet-Movement_5
+  - first:
+      213: -6917638671411614610
+    second: mob-Ghost-Soldier-Sprite-Sheet-Movement_6
+  - first:
+      213: 3139175446364743071
+    second: mob-Ghost-Soldier-Sprite-Sheet-Movement_7
+  - first:
+      213: -1891895812399171567
+    second: mob-Ghost-Soldier-Sprite-Sheet-Movement_8
+  - first:
+      213: 2523730866501884984
+    second: mob-Ghost-Soldier-Sprite-Sheet-Movement_9
+  - first:
+      213: 867037642939315433
+    second: mob-Ghost-Soldier-Sprite-Sheet-Movement_10
+  - first:
+      213: 162934434130943420
+    second: mob-Ghost-Soldier-Sprite-Sheet-Movement_11
+  - first:
+      213: -1826953927477082066
+    second: mob-Ghost-Soldier-Sprite-Sheet-Movement_12
+  - first:
+      213: 6805512779021147006
+    second: mob-Ghost-Soldier-Sprite-Sheet-Movement_13
+  - first:
+      213: 8790905722471498206
+    second: mob-Ghost-Soldier-Sprite-Sheet-Movement_14
+  - first:
+      213: 3110236491798791002
+    second: mob-Ghost-Soldier-Sprite-Sheet-Movement_15
+  - first:
+      213: -3267481882089566793
+    second: mob-Ghost-Soldier-Sprite-Sheet-Movement_16
+  - first:
+      213: 2022182071715686314
+    second: mob-Ghost-Soldier-Sprite-Sheet-Movement_17
+  - first:
+      213: 7936709085032849913
+    second: mob-Ghost-Soldier-Sprite-Sheet-Movement_18
+  - first:
+      213: -4515767044118716747
+    second: mob-Ghost-Soldier-Sprite-Sheet-Movement_19
+  - first:
+      213: 4890464265540527238
+    second: mob-Ghost-Soldier-Sprite-Sheet-Movement_20
+  - first:
+      213: 6027050771628358609
+    second: mob-Ghost-Soldier-Sprite-Sheet-Movement_21
+  - first:
+      213: -7876669440744396601
+    second: mob-Ghost-Soldier-Sprite-Sheet-Movement_22
+  - first:
+      213: 7830213753662507454
+    second: mob-Ghost-Soldier-Sprite-Sheet-Movement_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mob-Ghost-Soldier-Sprite-Sheet-Movement_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 453
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa5574d769dfe5f0800000000000000
+      internalID: -725121975014040920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Ghost-Soldier-Sprite-Sheet-Movement_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 456
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35b19b430d70e7b0800000000000000
+      internalID: -5197016516879338182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Ghost-Soldier-Sprite-Sheet-Movement_2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 456
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f41c6d2901701d0800000000000000
+      internalID: -3384718372091375799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Ghost-Soldier-Sprite-Sheet-Movement_3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 456
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c10d67e99ba60adb0800000000000000
+      internalID: -4782705458807386084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Ghost-Soldier-Sprite-Sheet-Movement_4
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 454
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37b2c4818b6b33f70800000000000000
+      internalID: 9165870568426974067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Ghost-Soldier-Sprite-Sheet-Movement_5
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 453
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8ea4bdfde58aa50800000000000000
+      internalID: 6532575575050741956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Ghost-Soldier-Sprite-Sheet-Movement_6
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 402
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c6102974c9fff90800000000000000
+      internalID: -6917638671411614610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Ghost-Soldier-Sprite-Sheet-Movement_7
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 402
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f95e238bf67909b20800000000000000
+      internalID: 3139175446364743071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Ghost-Soldier-Sprite-Sheet-Movement_8
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 405
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 118f5e548c2aeb5e0800000000000000
+      internalID: -1891895812399171567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Ghost-Soldier-Sprite-Sheet-Movement_9
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 400
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c988e0ad7160320800000000000000
+      internalID: 2523730866501884984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Ghost-Soldier-Sprite-Sheet-Movement_10
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 404
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e43a4a7426580c00800000000000000
+      internalID: 867037642939315433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Ghost-Soldier-Sprite-Sheet-Movement_11
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 403
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbddd0c210cd24200800000000000000
+      internalID: 162934434130943420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Ghost-Soldier-Sprite-Sheet-Movement_12
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 352
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2849b3251b55a6e0800000000000000
+      internalID: -1826953927477082066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Ghost-Soldier-Sprite-Sheet-Movement_13
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 352
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7bdfebb0d9027e50800000000000000
+      internalID: 6805512779021147006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Ghost-Soldier-Sprite-Sheet-Movement_14
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 355
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1ccd9ad229ff970800000000000000
+      internalID: 8790905722471498206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Ghost-Soldier-Sprite-Sheet-Movement_15
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 350
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a53cf1d4c97c92b20800000000000000
+      internalID: 3110236491798791002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Ghost-Soldier-Sprite-Sheet-Movement_16
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 354
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bdc6044a8297a2d0800000000000000
+      internalID: -3267481882089566793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Ghost-Soldier-Sprite-Sheet-Movement_17
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 353
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa7e6c751eb301c10800000000000000
+      internalID: 2022182071715686314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Ghost-Soldier-Sprite-Sheet-Movement_18
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 302
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f1aff2ccdad42e60800000000000000
+      internalID: 7936709085032849913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Ghost-Soldier-Sprite-Sheet-Movement_19
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 305
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be53e68cc5c451c0800000000000000
+      internalID: -4515767044118716747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Ghost-Soldier-Sprite-Sheet-Movement_20
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 304
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 684e846b65b6ed340800000000000000
+      internalID: 4890464265540527238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Ghost-Soldier-Sprite-Sheet-Movement_21
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 305
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dbf62e7eb264a350800000000000000
+      internalID: 6027050771628358609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Ghost-Soldier-Sprite-Sheet-Movement_22
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 303
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c8614340e270b290800000000000000
+      internalID: -7876669440744396601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mob-Ghost-Soldier-Sprite-Sheet-Movement_23
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 303
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb98e663ce18aac60800000000000000
+      internalID: 7830213753662507454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

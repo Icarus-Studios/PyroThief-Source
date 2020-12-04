@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
     private Image weaponSelect;
     public Sprite swordSelected;
     public Sprite bowSelected;
-    private bool swordActive = true;
+    public bool swordActive = true;
 
 
     public Image circleBar;
@@ -40,6 +40,8 @@ public class GameManager : MonoBehaviour
     public GameObject settingsUI;
     public GameObject gameOverScreen;
     private ShakeBehavior cameraShake;
+
+    public GameObject shop;
 
     //How much of the whole health bar is the circular part
     public float circlePercent = 0.3f;
@@ -102,6 +104,12 @@ public class GameManager : MonoBehaviour
             else
                 Pause();
         }
+
+        if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Keypad1))
+            changeToSword();
+
+        if (Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Keypad2))
+            changeToBow();
         //Debug.LogWarning("Enemies Active: " + enemiesActive);
     }
 
@@ -206,6 +214,18 @@ public class GameManager : MonoBehaviour
             swordActive = true;
             weaponSelect.sprite = swordSelected;
         }
+    }
+
+    public void changeToSword()
+    {
+        swordActive = true;
+        weaponSelect.sprite = swordSelected;
+    }
+
+    public void changeToBow()
+    {
+        swordActive = false;
+        weaponSelect.sprite = bowSelected;
     }
 
     void circleFill()

@@ -8,7 +8,11 @@ public class EnableSpawnTrigger : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        spawner.SetActive(true);
-        Destroy(this);
+        if(collision.gameObject.tag == "Player")
+        {
+            spawner.SetActive(true);
+            Destroy(this);
+        }
+        
     }
 }

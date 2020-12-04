@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float walkingSpeed = 1.0f;
     [SerializeField] public int attackDamage = 35;
     public int turretDamage = 10;
+    
 
     [Space]
 
@@ -31,6 +32,14 @@ public class PlayerController : MonoBehaviour
     public GameObject turret;
     public GameObject TurretUI;
     public static PlayerController Instance { get; private set; }
+    [Space]
+
+    [Header("Arrow Related Things")]
+    public GameObject arrowFront;
+    public GameObject arrowBack;
+    public GameObject arrowLeft;
+    public GameObject arrowRight;
+    public int arrowForce = 12;
     private void Start()
     {
         Instance = this;
@@ -57,7 +66,7 @@ public class PlayerController : MonoBehaviour
         //Check if attacking
         if (Input.GetMouseButtonDown(0))
         {
-            if(!GameManager.isPaused)
+            if(!GameManager.isPaused && GameManager.Instance.shop.activeInHierarchy == false)
             {
                 isAttackPressed = true;
                 //Debug.Log("Pressed primary button.");
@@ -189,31 +198,72 @@ public class PlayerController : MonoBehaviour
             if (!isAttacking)
             {
                 isAttacking = true;
+                if(GameManager.Instance.swordActive)
+                {
+                    if (angle > 45f && angle <= 135f)
+                    {
+                        ChangeAnimationState("AttackFront");
+                        attackPoint.transform.localPosition = new Vector3(0, .8f, 0);
+                        Attack();
+                    }
+                    else if (angle > 135f && angle <= 225f)
+                    {
+                        ChangeAnimationState("AttackLeft");
+                        attackPoint.transform.localPosition = new Vector3(-1.1f, 0, 0);
+                        Attack();
+                    }
+                    else if (angle > 225f && angle <= 315f)
+                    {
+                        ChangeAnimationState("AttackBack");
+                        attackPoint.transform.localPosition = new Vector3(0, -1.0f, 0);
+                        Attack();
+                    }
+                    else if (angle > 315f || angle <= 45)
+                    {
+                        ChangeAnimationState("AttackRight");
+                        attackPoint.transform.localPosition = new Vector3(1.1f, 0, 0);
+                        Attack();
+                    }
+                }
+                else //Bow is Active
+                {
+                    Vector2 mousePosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
 
-                if (angle > 45f && angle <= 135f)
-                {
-                    ChangeAnimationState("AttackFront");
-                    attackPoint.transform.localPosition = new Vector3(0, .8f, 0);
-                    Attack();
+                    if (angle > 45f && angle <= 135f)
+                    {
+                        ChangeAnimationState("ArrowFront");
+                        attackPoint.transform.localPosition = new Vector3(0, .8f, 3);
+                        Attack();
+                        GameObject arrow = Instantiate(arrowFront, attackPoint.position, Quaternion.identity);
+                        arrow.GetComponent<Rigidbody2D>().velocity = new Vector2(0.0f, arrowForce);
+
+                    }
+                    else if (angle > 135f && angle <= 225f)
+                    {
+                        ChangeAnimationState("ArrowLeft");
+                        attackPoint.transform.localPosition = new Vector3(-1.1f, 0, 3);
+                        Attack();
+                        GameObject arrow = Instantiate(arrowLeft, attackPoint.position, Quaternion.identity);
+                        arrow.GetComponent<Rigidbody2D>().velocity = new Vector2(-arrowForce, 0.0f);
+                    }
+                    else if (angle > 225f && angle <= 315f)
+                    {
+                        ChangeAnimationState("ArrowBack");
+                        attackPoint.transform.localPosition = new Vector3(0, -1f, 3);
+                        Attack();
+                        GameObject arrow = Instantiate(arrowBack, attackPoint.position, Quaternion.identity);
+                        arrow.GetComponent<Rigidbody2D>().velocity= new Vector2(0.0f, -arrowForce);
+                    }
+                    else if (angle > 315f || angle <= 45)
+                    {
+                        ChangeAnimationState("ArrowRight");
+                        attackPoint.transform.localPosition = new Vector3(1.1f, 0, 3);
+                        Attack();
+                        GameObject arrow = Instantiate(arrowRight, attackPoint.position, Quaternion.identity);
+                        arrow.GetComponent<Rigidbody2D>().velocity = new Vector2(arrowForce, 0.0f);
+                    }
                 }
-                else if (angle > 135f && angle <= 225f)
-                {
-                    ChangeAnimationState("AttackLeft");
-                    attackPoint.transform.localPosition = new Vector3(-1.1f, 0, 0);
-                    Attack();
-                }
-                else if (angle > 225f && angle <= 315f)
-                {
-                    ChangeAnimationState("AttackBack");
-                    attackPoint.transform.localPosition = new Vector3(0, -1.0f, 0);
-                    Attack();
-                }
-                else if (angle > 315f || angle <= 45)
-                {
-                    ChangeAnimationState("AttackRight");
-                    attackPoint.transform.localPosition = new Vector3(1.1f, 0, 0);
-                    Attack();
-                }
+                
 
                 
 

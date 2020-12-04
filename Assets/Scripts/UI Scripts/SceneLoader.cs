@@ -24,6 +24,11 @@ public class SceneLoader : MonoBehaviour
         
     }
 
+    public void loadCredits()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Credits");
+    }
+
     public void quitGame()
     {
         Application.Quit();

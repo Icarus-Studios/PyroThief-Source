@@ -206,5 +206,9 @@ public class SoldierAStarAI : MonoBehaviour
         {
             takeDamage(PlayerController.Instance.turretDamage);
         }
+        else if (collision.gameObject.tag == "Projectile")
+        {
+            takeDamage(PlayerController.Instance.attackDamage);
+        }
     }
 }

@@ -246,10 +246,14 @@ public class EnemyAI : MonoBehaviour
     {
         //Debug.Log(collision.gameObject.name.ToString());
         //Debug.Log(health.ToString());
-       
+
         if (collision.gameObject.name == "Bullet(Clone)")
         {
-            takeDamage(10);
+            takeDamage(PlayerController.Instance.turretDamage);
+        }
+        else if (collision.gameObject.tag == "Projectile")
+        {
+            takeDamage(PlayerController.Instance.attackDamage);
         }
     }
 }

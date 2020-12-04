@@ -10,6 +10,7 @@ TagManager:
   - Gold
   - Heart
   - Key
+  - Projectile
   layers:
   - Default
   - TransparentFX
