@@ -3,19 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
 
-public class SoldierAStarAI : MonoBehaviour
+public class SoldierAI : MonoBehaviour
 {
     [Header("Character Attributes:")]
     [SerializeField] private int attackDamage = 10;
     [SerializeField] private float attackDelay = 0.4f;
     [SerializeField] private float health = 100f;
     [SerializeField] private AIPath AIPath;
+    [SerializeField] private float minAttackDistance = 2.0f;
 
     private ParticleSystem blood;
     public SpriteRenderer healthBar;
     public Transform attackPoint;
     public float attackRange = 1f;
-    
+
     Vector3 localScale;
     public GameObject plusOneReward;
     public GameObject plusFiveReward;
@@ -31,6 +32,7 @@ public class SoldierAStarAI : MonoBehaviour
     private new Animator animation;
     private string currentAnimation;
     public static bool isAttacking;
+    int facingInt;
 
 
     void Start()
@@ -75,13 +77,17 @@ public class SoldierAStarAI : MonoBehaviour
 
         //float distanceToTarget = Vector2.Distance(rb.position, target.position);
         //Debug.Log("Distance to target:" + AIPath.remainingDistance);
-        if (AIPath.remainingDistance < 1.5f)
+        //if (AIPath.remainingDistance < minAttackDistance)
+        float distanceToChar = Vector3.Distance(AIPath.destination, transform.position);
+        if (distanceToChar < minAttackDistance)
         {
             if (!isAttacking)
             {
+                AIPath.canMove = false;
                 //Debug.Log("Attacking");
                 animation.SetTrigger("IsAttacking");
                 isAttacking = true;
+                SFX.GetComponent<SFX>().PlaySwordSwing();
                 Attack();
             }
         }
@@ -95,25 +101,29 @@ public class SoldierAStarAI : MonoBehaviour
         //Facing up
         if (angle > 45f && angle <= 135f)
         {
-            animation.SetInteger("angle", 1);
+            facingInt = 1;
+            animation.SetInteger("angle", facingInt);
             attackPoint.transform.localPosition = new Vector3(0, .8f, 0);
         }
         //Facing left
         else if (angle > 135f && angle <= 225f)
         {
-            animation.SetInteger("angle", 2);
+            facingInt = 2;
+            animation.SetInteger("angle", facingInt);
             attackPoint.transform.localPosition = new Vector3(-1.1f, 0, 0);
         }
         //Facing down
         else if (angle > 225f && angle <= 315f)
         {
-            animation.SetInteger("angle", 3);
+            facingInt = 3;
+            animation.SetInteger("angle", facingInt);
             attackPoint.transform.localPosition = new Vector3(0, -1.0f, 0);
         }
         //Facing right
         else if (angle > 315f || angle <= 45)
         {
-            animation.SetInteger("angle", 4);
+            facingInt = 4;
+            animation.SetInteger("angle", facingInt);
             attackPoint.transform.localPosition = new Vector3(1.1f, 0, 0);
         }
     }
@@ -126,10 +136,16 @@ public class SoldierAStarAI : MonoBehaviour
             if (hit.CompareTag("Player"))
             {
                 GameManager.Instance.updateHP(-attackDamage);
+                Rigidbody2D rb = GameObject.Find("Promethesus").GetComponent<Rigidbody2D>();
+                if (facingInt == 1) rb.AddForce(new Vector2(0, 1) * 2000f);
+                else if (facingInt == 2) rb.AddForce(new Vector2(-1, 0) * 20f);
+                else if (facingInt == 3) rb.AddForce(new Vector2(0, -1) * 20f);
+                else if (facingInt == 4) rb.AddForce(new Vector2(1, 0) * 20f);
             }
         }
         SFX.GetComponent<SFX>().PlaySwordSwing();
         isAttacking = false;
+        AIPath.canMove = true;
 
     }
 
@@ -137,8 +153,7 @@ public class SoldierAStarAI : MonoBehaviour
     {
         if (isAttacking)
         {
-            Invoke("AttackComplete", attackDelay);
-            
+            Invoke("AttackComplete", attackDelay);           
         }
     }
 

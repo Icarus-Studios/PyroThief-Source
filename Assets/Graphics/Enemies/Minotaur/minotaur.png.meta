@@ -197,6 +197,18 @@ TextureImporter:
   - first:
       213: 4827702657574030037
     second: minotaur_64
+  - first:
+      213: -8662262227114910336
+    second: minotaur_65
+  - first:
+      213: -6111445555973591243
+    second: minotaur_66
+  - first:
+      213: -4555729846712182564
+    second: minotaur_67
+  - first:
+      213: -7371576977000671943
+    second: minotaur_68
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -297,12 +309,12 @@ TextureImporter:
       name: minotaur_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 10
         y: 536
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 43
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -318,12 +330,12 @@ TextureImporter:
       name: minotaur_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 536
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 75
+        y: 542
+        width: 41
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -339,12 +351,12 @@ TextureImporter:
       name: minotaur_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 536
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 139
+        y: 542
+        width: 41
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -360,12 +372,12 @@ TextureImporter:
       name: minotaur_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 536
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 203
+        y: 542
+        width: 41
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -381,12 +393,12 @@ TextureImporter:
       name: minotaur_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 536
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 267
+        y: 542
+        width: 41
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -402,12 +414,12 @@ TextureImporter:
       name: minotaur_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 472
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 330
+        y: 536
+        width: 43
+        height: 55
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -423,12 +435,12 @@ TextureImporter:
       name: minotaur_6
       rect:
         serializedVersion: 2
-        x: 64
+        x: 10
         y: 472
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 43
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -444,12 +456,12 @@ TextureImporter:
       name: minotaur_7
       rect:
         serializedVersion: 2
-        x: 128
-        y: 472
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 76
+        y: 477
+        width: 41
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -465,12 +477,12 @@ TextureImporter:
       name: minotaur_8
       rect:
         serializedVersion: 2
-        x: 192
-        y: 472
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 139
+        y: 477
+        width: 41
+        height: 52
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -486,12 +498,12 @@ TextureImporter:
       name: minotaur_9
       rect:
         serializedVersion: 2
-        x: 256
-        y: 472
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 203
+        y: 477
+        width: 41
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -507,12 +519,12 @@ TextureImporter:
       name: minotaur_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 408
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 267
+        y: 477
+        width: 41
+        height: 52
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -528,12 +540,12 @@ TextureImporter:
       name: minotaur_11
       rect:
         serializedVersion: 2
-        x: 64
-        y: 408
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 330
+        y: 472
+        width: 43
+        height: 55
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -549,12 +561,12 @@ TextureImporter:
       name: minotaur_12
       rect:
         serializedVersion: 2
-        x: 128
+        x: 16
         y: 408
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 29
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -570,12 +582,12 @@ TextureImporter:
       name: minotaur_13
       rect:
         serializedVersion: 2
-        x: 192
-        y: 408
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 80
+        y: 410
+        width: 32
+        height: 54
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -591,12 +603,12 @@ TextureImporter:
       name: minotaur_14
       rect:
         serializedVersion: 2
-        x: 256
-        y: 408
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 147
+        y: 416
+        width: 31
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -612,12 +624,12 @@ TextureImporter:
       name: minotaur_15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 344
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 204
+        y: 413
+        width: 35
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -633,12 +645,12 @@ TextureImporter:
       name: minotaur_16
       rect:
         serializedVersion: 2
-        x: 64
-        y: 344
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 270
+        y: 415
+        width: 35
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -654,12 +666,12 @@ TextureImporter:
       name: minotaur_17
       rect:
         serializedVersion: 2
-        x: 128
-        y: 344
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 336
+        y: 408
+        width: 29
+        height: 55
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -675,12 +687,12 @@ TextureImporter:
       name: minotaur_18
       rect:
         serializedVersion: 2
-        x: 192
+        x: 16
         y: 344
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 29
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -696,12 +708,12 @@ TextureImporter:
       name: minotaur_19
       rect:
         serializedVersion: 2
-        x: 256
-        y: 344
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 80
+        y: 347
+        width: 32
+        height: 54
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -717,12 +729,12 @@ TextureImporter:
       name: minotaur_20
       rect:
         serializedVersion: 2
-        x: 0
-        y: 280
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 146
+        y: 353
+        width: 31
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -738,12 +750,12 @@ TextureImporter:
       name: minotaur_21
       rect:
         serializedVersion: 2
-        x: 64
-        y: 280
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 206
+        y: 352
+        width: 35
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -759,12 +771,12 @@ TextureImporter:
       name: minotaur_22
       rect:
         serializedVersion: 2
-        x: 128
-        y: 280
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 272
+        y: 352
+        width: 35
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -780,12 +792,12 @@ TextureImporter:
       name: minotaur_23
       rect:
         serializedVersion: 2
-        x: 192
-        y: 280
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 336
+        y: 344
+        width: 29
+        height: 55
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -801,12 +813,12 @@ TextureImporter:
       name: minotaur_24
       rect:
         serializedVersion: 2
-        x: 256
+        x: 10
         y: 280
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 43
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -822,12 +834,12 @@ TextureImporter:
       name: minotaur_25
       rect:
         serializedVersion: 2
-        x: 320
+        x: 74
         y: 280
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 43
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -843,12 +855,12 @@ TextureImporter:
       name: minotaur_26
       rect:
         serializedVersion: 2
-        x: 384
-        y: 280
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 138
+        y: 281
+        width: 43
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -864,12 +876,12 @@ TextureImporter:
       name: minotaur_27
       rect:
         serializedVersion: 2
-        x: 448
+        x: 202
         y: 280
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 43
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -885,12 +897,12 @@ TextureImporter:
       name: minotaur_28
       rect:
         serializedVersion: 2
-        x: 512
+        x: 266
         y: 280
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 44
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -906,12 +918,12 @@ TextureImporter:
       name: minotaur_29
       rect:
         serializedVersion: 2
-        x: 0
-        y: 216
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 328
+        y: 286
+        width: 45
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -924,36 +936,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minotaur_30
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 216
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e3727d5a90d1c1090800000000000000
-      internalID: -8062537305625778370
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: minotaur_31
       rect:
         serializedVersion: 2
-        x: 128
-        y: 216
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 389
+        y: 287
+        width: 52
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -966,36 +957,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minotaur_32
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 216
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ab36bf06fa3377640800000000000000
-      internalID: 5077583933222904762
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: minotaur_33
       rect:
         serializedVersion: 2
-        x: 256
-        y: 216
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 458
+        y: 286
+        width: 45
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1008,36 +978,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minotaur_34
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 216
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c28ace067f92872e0800000000000000
-      internalID: -2127904681472776148
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: minotaur_35
       rect:
         serializedVersion: 2
-        x: 384
-        y: 216
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 518
+        y: 286
+        width: 53
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1050,36 +999,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minotaur_36
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 216
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8fd914e525efebde0800000000000000
-      internalID: -1315334411423474184
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: minotaur_37
       rect:
         serializedVersion: 2
-        x: 512
-        y: 216
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 10
+        y: 217
+        width: 43
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1095,12 +1023,12 @@ TextureImporter:
       name: minotaur_38
       rect:
         serializedVersion: 2
-        x: 0
-        y: 152
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 75
+        y: 216
+        width: 43
+        height: 57
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1116,12 +1044,12 @@ TextureImporter:
       name: minotaur_39
       rect:
         serializedVersion: 2
-        x: 64
-        y: 152
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 138
+        y: 216
+        width: 43
+        height: 58
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1137,12 +1065,12 @@ TextureImporter:
       name: minotaur_40
       rect:
         serializedVersion: 2
-        x: 128
-        y: 152
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 203
+        y: 216
+        width: 43
+        height: 57
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1158,12 +1086,12 @@ TextureImporter:
       name: minotaur_41
       rect:
         serializedVersion: 2
-        x: 192
-        y: 152
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 266
+        y: 216
+        width: 44
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1176,36 +1104,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minotaur_42
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 152
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 573d4be42cd84e520800000000000000
-      internalID: 2730463139777008501
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: minotaur_43
       rect:
         serializedVersion: 2
-        x: 320
-        y: 152
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 329
+        y: 221
+        width: 44
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1221,12 +1128,12 @@ TextureImporter:
       name: minotaur_44
       rect:
         serializedVersion: 2
-        x: 384
-        y: 152
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 392
+        y: 221
+        width: 45
+        height: 52
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1242,12 +1149,12 @@ TextureImporter:
       name: minotaur_45
       rect:
         serializedVersion: 2
-        x: 448
-        y: 152
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 458
+        y: 221
+        width: 47
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1260,36 +1167,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minotaur_46
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 152
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b2cdeef3d1c0d9280800000000000000
-      internalID: -9035051957669143509
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: minotaur_47
       rect:
         serializedVersion: 2
-        x: 0
-        y: 88
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 520
+        y: 221
+        width: 47
+        height: 52
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1302,36 +1188,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minotaur_48
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 88
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06caf44505abc4a40800000000000000
-      internalID: 5353858911211334752
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: minotaur_49
       rect:
         serializedVersion: 2
-        x: 128
-        y: 88
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 20
+        y: 152
+        width: 29
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1347,12 +1212,12 @@ TextureImporter:
       name: minotaur_50
       rect:
         serializedVersion: 2
-        x: 192
-        y: 88
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 84
+        y: 152
+        width: 29
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1368,12 +1233,12 @@ TextureImporter:
       name: minotaur_51
       rect:
         serializedVersion: 2
-        x: 256
-        y: 88
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 147
+        y: 152
+        width: 29
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1389,12 +1254,12 @@ TextureImporter:
       name: minotaur_52
       rect:
         serializedVersion: 2
-        x: 320
-        y: 88
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 212
+        y: 152
+        width: 29
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1410,12 +1275,12 @@ TextureImporter:
       name: minotaur_53
       rect:
         serializedVersion: 2
-        x: 384
-        y: 88
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 271
+        y: 152
+        width: 34
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1428,36 +1293,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: minotaur_54
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 88
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e986c04274cd1c2f0800000000000000
-      internalID: -954239447920252770
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: minotaur_55
       rect:
         serializedVersion: 2
-        x: 512
-        y: 88
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 328
+        y: 154
+        width: 40
+        height: 54
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1465,6 +1309,258 @@ TextureImporter:
       bones: []
       spriteID: 18fcf51f025d32940800000000000000
       internalID: 5270290326418870145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_56
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 160
+        width: 44
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0329a6b8e2c310ca0800000000000000
+      internalID: -6052490253604056528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_57
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 157
+        width: 43
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76df0600c7ef5fb60800000000000000
+      internalID: 7779403739888156007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_58
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 159
+        width: 47
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e71cb28f37179630800000000000000
+      internalID: 3933638361075161065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_59
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 88
+        width: 29
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13cd0f5f658a28220800000000000000
+      internalID: 2486735035708791857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_60
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 88
+        width: 29
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ddc1778990b93b50800000000000000
+      internalID: 6573479304572816856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_61
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 89
+        width: 29
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad425d4687ff1200800000000000000
+      internalID: 153113068548804013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_62
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 88
+        width: 29
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0261d6cb0bcc192c0800000000000000
+      internalID: -4426531899280910816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_63
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 88
+        width: 34
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7059c5fc04fcb680800000000000000
+      internalID: -8737840840505208708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_65
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 90
+        width: 40
+        height: 54
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d1889266679c780800000000000000
+      internalID: -8662262227114910336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_66
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 96
+        width: 44
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53fed0c85a8cf2ba0800000000000000
+      internalID: -6111445555973591243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_67
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 93
+        width: 43
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8531a77dbc6c0c0800000000000000
+      internalID: -4555729846712182564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_68
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 95
+        width: 47
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9355d63bbc5e2b990800000000000000
+      internalID: -7371576977000671943
       vertices: []
       indices: 
       edges: []

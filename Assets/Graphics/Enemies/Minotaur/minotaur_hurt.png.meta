@@ -1,7 +1,202 @@
 fileFormatVersion: 2
 guid: 10b47c0d0642bfb4cae46f3125e135e2
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4251313308608264839
+    second: minotaur_hurt_0
+  - first:
+      213: -2894785096056181939
+    second: minotaur_hurt_1
+  - first:
+      213: -86376435661154658
+    second: minotaur_hurt_2
+  - first:
+      213: 8555450806596291897
+    second: minotaur_hurt_3
+  - first:
+      213: -7800261444653326867
+    second: minotaur_hurt_4
+  - first:
+      213: 3305099539817202902
+    second: minotaur_hurt_5
+  - first:
+      213: 8487431310902797122
+    second: minotaur_hurt_6
+  - first:
+      213: -7169736892080879379
+    second: minotaur_hurt_7
+  - first:
+      213: 6027689049107240218
+    second: minotaur_hurt_8
+  - first:
+      213: -1555797159684848772
+    second: minotaur_hurt_9
+  - first:
+      213: -4834267616688709295
+    second: minotaur_hurt_10
+  - first:
+      213: -8766756382750949915
+    second: minotaur_hurt_11
+  - first:
+      213: -745612838833881485
+    second: minotaur_hurt_12
+  - first:
+      213: -9191395322842731547
+    second: minotaur_hurt_13
+  - first:
+      213: -2464383447982583682
+    second: minotaur_hurt_14
+  - first:
+      213: -2304301502935711681
+    second: minotaur_hurt_15
+  - first:
+      213: 2755022516589538009
+    second: minotaur_hurt_16
+  - first:
+      213: -4677238704417442526
+    second: minotaur_hurt_17
+  - first:
+      213: -4855627777926156139
+    second: minotaur_hurt_18
+  - first:
+      213: 6501254219697601878
+    second: minotaur_hurt_19
+  - first:
+      213: 928113163272000027
+    second: minotaur_hurt_20
+  - first:
+      213: 6847020597461579317
+    second: minotaur_hurt_21
+  - first:
+      213: -7605574769253767905
+    second: minotaur_hurt_22
+  - first:
+      213: 1737605750771541783
+    second: minotaur_hurt_23
+  - first:
+      213: 4040942324964346451
+    second: minotaur_hurt_24
+  - first:
+      213: 2651303843577135224
+    second: minotaur_hurt_25
+  - first:
+      213: -1347544599238819393
+    second: minotaur_hurt_26
+  - first:
+      213: -2814734484228337949
+    second: minotaur_hurt_27
+  - first:
+      213: -5424585530640303621
+    second: minotaur_hurt_28
+  - first:
+      213: 1176939664660487694
+    second: minotaur_hurt_29
+  - first:
+      213: -3071092220848279777
+    second: minotaur_hurt_30
+  - first:
+      213: -8565763831500472351
+    second: minotaur_hurt_31
+  - first:
+      213: 6315540942797588021
+    second: minotaur_hurt_32
+  - first:
+      213: 284680523793098359
+    second: minotaur_hurt_33
+  - first:
+      213: 2081606768253991606
+    second: minotaur_hurt_34
+  - first:
+      213: 1294132797978534783
+    second: minotaur_hurt_35
+  - first:
+      213: -1726275620420156780
+    second: minotaur_hurt_36
+  - first:
+      213: 8533928146562435616
+    second: minotaur_hurt_37
+  - first:
+      213: 5454359881720453905
+    second: minotaur_hurt_38
+  - first:
+      213: -6414463485838321902
+    second: minotaur_hurt_39
+  - first:
+      213: -6732753318330651180
+    second: minotaur_hurt_40
+  - first:
+      213: 3277513359600124736
+    second: minotaur_hurt_41
+  - first:
+      213: 7181256420611567470
+    second: minotaur_hurt_42
+  - first:
+      213: 4703993921536379332
+    second: minotaur_hurt_43
+  - first:
+      213: 4566590712604795605
+    second: minotaur_hurt_44
+  - first:
+      213: -2219332601701634524
+    second: minotaur_hurt_45
+  - first:
+      213: -1915753502348866841
+    second: minotaur_hurt_46
+  - first:
+      213: -6071293563842850685
+    second: minotaur_hurt_47
+  - first:
+      213: 677497732661906416
+    second: minotaur_hurt_48
+  - first:
+      213: 5368970039212720844
+    second: minotaur_hurt_49
+  - first:
+      213: 1460460452179875190
+    second: minotaur_hurt_50
+  - first:
+      213: 8989085386306352432
+    second: minotaur_hurt_51
+  - first:
+      213: 3662754412548427667
+    second: minotaur_hurt_52
+  - first:
+      213: 1659938702424382767
+    second: minotaur_hurt_53
+  - first:
+      213: -8014022313961406758
+    second: minotaur_hurt_54
+  - first:
+      213: 2282671747358260620
+    second: minotaur_hurt_55
+  - first:
+      213: 574812594092012803
+    second: minotaur_hurt_56
+  - first:
+      213: -7231851807582165715
+    second: minotaur_hurt_57
+  - first:
+      213: 7044244013717807404
+    second: minotaur_hurt_58
+  - first:
+      213: -4959398205923722320
+    second: minotaur_hurt_59
+  - first:
+      213: 424686420696777258
+    second: minotaur_hurt_60
+  - first:
+      213: -7537591632195913211
+    second: minotaur_hurt_61
+  - first:
+      213: -1328151966748259906
+    second: minotaur_hurt_62
+  - first:
+      213: 5137375127755249650
+    second: minotaur_hurt_63
+  - first:
+      213: 7863095911470378261
+    second: minotaur_hurt_64
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -31,7 +226,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,7 +235,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -64,7 +259,31 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -73,7 +292,1372 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: minotaur_hurt_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 536
+        width: 43
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a7c740ee2bffa30800000000000000
+      internalID: 4251313308608264839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 542
+        width: 41
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4be978da48a3d7d0800000000000000
+      internalID: -2894785096056181939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_2
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 542
+        width: 41
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e96d373e6112dcef0800000000000000
+      internalID: -86376435661154658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_3
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 542
+        width: 41
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d408c0e211bb670800000000000000
+      internalID: 8555450806596291897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_4
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 542
+        width: 41
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ded534c2b87efb390800000000000000
+      internalID: -7800261444653326867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_5
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 472
+        width: 43
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d48c1235821edd20800000000000000
+      internalID: 3305099539817202902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_6
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 477
+        width: 41
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243a3e51fc969c570800000000000000
+      internalID: 8487431310902797122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_7
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 477
+        width: 41
+        height: 52
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de88186984aff7c90800000000000000
+      internalID: -7169736892080879379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_8
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 477
+        width: 41
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a159c8c0147a6a350800000000000000
+      internalID: 6027689049107240218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_9
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 477
+        width: 41
+        height: 52
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c734c6ae9b2b86ae0800000000000000
+      internalID: -1555797159684848772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_10
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 408
+        width: 29
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1516816373b39ecb0800000000000000
+      internalID: -4834267616688709295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_11
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 410
+        width: 32
+        height: 54
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5edbdb5a489365680800000000000000
+      internalID: -8766756382750949915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_12
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 416
+        width: 31
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ef551d21d07a5f0800000000000000
+      internalID: -745612838833881485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_13
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 413
+        width: 35
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eba5c7e6aa917080800000000000000
+      internalID: -9191395322842731547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_14
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 415
+        width: 35
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7055a89f40cccdd0800000000000000
+      internalID: -2464383447982583682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_15
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 344
+        width: 29
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f304e16edf97500e0800000000000000
+      internalID: -2304301502935711681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_16
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 347
+        width: 32
+        height: 54
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9daa581d16ecb3620800000000000000
+      internalID: 2755022516589538009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_17
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 353
+        width: 31
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2257d7ded2c171fb0800000000000000
+      internalID: -4677238704417442526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_18
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 352
+        width: 35
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 590313f13485d9cb0800000000000000
+      internalID: -4855627777926156139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_19
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 352
+        width: 35
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65db5978448193a50800000000000000
+      internalID: 6501254219697601878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_20
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 280
+        width: 43
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b121130310251ec00800000000000000
+      internalID: 928113163272000027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_21
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 280
+        width: 43
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 536fa71d4f0850f50800000000000000
+      internalID: 6847020597461579317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_22
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 281
+        width: 43
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f15a4fd1b02937690800000000000000
+      internalID: -7605574769253767905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_23
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 280
+        width: 43
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 717e96e59373d1810800000000000000
+      internalID: 1737605750771541783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_24
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 280
+        width: 44
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a475d72af441830800000000000000
+      internalID: 4040942324964346451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_25
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 286
+        width: 45
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8700b0c6cc25bc420800000000000000
+      internalID: 2651303843577135224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_26
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 300
+        width: 10
+        height: 7
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1cf5b935f8c4de0800000000000000
+      internalID: -1347544599238819393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_27
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 287
+        width: 46
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee078256ed00f8d0800000000000000
+      internalID: -2814734484228337949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_28
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 296
+        width: 8
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf9f578533008b4b0800000000000000
+      internalID: -5424585530640303621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_29
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 286
+        width: 45
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ed72aa364555010800000000000000
+      internalID: 1176939664660487694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_30
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 295
+        width: 8
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f6fdf75e94165d0800000000000000
+      internalID: -3071092220848279777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_31
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 286
+        width: 46
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ef7689bd2b402980800000000000000
+      internalID: -8565763831500472351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_32
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 299
+        width: 10
+        height: 7
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 536c2ebb60f45a750800000000000000
+      internalID: 6315540942797588021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_33
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 217
+        width: 43
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776e8279d6363f300800000000000000
+      internalID: 284680523793098359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_34
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 216
+        width: 43
+        height: 57
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6baf3dfa35a53ec10800000000000000
+      internalID: 2081606768253991606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_35
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 216
+        width: 43
+        height: 58
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7361b35ceea5f110800000000000000
+      internalID: 1294132797978534783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_36
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 216
+        width: 43
+        height: 57
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492807c28790b08e0800000000000000
+      internalID: -1726275620420156780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_37
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 216
+        width: 44
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02acf824f6a9e6670800000000000000
+      internalID: 8533928146562435616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_38
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 228
+        width: 6
+        height: 5
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11bd61bf967c1bb40800000000000000
+      internalID: 5454359881720453905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_39
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 221
+        width: 44
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21794e5e17f3bf6a0800000000000000
+      internalID: -6414463485838321902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_40
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 221
+        width: 45
+        height: 52
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dda19457847092a0800000000000000
+      internalID: -6732753318330651180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_41
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 221
+        width: 44
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 043009919011c7d20800000000000000
+      internalID: 3277513359600124736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_42
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 228
+        width: 6
+        height: 5
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6fab87aaa2f8a360800000000000000
+      internalID: 7181256420611567470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_43
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 221
+        width: 44
+        height: 52
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c9c5ce7c81f74140800000000000000
+      internalID: 4703993921536379332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_44
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 227
+        width: 9
+        height: 6
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d2286bee0acf5f30800000000000000
+      internalID: 4566590712604795605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_45
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 152
+        width: 29
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e612dd1c85331e0800000000000000
+      internalID: -2219332601701634524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_46
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 152
+        width: 29
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea0947f650e965e0800000000000000
+      internalID: -1915753502348866841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_47
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 152
+        width: 29
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3801808bbae6ebba0800000000000000
+      internalID: -6071293563842850685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_48
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 152
+        width: 29
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb027b2994f66900800000000000000
+      internalID: 677497732661906416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_49
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 152
+        width: 34
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc24dfcfdc9628a40800000000000000
+      internalID: 5368970039212720844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_50
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 177
+        width: 5
+        height: 4
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67510bc1b09944410800000000000000
+      internalID: 1460460452179875190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_51
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 154
+        width: 40
+        height: 54
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 035f17a5885afbc70800000000000000
+      internalID: 8989085386306352432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_52
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 160
+        width: 44
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f817b6bb7b4d230800000000000000
+      internalID: 3662754412548427667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_53
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 157
+        width: 43
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d9de28479490710800000000000000
+      internalID: 1659938702424382767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_54
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 159
+        width: 47
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adeb6426a2978c090800000000000000
+      internalID: -8014022313961406758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_55
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 88
+        width: 29
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8dfb103cddadaf10800000000000000
+      internalID: 2282671747358260620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_56
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 88
+        width: 29
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305764342052af700800000000000000
+      internalID: 574812594092012803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_57
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 89
+        width: 29
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d256cc4d81d43ab90800000000000000
+      internalID: -7231851807582165715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_58
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 88
+        width: 29
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2162d4cb9e22c160800000000000000
+      internalID: 7044244013717807404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_59
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 88
+        width: 34
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bbf4349b9dac2bb0800000000000000
+      internalID: -4959398205923722320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_60
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 113
+        width: 5
+        height: 4
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22409eac0ac4e500800000000000000
+      internalID: 424686420696777258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_61
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 90
+        width: 40
+        height: 54
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50a710da858156790800000000000000
+      internalID: -7537591632195913211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_62
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 96
+        width: 44
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb9cb36b2d4719de0800000000000000
+      internalID: -1328151966748259906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_63
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 93
+        width: 43
+        height: 51
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f757cfa57f9b4740800000000000000
+      internalID: 5137375127755249650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur_hurt_64
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 95
+        width: 47
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51da40e22145f1d60800000000000000
+      internalID: 7863095911470378261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

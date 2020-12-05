@@ -14,7 +14,7 @@ public class Settings : MonoBehaviour
     {
         //Debug.Log("Master volume set to: " + slider.value);
         bool diditdoit = audioMixer.SetFloat("MasterVolume", slider.value);
-        Debug.Log(diditdoit);
+        //Debug.Log(diditdoit);
     }
 
     public void SetMusicVol(Slider slider)

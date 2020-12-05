@@ -617,8 +617,16 @@ namespace Pathfinding {
 				// Note that rigid.MovePosition may or may not move the character immediately.
 				// Check the Unity documentation for the special cases.
 				if (rigid != null) rigid.MovePosition(currentPosition);
-				else if (rigid2D != null) rigid2D.MovePosition(currentPosition);
-				else tr.position = currentPosition;
+				else if (rigid2D != null) 
+				{ 
+					rigid2D.MovePosition(currentPosition); 
+					//Debug.Log("rb.movepos"); 
+				}
+				else 
+				{ 
+					tr.position = currentPosition; 
+					//Debug.Log("position is running");
+				}
 			}
 
 			accumulatedMovementDelta = Vector3.zero;

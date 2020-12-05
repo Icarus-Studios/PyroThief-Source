@@ -135,12 +135,21 @@ public class PlayerController : MonoBehaviour
 
     public void Attack()
     {
-        Debug.Log("Attacking!");
+        //Debug.Log("Attacking!");
         SFX.GetComponent<SFX>().PlaySwordSwing();
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
         foreach (Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<SoldierAStarAI>().takeDamage(attackDamage);
+            if (enemy.gameObject.GetComponent<SoldierAI>() != null)
+            {
+                enemy.GetComponent<SoldierAI>().takeDamage(attackDamage);
+            }
+            else if (enemy.gameObject.GetComponent<MinotaurAI>() != null)
+            {
+                enemy.GetComponent<MinotaurAI>().takeDamage(attackDamage);
+            }
+            
+  
             //enemy.GetComponent<SpriteRenderer>().color = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f));
         }
     }

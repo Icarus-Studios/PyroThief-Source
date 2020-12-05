@@ -61,7 +61,7 @@ public class DialougeManager : MonoBehaviour
         foreach (GameObject enemy in enemies)
         {
             enemy.GetComponent<AIPath>().enabled = false;
-            enemy.GetComponent<SoldierAStarAI>().enabled = false;
+            enemy.GetComponent<SoldierAI>().enabled = false;
             enemy.GetComponentInChildren<Animator>().enabled = false;
             foreach (SpriteRenderer sr in enemy.GetComponentsInChildren<SpriteRenderer>())
             {
@@ -129,7 +129,7 @@ public class DialougeManager : MonoBehaviour
             foreach (GameObject enemy in enemies)
             {
                 enemy.GetComponent<AIPath>().enabled = true;
-                enemy.GetComponent<SoldierAStarAI>().enabled = true;
+                enemy.GetComponent<SoldierAI>().enabled = true;
                 enemy.GetComponentInChildren<Animator>().enabled = true;
                 
             }
