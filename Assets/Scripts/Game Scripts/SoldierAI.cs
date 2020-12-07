@@ -76,11 +76,12 @@ public class SoldierAI : MonoBehaviour
         //rb.MovePosition((Vector2)transform.position + (direction * walkingSpeed * Time.deltaTime));
 
         //float distanceToTarget = Vector2.Distance(rb.position, target.position);
-        //Debug.Log("Distance to target:" + AIPath.remainingDistance);
+        //Debug.LogWarning("Distance to target:" + AIPath.remainingDistance);
         //if (AIPath.remainingDistance < minAttackDistance)
         float distanceToChar = Vector3.Distance(AIPath.destination, transform.position);
         if (distanceToChar < minAttackDistance)
         {
+            //Debug.LogWarning("Attacking");
             if (!isAttacking)
             {
                 AIPath.canMove = false;
@@ -223,7 +224,7 @@ public class SoldierAI : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Projectile")
         {
-            takeDamage(PlayerController.Instance.attackDamage);
+            takeDamage(PlayerController.Instance.attackDamage/2);
         }
     }
 }

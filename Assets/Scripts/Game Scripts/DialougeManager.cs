@@ -52,6 +52,21 @@ public class DialougeManager : MonoBehaviour
         }
     }
 
+    void updateScriptState(GameObject mob, bool state)
+    {
+        mob.GetComponent<AIPath>().enabled = state;
+        if (mob.gameObject.GetComponent<SoldierAI>() != null)
+        {
+            mob.GetComponent<SoldierAI>().enabled = state;
+        }
+        else if (mob.gameObject.GetComponent<MinotaurAI>() != null)
+        {
+            mob.GetComponent<MinotaurAI>().enabled = state;
+        }
+
+        mob.GetComponentInChildren<Animator>().enabled = state;
+    }
+
     public IEnumerator StartDialouge()
     {
         Cursor.visible = true;
@@ -60,9 +75,7 @@ public class DialougeManager : MonoBehaviour
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
         foreach (GameObject enemy in enemies)
         {
-            enemy.GetComponent<AIPath>().enabled = false;
-            enemy.GetComponent<SoldierAI>().enabled = false;
-            enemy.GetComponentInChildren<Animator>().enabled = false;
+            updateScriptState(enemy, false);
             foreach (SpriteRenderer sr in enemy.GetComponentsInChildren<SpriteRenderer>())
             {
                 if (sr.gameObject.name == "MiniMapIndicator")
@@ -128,9 +141,7 @@ public class DialougeManager : MonoBehaviour
             GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
             foreach (GameObject enemy in enemies)
             {
-                enemy.GetComponent<AIPath>().enabled = true;
-                enemy.GetComponent<SoldierAI>().enabled = true;
-                enemy.GetComponentInChildren<Animator>().enabled = true;
+                updateScriptState(enemy, true);
                 
             }
             GameObject[] player = GameObject.FindGameObjectsWithTag("Player");

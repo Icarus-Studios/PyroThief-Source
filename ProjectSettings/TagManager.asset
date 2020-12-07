@@ -11,6 +11,7 @@ TagManager:
   - Heart
   - Key
   - Projectile
+  - enemyPro
   layers:
   - Default
   - TransparentFX

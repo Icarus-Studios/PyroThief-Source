@@ -276,7 +276,11 @@ public class MinotaurAI : MonoBehaviour
 
         if (collision.gameObject.name == "Bullet(Clone)")
         {
-            takeDamage(10);
+            takeDamage(PlayerController.Instance.turretDamage);
+        }
+        else if (collision.gameObject.tag == "Projectile")
+        {
+            takeDamage(PlayerController.Instance.attackDamage/2);
         }
     }
 }
