@@ -17,6 +17,7 @@ public class KeyDoor : MonoBehaviour
         if(miniMapIndicator != null)
             Destroy(miniMapIndicator);
         gameObject.SetActive(false);
+        Destroy(this);
     }
 
    
