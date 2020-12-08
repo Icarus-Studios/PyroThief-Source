@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     public Vector3 aimDirection;
     public bool isAttacking;
     private bool isAttackPressed;
+    private GameObject player;
 
     public Transform attackPoint;
     public float attackRange = 1f;
@@ -48,6 +49,7 @@ public class PlayerController : MonoBehaviour
         animation = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         SFX = GameObject.Find("SFX");
+        player = GameObject.Find("Promethesus");
     }
 
     void Update()
@@ -130,6 +132,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        player.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255);
         MoveCharacter();
     }
 

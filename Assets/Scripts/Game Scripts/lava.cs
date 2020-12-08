@@ -14,10 +14,7 @@ public class lava : MonoBehaviour
                 CinemachineShake.Instance.ShakeCamera(5f, .3f);
                 player.GetComponent<SpriteRenderer>().color = new Color(255, 0, 0);            
         }
-        else
-        {
-            player.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255);
-        }
+       
     }
 
 }

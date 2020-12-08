@@ -249,18 +249,22 @@ public class GameManager : MonoBehaviour
 
     public void updateHP(float amount)
     {
-        
+        GameObject player = GameObject.Find("Promethesus");
+
         if (amount < 0)
+        {
             CinemachineShake.Instance.ShakeCamera(5f, .3f);
+            player.GetComponent<SpriteRenderer>().color = new Color(255, 0, 0);
+        }
         else
         {
-            if(currentHealth < maxHealth)
+            if (currentHealth < maxHealth)
             {
                 tint.enabled = true;
                 StartCoroutine(FadeImage(false));
                 hpRegained.Play();
                 StartCoroutine(FadeImage(true));
-            }   
+            }
         }
 
         currentHealth += amount;
