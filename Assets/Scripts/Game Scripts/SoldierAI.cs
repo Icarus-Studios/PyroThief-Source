@@ -28,9 +28,9 @@ public class SoldierAI : MonoBehaviour
     public GameObject plus10Health;
     public GameObject plus50Health;
     private GameObject SFX;
+    private bool hitShield;
 
     private new Animator animation;
-    private string currentAnimation;
     public static bool isAttacking;
     int facingInt;
 
@@ -56,13 +56,6 @@ public class SoldierAI : MonoBehaviour
     }
     private void MoveCharacter()
     {
-
-        //Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
-        //Vector2 directionEnd = ((Vector2)path.vectorPath[path.vectorPath.Count - 1] - rb.position).normalized;
-        //Vector2 force = direction * walkingSpeed;
-
-
-        //Debug.Log("Direction mag: " + AIPath.steeringTarget.magnitude);
         if (AIPath.steeringTarget.magnitude > 0.001f)
         {
             animation.SetBool("IsMoving", true);
@@ -72,16 +65,12 @@ public class SoldierAI : MonoBehaviour
             animation.SetBool("IsMoving", false);
         }
 
-        //rb.AddForce(force);
-        //rb.MovePosition((Vector2)transform.position + (direction * walkingSpeed * Time.deltaTime));
-
-        //float distanceToTarget = Vector2.Distance(rb.position, target.position);
-        //Debug.LogWarning("Distance to target:" + AIPath.remainingDistance);
-        //if (AIPath.remainingDistance < minAttackDistance)
-        float distanceToChar = Vector3.Distance(AIPath.destination, transform.position);
+        //float distanceToChar = Vector3.Distance(AIPath.destination, transform.position);
+        float distanceToChar = ((Vector2)(AIPath.destination - transform.position)).magnitude;
+        //Debug.Log("Distance to Char:" + distanceToChar);
         if (distanceToChar < minAttackDistance)
         {
-            //Debug.LogWarning("Attacking");
+            //Debug.Log("I should be attacking!");
             if (!isAttacking)
             {
                 AIPath.canMove = false;
@@ -132,10 +121,26 @@ public class SoldierAI : MonoBehaviour
     void AttackComplete()
     {
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(attackPoint.position, attackRange);
+
+        foreach(Collider2D hit in hitColliders)
+        {
+            if (hit.CompareTag("Shield"))
+            {
+                if (hit.enabled)
+                {
+                    hitShield = true;
+                }
+                else
+                {
+                    hitShield = false;
+                }
+            }
+        }
         foreach (Collider2D hit in hitColliders)
         {
-            if (hit.CompareTag("Player"))
+            if (hit.CompareTag("Player") && !hitShield)
             {
+                Debug.Log("Hitting player!");
                 GameManager.Instance.updateHP(-attackDamage);
                 Rigidbody2D rb = GameObject.Find("Promethesus").GetComponent<Rigidbody2D>();
                 if (facingInt == 1) rb.AddForce(new Vector2(0, 1) * 2000f);
@@ -143,11 +148,21 @@ public class SoldierAI : MonoBehaviour
                 else if (facingInt == 3) rb.AddForce(new Vector2(0, -1) * 20f);
                 else if (facingInt == 4) rb.AddForce(new Vector2(1, 0) * 20f);
             }
+            else if(hit.CompareTag("Player") && hitShield)
+            {
+                Debug.Log("Hitting shield!");
+                CinemachineShake.Instance.ShakeCamera(10f, .3f);
+                Rigidbody2D rb = GameObject.Find("Promethesus").GetComponent<Rigidbody2D>();
+                //if (facingInt == 1) rb.AddForce(new Vector2(0, 1) * 2000f);
+                //else if (facingInt == 2) rb.AddForce(new Vector2(-1, 0) * 20f);
+                //else if (facingInt == 3) rb.AddForce(new Vector2(0, -1) * 20f);
+                //else if (facingInt == 4) rb.AddForce(new Vector2(1, 0) * 20f);
+                hitShield = false;
+            }
         }
         SFX.GetComponent<SFX>().PlaySwordSwing();
         isAttacking = false;
         AIPath.canMove = true;
-
     }
 
     public void Attack()
@@ -224,7 +239,7 @@ public class SoldierAI : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Projectile")
         {
-            takeDamage(PlayerController.Instance.attackDamage/2);
+            takeDamage(PlayerController.Instance.attackDamage);
         }
     }
 }

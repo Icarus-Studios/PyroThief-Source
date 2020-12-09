@@ -36,9 +36,11 @@ public class MinotaurAI : MonoBehaviour
     private new Rigidbody2D rb;
     private new BoxCollider2D box;
     private new GameObject targetObj;
-    public static bool isAttacking;
-    public static bool hasChargedUp;
-    int facingInt;
+    private bool isAttacking;
+    private bool hitShield;
+    private int facingInt;
+    private int flag;
+    private MinotaurAI minoScript;
 
 
     void Start()
@@ -51,6 +53,17 @@ public class MinotaurAI : MonoBehaviour
         localScale = healthBar.transform.localScale;
         SFX = GameObject.Find("SFX");
         isAttacking = false;
+        setFlag();
+    }
+
+    public void setFlag()
+    {
+        flag = 1;
+    }
+
+    public int getFlag()
+    {
+        return flag;
     }
 
     void Update()
@@ -76,7 +89,7 @@ public class MinotaurAI : MonoBehaviour
         //Down - 3
         //Right - 4
         //Idle
-        if (!isAttacking)
+        if (true)//!isAttacking)
         {
             if (angle > 45f && angle <= 135f)
             {
@@ -98,27 +111,34 @@ public class MinotaurAI : MonoBehaviour
                 facingInt = 4;
                 animation.SetInteger("angle", facingInt);
             }
-            Debug.Log("Facing int:" + facingInt);
+            //Debug.Log(transform.name + "Facing int:" + facingInt);
         }
+        //Debug.Log(transform.name + "AIPath remaining distance:" + AIPath.remainingDistance);
+        //Debug.Log(transform.name + "aggrosdisatnce:" + aggroDistance);
+        //Debug.Log(transform.name + "minChargedistance" + minChargeDistance);
+        //Debug.Log(transform.name + "Am attacking?" + isAttacking);
 
+        //If remaining distance is larger than the aggro distance, do nothing.
         if (AIPath.remainingDistance > aggroDistance)
         {
             AIPath.canMove = false;
             animation.SetBool("IsMoving", false);
         }
+        //If remaining distance is greater than some charge distance
         else if (AIPath.remainingDistance > minChargeDistance && !isAttacking)
         {
             AIPath.canMove = true;
-            Debug.Log("Mino is walking!");
+            //Debug.Log(transform.name + "Mino is walking!");
             animation.SetBool("IsMoving", true);
         }
         else if (!isAttacking)
         {
-            Debug.Log("Mino is charging");
+            //One mino is getting to here
+            //Debug.Log(transform.name + "Mino is charging");
             AIPath.canSearch = false;
             AIPath.canMove = false;
             animation.SetBool("IsCharging", true);
-            //animation.SetBool("IsMoving", false);
+            animation.SetBool("IsMoving", false);
             isAttacking = true;
             StartCoroutine(waitToCharge());
         }
@@ -132,6 +152,7 @@ public class MinotaurAI : MonoBehaviour
     IEnumerator AttackComplete()
     {
         animation.SetBool("IsRushing", true);
+        //Debug.Log("Rushing should be true here");
         bool isPlayerHit = false;
         bool isSomethingHit = false;
         //Vector3 targetOldPosition = AIPath.destination;
@@ -154,11 +175,11 @@ public class MinotaurAI : MonoBehaviour
         if (rayHit.collider != null)
         {
             chargeTarget = (Vector3)rayHit.point;
-            //Debug.Log("Collider hit is:" + rayHit.collider.gameObject.name);
+            Debug.Log("Collider hit is:" + rayHit.collider.gameObject.name);
         }
         else
         {
-            //Debug.Log("Collider was fucking NULL!");
+            Debug.Log("Collider was fucking NULL!");
             chargeTarget = targetOldPosition;
 
             //isAttacking = false;
@@ -170,55 +191,136 @@ public class MinotaurAI : MonoBehaviour
         {
             //Vector3 smoothedDelta = Vector3.MoveTowards(transform.position, chargeTarget, Time.fixedDeltaTime * g_rushSpeed);
             //rb.MovePosition((Vector2)smoothedDelta)
-
+            //Debug.Log(transform.name + "Therefore: ChargeTar:" + chargeTarget + "And transform.position:" + transform.position);
             Vector2 velocity = (chargeTarget - transform.position);
+            //Debug.Log("Velocity:" + velocity);
             velocity *= g_rushSpeed;
             rb.AddForce(velocity, ForceMode2D.Force);
-            animation.SetBool("IsCharging", false);
-
-            //rb.MovePosition((Vector2)transform.position + velocity*Time.fixedDeltaTime * g_rushSpeed);
+            //animation.SetBool("IsCharging", false);
 
             Collider2D[] hitColliders = Physics2D.OverlapBoxAll(box.transform.position, 1.4f*box.size,0f);
+            //Debug.Log("The list is size: " + hitColliders.Length);
             foreach (Collider2D hit in hitColliders)
             {
-                if (hit.CompareTag("Player"))
+                Debug.Log("Hit collider name: " + hit.gameObject.name);
+            }
+            foreach (Collider2D hit in hitColliders)
+            {
+                if (hit.CompareTag("Shield"))
                 {
+                    if (hit.enabled)
+                    {
+                        Debug.Log(transform.name + "Shield Detected!");
+                        hitShield = true;
+                        break;
+                    }
+                    else
+                    {
+                        Debug.Log(transform.name + "Shield not Detected!");
+                        hitShield = false;
+                        break;
+                    }
+                }
+            }
+            foreach (Collider2D hit in hitColliders)
+            {
+                minoScript = hit.gameObject.GetComponent<MinotaurAI>();
+                if (hit.CompareTag("Player") && !hitShield)
+                {
+                    Debug.Log(transform.name + "Player hit" + hit.gameObject.name);
                     animation.SetBool("IsRushing", false);
+                    //animation.SetBool("IsMoving", false);
                     CinemachineShake.Instance.ShakeCamera(10f, .3f);
                     SFX.GetComponent<SFX>().PlaySwordSwing();
                     isPlayerHit = true;
                     isSomethingHit = true;
                     GameManager.Instance.updateHP(-attackDamage);
                 }
-                else if (hit.gameObject.layer == LayerMask.NameToLayer("Obstacles"))
+
+                else if (hitShield)
                 {
+                    Debug.Log(transform.name + "Shield hit" + hit.gameObject.name);
                     animation.SetBool("IsRushing", false);
+                    //animation.SetBool("IsMoving", false);
                     CinemachineShake.Instance.ShakeCamera(10f, .3f);
-                    rb.velocity = new Vector2(0f, 0f);
-                    rb.AddForce(rayDirection.normalized * -100f);
+                    isPlayerHit = true;
                     isSomethingHit = true;
                 }
+                else if (hit.gameObject.layer == LayerMask.NameToLayer("Obstacles"))
+                {
+                    Debug.Log(transform.name + "hit something" + hit.gameObject.name);
+                    animation.SetBool("IsRushing", false);
+                    //animation.SetBool("IsMoving", false);
+                    CinemachineShake.Instance.ShakeCamera(10f, .3f);
+                    rb.velocity = new Vector2(0f, 0f);
+                    //rb.AddForce(rayDirection.normalized * -100f);
+                    Vector2 closestPt = hit.ClosestPoint(transform.position);
+                    Vector2 vecAway = ((Vector2)transform.position - closestPt).normalized;
+                    rb.AddForce(vecAway * 100f);
+                    isSomethingHit = true;
+                }
+
+                //You da issue
+                else if (hit.tag == "Enemy" && minoScript == null)
+                {
+                    Debug.Log(transform.name + "Hit enemy tag of name" + hit.gameObject.name);
+                    animation.SetBool("IsRushing", false);
+                    //animation.SetBool("IsMoving", false);
+                    rb.velocity = new Vector2(0f, 0f);
+                    isSomethingHit = true;
+                    //Debug.DrawRay(transform.position, (Vector2)(hit.transform.position - transform.position), Color.blue, 10f);
+                    //hit.attachedRigidbody.transform.position = transform.position;
+                }
+
+                else if(hit.tag == "Enemy" && minoScript != null)
+                {
+                    Rigidbody2D colRB = hit.gameObject.GetComponent<Rigidbody2D>();
+                    //Debug.Log(transform.name + "Hit enemy tag of name" + hit.gameObject.name + "Minoscript found.");
+                    //Debug.Log(transform.name + " velcity mag. is :" + rb.velocity.magnitude);
+                    //Debug.Log("And the collision's velcity is: " + colRB.velocity.magnitude);
+                    if((rb.velocity.magnitude - colRB.velocity.magnitude > 0.05f) && colRB.velocity.magnitude > 0.001f)
+                    {
+                        animation.SetBool("IsRushing", false);
+                        rb.velocity = new Vector2(0f, 0f);
+                        isSomethingHit = true;
+                    }
+                    //animation.SetBool("IsRushing", false);
+                    //animation.SetBool("IsMoving", false);
+                    //rb.velocity = new Vector2(0f, 0f);
+                    //isSomethingHit = true;
+                }
+
+                //StartCoroutine("stuck");
             }
+
+            hitShield = false;
 
             yield return null;
         }
+        AIPath.canSearch = true;
+
         if (isPlayerHit)
         {
             yield return new WaitForSeconds(.75f * stunnedTime);
             rb.velocity = new Vector2(0, 0);
             rb.transform.Translate(-1* rayDirection.normalized);
             yield return new WaitForSeconds(.25f * stunnedTime);
+            AIPath.canMove = true;
         }
         else
         {
             yield return new WaitForSeconds(stunnedTime);
-        }
-        Debug.Log("Mino is ready!");
-  
+            AIPath.canMove = true;
+        }  
         isAttacking = false;
-        AIPath.canSearch = true;
     }
 
+    //IEnumerator stuck()
+    //{
+    //    yield return new WaitForSeconds(2f);
+
+    //    isAttacking = false;
+    //}
     public void takeDamage(int damage)
     {
         //Debug.Log("Enemy was attacked!");
@@ -234,9 +336,10 @@ public class MinotaurAI : MonoBehaviour
         }
     }
 
+    
     public void dropItem()
     {
-        int dropNum = Random.Range(1, 10);
+        int dropNum = UnityEngine.Random.Range(1, 10);
         GameObject gold;
         switch (dropNum)
         {

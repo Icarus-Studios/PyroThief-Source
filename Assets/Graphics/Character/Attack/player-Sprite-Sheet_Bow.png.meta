@@ -38,6 +38,30 @@ TextureImporter:
   - first:
       213: -530135926028773752
     second: player-Sprite-Sheet_Bow_11
+  - first:
+      213: 7246613119061800361
+    second: player-Sprite-Sheet_Bow_12
+  - first:
+      213: -8967049663905811859
+    second: player-Sprite-Sheet_Bow_13
+  - first:
+      213: 966496526190389054
+    second: player-Sprite-Sheet_Bow_14
+  - first:
+      213: 8375915210599712126
+    second: player-Sprite-Sheet_Bow_15
+  - first:
+      213: 8570992240005366600
+    second: player-Sprite-Sheet_Bow_16
+  - first:
+      213: 807601480356821368
+    second: player-Sprite-Sheet_Bow_17
+  - first:
+      213: 2612567364353206980
+    second: player-Sprite-Sheet_Bow_18
+  - first:
+      213: -7523668795342121427
+    second: player-Sprite-Sheet_Bow_19
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -130,8 +154,8 @@ TextureImporter:
         y: 249
         width: 51
         height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -147,12 +171,12 @@ TextureImporter:
       name: player-Sprite-Sheet_Bow_1
       rect:
         serializedVersion: 2
-        x: 69
+        x: 73
         y: 249
         width: 44
         height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -168,12 +192,12 @@ TextureImporter:
       name: player-Sprite-Sheet_Bow_2
       rect:
         serializedVersion: 2
-        x: 129
+        x: 137
         y: 249
         width: 51
         height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -189,12 +213,12 @@ TextureImporter:
       name: player-Sprite-Sheet_Bow_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 4
         y: 189
         width: 51
         height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,12 +234,12 @@ TextureImporter:
       name: player-Sprite-Sheet_Bow_4
       rect:
         serializedVersion: 2
-        x: 67
+        x: 75
         y: 189
         width: 44
         height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -231,12 +255,12 @@ TextureImporter:
       name: player-Sprite-Sheet_Bow_5
       rect:
         serializedVersion: 2
-        x: 120
+        x: 132
         y: 189
         width: 51
         height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -252,12 +276,12 @@ TextureImporter:
       name: player-Sprite-Sheet_Bow_6
       rect:
         serializedVersion: 2
-        x: 14
-        y: 123
+        x: 16
+        y: 116
         width: 31
         height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -273,12 +297,12 @@ TextureImporter:
       name: player-Sprite-Sheet_Bow_7
       rect:
         serializedVersion: 2
-        x: 74
-        y: 128
+        x: 80
+        y: 121
         width: 31
         height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -294,12 +318,12 @@ TextureImporter:
       name: player-Sprite-Sheet_Bow_8
       rect:
         serializedVersion: 2
-        x: 134
-        y: 123
+        x: 144
+        y: 116
         width: 31
         height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -315,12 +339,12 @@ TextureImporter:
       name: player-Sprite-Sheet_Bow_9
       rect:
         serializedVersion: 2
-        x: 13
-        y: 64
+        x: 17
+        y: 52
         width: 31
         height: 53
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -336,12 +360,12 @@ TextureImporter:
       name: player-Sprite-Sheet_Bow_10
       rect:
         serializedVersion: 2
-        x: 73
-        y: 64
+        x: 80
+        y: 52
         width: 31
         height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -357,12 +381,12 @@ TextureImporter:
       name: player-Sprite-Sheet_Bow_11
       rect:
         serializedVersion: 2
-        x: 133
-        y: 64
+        x: 144
+        y: 52
         width: 31
         height: 53
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

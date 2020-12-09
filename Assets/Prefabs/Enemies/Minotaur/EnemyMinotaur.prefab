@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 114048463356065772}
   - component: {fileID: 114048463356065775}
-  - component: {fileID: 114048463356065771}
   - component: {fileID: 114048463356065768}
+  - component: {fileID: 114048463356065771}
   - component: {fileID: 114048463356065769}
   - component: {fileID: 114048463356065774}
   - component: {fileID: 1409180392}
@@ -55,15 +55,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackDamage: 10
   attackDelay: 0.4
-  health: 100
+  health: 300
   AIPath: {fileID: 114048463356065769}
   aggroDistance: 20
-  minChargeDistance: 10
-  g_rushSpeed: 2.5
+  minChargeDistance: 12
+  g_rushSpeed: 10
   g_layerMask:
     serializedVersion: 2
     m_Bits: 822
-  stunnedTime: 2
+  stunnedTime: 1
   healthBar: {fileID: 114048464413135004}
   attackRange: 1
   plusOneReward: {fileID: 941700094530051911, guid: 9d7421cd65c173e4697ea3b77ce703ec,
@@ -84,6 +84,27 @@ MonoBehaviour:
     type: 3}
   plus50Health: {fileID: 8544971866740754204, guid: f6be484389948234294aafdc6d69d850,
     type: 3}
+--- !u!50 &114048463356065768
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114048463356065773}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 10
+  m_LinearDrag: 1
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!114 &114048463356065771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,27 +133,6 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
---- !u!50 &114048463356065768
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 114048463356065773}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 2
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 4
 --- !u!114 &114048463356065769
 MonoBehaviour:
   m_ObjectHideFlags: 0

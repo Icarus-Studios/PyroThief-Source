@@ -12,6 +12,8 @@ TagManager:
   - Key
   - Projectile
   - enemyPro
+  - Shield
+  - Trigger
   layers:
   - Default
   - TransparentFX
