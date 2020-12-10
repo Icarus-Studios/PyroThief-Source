@@ -9,15 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: f2ecc7a54e884fd4e9481ad2f95903e7
   - enabled: 1
-    path: Assets/Scenes/UI_Playground.unity
-    guid: d1628fcf0327af04a9f40f0012bfb273
-  - enabled: 1
     path: Assets/Scenes/BasicMovementAndAnim.unity
     guid: a52f6b18f22744b43ac183af67ecc507
+  - enabled: 1
+    path: Assets/Scenes/EndScreen.unity
+    guid: 10ec9266401f2c848a474cc9217d1d6b
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 27259c790e1a6294caec070fe585c865
-  - enabled: 0
-    path: Assets/Scenes/BasicMovementAndAnim.unity
-    guid: a52f6b18f22744b43ac183af67ecc507
   m_configObjects: {}

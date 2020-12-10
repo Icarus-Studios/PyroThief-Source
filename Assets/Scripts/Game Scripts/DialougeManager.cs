@@ -31,7 +31,7 @@ public class DialougeManager : MonoBehaviour
     private GameObject OST;
     private GameObject switchCamera;
     public GameObject controlScreen;
-
+    public GameObject fadeToBlack;
 
     public void Start()
     {
@@ -54,14 +54,22 @@ public class DialougeManager : MonoBehaviour
 
     void updateScriptState(GameObject mob, bool state)
     {
-        mob.GetComponent<AIPath>().enabled = state;
-        if (mob.gameObject.GetComponent<SoldierAI>() != null)
+        if(mob.gameObject.GetComponent<CerberusAI>() != null)
         {
-            mob.GetComponent<SoldierAI>().enabled = state;
+            mob.GetComponent<CerberusAI>().enabled = state;
         }
-        else if (mob.gameObject.GetComponent<MinotaurAI>() != null)
+        else
         {
-            mob.GetComponent<MinotaurAI>().enabled = state;
+            mob.GetComponent<AIPath>().enabled = state;
+            if (mob.gameObject.GetComponent<SoldierAI>() != null)
+            {
+                mob.GetComponent<SoldierAI>().enabled = state;
+            }
+            else if (mob.gameObject.GetComponent<MinotaurAI>() != null)
+            {
+                mob.GetComponent<MinotaurAI>().enabled = state;
+            }
+
         }
 
         mob.GetComponentInChildren<Animator>().enabled = state;
@@ -92,6 +100,10 @@ public class DialougeManager : MonoBehaviour
             p.GetComponent<Animator>().enabled = false;
         }
 
+        if (gameObject.name.Equals("ExitCutscene"))
+        {
+            OST.GetComponent<OST>().stopBossMusic();
+        }
 
         yield return new WaitForSeconds(speechBubbleAnimationDelay);
         StartCoroutine(TypeDialouge());
@@ -136,6 +148,11 @@ public class DialougeManager : MonoBehaviour
             }
             else
                 speechBubbleAnimator.SetTrigger("Close");
+
+            if(gameObject.name.Equals("ExitCutscene"))
+            {
+                fadeToBlack.SetActive(true);
+            }
 
 
             GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");

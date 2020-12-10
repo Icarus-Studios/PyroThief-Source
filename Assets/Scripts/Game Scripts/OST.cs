@@ -46,10 +46,15 @@ public class OST : MonoBehaviour
     public void switchToBossMusic()
     {
         StartCoroutine(StartFade(Underworld, 2f, 0f));
-        StartCoroutine(StartFade(BattleTheme, 2f, 1f));
+        StartCoroutine(StartFade(BossTheme, 2f, 1f));
         PlayBossTheme();
     }
     
+    public void stopBossMusic()
+    {
+        StartCoroutine(StartFade(BossTheme, 2f, 0f));
+        
+    }
 
     public static IEnumerator StartFade(AudioSource audioSource, float duration, float targetVolume)
     {
