@@ -43,9 +43,13 @@ public class CerberusAI : MonoBehaviour
     private bool isAttacking;
     private bool isLavaReady = true;
 
+    private int prevEnemiesActive;
+    private bool enemiesDead = false;
+    bool enabled = false;
     // Start is called before the first frame update
     void Start()
     {
+        prevEnemiesActive = GameManager.Instance.enemiesActive;
         rb = GetComponent<Rigidbody2D>();
         box = GetComponent<BoxCollider2D>();
         //swipeBoxObj = GameObject.FindWithTag("swipeBox");
@@ -77,7 +81,11 @@ public class CerberusAI : MonoBehaviour
     {
         if(health >= 0.80 * maxHealth) { phase = 1; }
         else if(health < 0.80f * maxHealth && health >= 0.50f * maxHealth) { phase = 2; }
-        else if(health < 0.50f * maxHealth && health >= 0.20f * maxHealth) { phase = 3; }
+        else if(health < 0.50f * maxHealth && health >= 0.40f * maxHealth) { phase = 3; }
+        else if (health < 0.40f * maxHealth && health >= 0f * maxHealth)
+        {
+            phase = 2;
+        }
 
         return phase;
     }
@@ -129,6 +137,7 @@ public class CerberusAI : MonoBehaviour
     {
         Debug.Log("Phase2");
         animation.SetBool("IsIdle", true);
+        animation.SetBool("IsHowl", false);
         swipeBox.enabled = false;
         float distanceToChar = ((Vector2)(target.transform.position - transform.position)).magnitude;
         //Debug.Log("Distance to Char:" + distanceToChar);
@@ -159,6 +168,12 @@ public class CerberusAI : MonoBehaviour
         PlayerController script = target.gameObject.GetComponent<PlayerController>();
         script.walkingSpeed = 3f;
         Debug.Log("Phase3");
+        GameManager.Instance.enableBossSpawn();
+        if(enabled == false)
+        {
+            GameManager.Instance.enemiesActive++;
+            enabled = true;
+        }
         tilesToDelete = GameObject.FindGameObjectsWithTag("Wave");
 
         foreach (GameObject tile in tilesToDelete)
@@ -166,6 +181,19 @@ public class CerberusAI : MonoBehaviour
             Destroy(tile);
         }
         //animation.SetTrigger("Swipe");
+
+        if (prevEnemiesActive == (GameManager.Instance.enemiesActive - 1))
+        {
+            enemiesDead = true;
+        }
+        else
+        {
+
+            enemiesDead = false;
+        }
+
+        //Debug.LogError("prev:" + prevEnemiesActive + " cu: " + GameManager.Instance.enemiesActive);
+            
     }
     struct StructData
     {

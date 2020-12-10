@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     public Image UITurretPrompt;
     public int enemiesActive = 0;
     public GameObject endCutscene;
-
+    public GameObject bossSpawn;
     //these probably should go in their own script but I'm putting them here now as a UI proof of concept
     private Image weaponSelect;
     public Sprite swordSelected;
@@ -148,6 +148,11 @@ public class GameManager : MonoBehaviour
     public void startEndCutscene()
     {
         endCutscene.SetActive(true);
+    }
+
+    public void enableBossSpawn()
+    {
+        bossSpawn.SetActive(true);
     }
 
     public string getTimePlayed() { return timePlayed.text; }

@@ -93,8 +93,15 @@ public class DialougeManager : MonoBehaviour
             }
         }
 
-        
-
+        GameObject[] player = GameObject.FindGameObjectsWithTag("Player");
+        if (gameObject.name.Equals("FirstCutscene"))
+        {
+            foreach (GameObject p in player)
+            {
+                p.GetComponent<PlayerController>().enabled = false;
+                p.GetComponent<Animator>().enabled = false;
+            }
+        }
         if (gameObject.name.Equals("ExitCutscene"))
         {
             OST.GetComponent<OST>().stopBossMusic();
@@ -103,12 +110,12 @@ public class DialougeManager : MonoBehaviour
 
         yield return new WaitForSeconds(speechBubbleAnimationDelay);
 
-        GameObject[] player = GameObject.FindGameObjectsWithTag("Player");
-        foreach (GameObject p in player)
-        {
-            p.GetComponent<PlayerController>().enabled = false;
-            p.GetComponent<Animator>().enabled = false;
-        }
+
+            foreach (GameObject p in player)
+            {
+                p.GetComponent<PlayerController>().enabled = false;
+                p.GetComponent<Animator>().enabled = false;
+            }
 
         StartCoroutine(TypeDialouge());
 
