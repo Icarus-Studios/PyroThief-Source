@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     private static Text goldText;
     public Image UITurretPrompt;
     public int enemiesActive = 0;
+    public GameObject endCutscene;
 
     //these probably should go in their own script but I'm putting them here now as a UI proof of concept
     private Image weaponSelect;
@@ -142,6 +143,11 @@ public class GameManager : MonoBehaviour
         minutes = (int)(Time.timeSinceLevelLoad / 60f);
         seconds = (int)(Time.timeSinceLevelLoad % 60f);
         timePlayed.text = "Time Played: " + minutes.ToString("00") + ":" + seconds.ToString("00");
+    }
+
+    public void startEndCutscene()
+    {
+        endCutscene.SetActive(true);
     }
 
     public string getTimePlayed() { return timePlayed.text; }

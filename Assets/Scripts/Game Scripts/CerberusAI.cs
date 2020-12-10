@@ -61,8 +61,8 @@ public class CerberusAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        localScale.x = health / 100;
-        healthBar.transform.localScale = 4*localScale;
+        localScale.x = health / maxHealth;
+        healthBar.transform.localScale = new Vector3(localScale.x * 7, localScale.y * 4, localScale.z * 4);
     }
 
     private void FixedUpdate()
@@ -449,6 +449,16 @@ public class CerberusAI : MonoBehaviour
             //dropItem();
             GameManager.Instance.enemiesActive--;
             Destroy(this.gameObject);
+            StartCoroutine(Wait());
+            GameManager.Instance.startEndCutscene();
+
         }
+    }
+
+    IEnumerator Wait()
+    {
+       
+        yield return new WaitForSeconds(3f);
+        
     }
 }
