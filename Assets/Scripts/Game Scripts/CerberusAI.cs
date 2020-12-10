@@ -13,14 +13,18 @@ public class CerberusAI : MonoBehaviour
     [SerializeField] private float stunnedTime = 2f;
     [SerializeField] private float maxHealth = 100f;
     [SerializeField] private float lavaFallDelay = 0.01f;
-
+    [SerializeField] private BoxCollider2D swipeBox;
+    //private GameObject swipeBoxObj;
+    //private BoxCollider2D swipeBox;
 
     private ParticleSystem blood;
     public SpriteRenderer healthBar;
-    public SpriteRenderer lavaWave;
     public float attackRange = 1f;
     Vector3 localScale;
     private GameObject SFX;
+    private Rigidbody2D target;
+    private float minAtckDist = 2.5f;
+
 
     private new Animator animation;
     private new Rigidbody2D rb;
@@ -32,18 +36,20 @@ public class CerberusAI : MonoBehaviour
     public GameObject lavaPreFab;
     //private List<GameObject> activeLavaPrefabs = new List<GameObject>();
     private int tileNum = 1;
-    private int colNum = 0;
     private float colXStart = 98.5016f;
     private float colXMultiplier = 0.9899f;
     private StructData[] struct31List = new StructData[31];
-    private bool startLava;
     private GameObject[] tilesToDelete;
+    private bool isAttacking;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         box = GetComponent<BoxCollider2D>();
+        //swipeBoxObj = GameObject.FindWithTag("swipeBox");
+        //swipeBox = swipeBoxObj.GetComponent<BoxCollider2D>();
+        target = GameObject.Find("Promethesus").GetComponent<Rigidbody2D>();
         //targetObj = GameObject.Find("Promethesus");
         animation = GetComponentInChildren<Animator>();
         blood = gameObject.GetComponentInChildren(typeof(ParticleSystem), true) as ParticleSystem;
@@ -89,11 +95,41 @@ public class CerberusAI : MonoBehaviour
     private void Phase1()
     {
         animation.SetBool("IsIdle", true);
+        swipeBox.enabled = false;
+        float distanceToChar = ((Vector2)(target.transform.position - transform.position)).magnitude;
+        //Debug.Log("Distance to Char:" + distanceToChar);
+        //Debug.Log("Dist to char bool:" + (distanceToChar < minAtckDist));
+        //Debug.Log("min disntace: " + minAtckDist);
+        if (distanceToChar < minAtckDist)
+        {
+            animation.SetBool("IsIdle", false);
+
+            //Debug.Log("I should be attacking!");
+            if (!isAttacking)
+            {
+                Debug.Log("Attacking");
+                animation.SetTrigger("Swipe");
+                isAttacking = true;
+                //StartCoroutine("attackAnimationDelay");
+                Attack();
+            }
+            swipeBox.enabled = false;
+        }
+        //animation.SetBool("IsIdle", true);
+
         StartCoroutine("Phase1SubDelay");
     }
+    //IEnumerator attackAnimationDelay()
+    //{
+    //    yield return new WaitForSeconds(2f);
+    //    isAttacking = true;
+    //    //SFX.GetComponent<SFX>().PlaySwordSwing();
+    //    AttackComplete();
+    //    //Attack();
+    //}
     IEnumerator Phase1SubDelay()
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(20f);
 
         if (!lavaFlow)
         {
@@ -351,5 +387,68 @@ public class CerberusAI : MonoBehaviour
         ++tileNum;
 
         lavaFlow = false;
+    }
+
+    void AttackComplete()
+    {
+        Debug.Log("In atckcomplete");
+        Collider2D[] hitColliders = Physics2D.OverlapBoxAll(swipeBox.transform.position, swipeBox.size*1f, 0f); //swipeBox.size
+        swipeBox.enabled = true;
+
+        foreach (Collider2D hit in hitColliders)
+        {
+            //Debug.Log("Colliders: " + hit.transform.name);
+            if (hit.CompareTag("Shield"))
+            {
+                if (hit.enabled)
+                {
+                    hitShield = true;
+                }
+                else
+                {
+                    hitShield = false;
+                }
+            }
+        }
+        foreach (Collider2D hit in hitColliders)
+        {
+            if (hit.CompareTag("Player") && !hitShield)
+            {
+                //Debug.Log("Hitting player!");
+                GameManager.Instance.updateHP(-attackDamage);
+                target.AddForce(new Vector2(0, -1) * 500f);
+            }
+            else if (hit.CompareTag("Player") && hitShield)
+            {
+                //Debug.Log("Hitting shield!");
+                CinemachineShake.Instance.ShakeCamera(10f, .3f);
+                target.AddForce(new Vector2(0, -1) * 200f);
+                hitShield = false;
+            }
+        }
+        isAttacking = false;
+    }
+
+    public void Attack()
+    {
+        if (isAttacking)
+        {
+            Invoke("AttackComplete", attackDelay);
+        }
+    }
+
+    public void takeDamage(int damage)
+    {
+        //Debug.Log("Enemy was attacked!");
+        blood.Play();
+        SFX.GetComponent<SFX>().PlayDamageSound();
+        health -= damage;
+        if (health <= 0)
+        {
+            // Debug.Log("Enemy died!");
+            //dropItem();
+            GameManager.Instance.enemiesActive--;
+            Destroy(this.gameObject);
+        }
     }
 }

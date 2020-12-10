@@ -15,6 +15,7 @@ TagManager:
   - Shield
   - Trigger
   - Wave
+  - swipeBox
   layers:
   - Default
   - TransparentFX

@@ -312,6 +312,12 @@ public class PlayerController : MonoBehaviour
             {
                 enemy.GetComponent<ArcherAI>().takeDamage(attackDamage);
             }
+            else if (enemy.gameObject.GetComponent<CerberusAI>() != null)
+            {
+                Debug.Log("You applied:" + attackDamage + "damage.");
+                enemy.GetComponent<CerberusAI>().takeDamage(attackDamage);
+            }
+
 
             //enemy.GetComponent<SpriteRenderer>().color = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f));
         }

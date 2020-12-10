@@ -13,7 +13,7 @@ public class KeyHolder : MonoBehaviour
 
     public void AddKey(Key.KeyType keyType)
     {
-        Debug.Log("Added Key: " + keyType);
+        //Debug.Log("Added Key: " + keyType);
         keyList.Add(keyType);
     }
 
