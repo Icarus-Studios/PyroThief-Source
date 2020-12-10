@@ -42,6 +42,7 @@ public class ArcherAI : MonoBehaviour
     [Space]
     private GameObject SFX;
     private GameObject player;
+    PlayerController script;
     private new Animator animation;
     private string currentAnimation;
     public static bool isAttacking;
@@ -55,6 +56,7 @@ public class ArcherAI : MonoBehaviour
         localScale = healthBar.transform.localScale;
         SFX = GameObject.Find("SFX");
         player = GameObject.Find("Promethesus");
+        script = player.GetComponent<PlayerController>();
         isAttacking = false;
     }
 
@@ -262,7 +264,7 @@ public class ArcherAI : MonoBehaviour
         {
             takeDamage(PlayerController.Instance.turretDamage);
         }
-        else if (collision.gameObject.tag == "Projectile" )
+        else if (collision.gameObject.tag == "Projectile")
         {
             takeDamage(PlayerController.Instance.attackDamage/2);
         }

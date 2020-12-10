@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public int attackDamage = 35;
     public int turretDamage = 10;
     public float walkingSpeed = 1.0f;
+    public static int test = 3;
 
 
     [Space]
@@ -26,7 +27,8 @@ public class PlayerController : MonoBehaviour
     public Vector3 aimDirection;
     public bool isAttacking;
     private bool isAttackPressed;
-    public bool isShieldPressed;
+    public static bool isShieldPressed;
+    public static int shieldNum = 0;
 
     public Transform attackPoint;
     public Transform arrowPoint;
@@ -91,6 +93,12 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey("left shift"))
         {
             isShieldPressed = true;
+            shieldNum = 1;
+            Debug.Log("player shield is true");
+        }
+        else
+        {
+            shieldNum = 0;
         }
 
         if (Input.GetKeyDown(KeyCode.R))
