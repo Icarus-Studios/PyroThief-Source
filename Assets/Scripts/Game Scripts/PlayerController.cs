@@ -8,10 +8,11 @@ public class PlayerController : MonoBehaviour
 {
     [Header("Character Attributes:")]
     [SerializeField] private float attackDelay = 0.4f;
-    [SerializeField] private float walkingSpeed = 1.0f;
+    //[SerializeField] private float walkingSpeed = 1.0f;
     [SerializeField] public int attackDamage = 35;
     public int turretDamage = 10;
-    
+    public float walkingSpeed = 1.0f;
+
 
     [Space]
 

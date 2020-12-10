@@ -12,7 +12,7 @@ public class CerberusAI : MonoBehaviour
     [SerializeField] private float health = 100f;
     [SerializeField] private float stunnedTime = 2f;
     [SerializeField] private float maxHealth = 100f;
-    [SerializeField] private float lavaFallDelay = 0.01f;
+    [SerializeField] private float lavaFallDelay = 0.001f;
     [SerializeField] private BoxCollider2D swipeBox;
     //private GameObject swipeBoxObj;
     //private BoxCollider2D swipeBox;
@@ -41,6 +41,7 @@ public class CerberusAI : MonoBehaviour
     private StructData[] struct31List = new StructData[31];
     private GameObject[] tilesToDelete;
     private bool isAttacking;
+    private bool isLavaReady = true;
 
     // Start is called before the first frame update
     void Start()
@@ -68,20 +69,15 @@ public class CerberusAI : MonoBehaviour
     private void FixedUpdate()
     {
         phase = CheckCurrentPhase();
-        //Debug.Log("Phase:" + phase);
         RunCurrentPhase(phase);
-        //Debug.Log("Health: " + health);
-        //animation.SetBool("IsStun", true);
-        //animation.SetBool("IsHowl", true);
-        //animation.SetTrigger("Swipe");
-        //animation.SetTrigger("IsIdle",true);
+        Debug.Log("Current Health: " + health);
     }
 
     private int CheckCurrentPhase()
     {
         if(health >= 0.80 * maxHealth) { phase = 1; }
-        else if(health < 0.80f * maxHealth && health >= 0.25f * maxHealth) { phase = 2; }
-        else if(health < 0.25f * maxHealth) { phase = 3; }
+        else if(health < 0.80f * maxHealth && health >= 0.50f * maxHealth) { phase = 2; }
+        else if(health < 0.50f * maxHealth && health >= 0.20f * maxHealth) { phase = 3; }
 
         return phase;
     }
@@ -98,8 +94,6 @@ public class CerberusAI : MonoBehaviour
         swipeBox.enabled = false;
         float distanceToChar = ((Vector2)(target.transform.position - transform.position)).magnitude;
         //Debug.Log("Distance to Char:" + distanceToChar);
-        //Debug.Log("Dist to char bool:" + (distanceToChar < minAtckDist));
-        //Debug.Log("min disntace: " + minAtckDist);
         if (distanceToChar < minAtckDist)
         {
             animation.SetBool("IsIdle", false);
@@ -107,7 +101,7 @@ public class CerberusAI : MonoBehaviour
             //Debug.Log("I should be attacking!");
             if (!isAttacking)
             {
-                Debug.Log("Attacking");
+                //Debug.Log("Attacking");
                 animation.SetTrigger("Swipe");
                 isAttacking = true;
                 //StartCoroutine("attackAnimationDelay");
@@ -116,35 +110,62 @@ public class CerberusAI : MonoBehaviour
             swipeBox.enabled = false;
         }
         //animation.SetBool("IsIdle", true);
-
-        StartCoroutine("Phase1SubDelay");
+   
+        
     }
-    //IEnumerator attackAnimationDelay()
-    //{
-    //    yield return new WaitForSeconds(2f);
-    //    isAttacking = true;
-    //    //SFX.GetComponent<SFX>().PlaySwordSwing();
-    //    AttackComplete();
-    //    //Attack();
-    //}
+
     IEnumerator Phase1SubDelay()
     {
-        yield return new WaitForSeconds(20f);
-
+        yield return new WaitForSeconds(0f);
+        //Debug.Log("Lava should flow now!");
         if (!lavaFlow)
         {
+            //Debug.Log("See! flowing");
             lavaFlow = true;
             StartCoroutine("releaseLava");
         }
     }
     private void Phase2()
     {
-        animation.SetBool("IsHowl", true);
+        Debug.Log("Phase2");
+        animation.SetBool("IsIdle", true);
+        swipeBox.enabled = false;
+        float distanceToChar = ((Vector2)(target.transform.position - transform.position)).magnitude;
+        //Debug.Log("Distance to Char:" + distanceToChar);
+        if (distanceToChar < minAtckDist)
+        {
+            animation.SetBool("IsIdle", false);
+
+            //Debug.Log("I should be attacking!");
+            if (!isAttacking)
+            {
+                //Debug.Log("Attacking");
+                animation.SetTrigger("Swipe");
+                isAttacking = true;
+                //StartCoroutine("attackAnimationDelay");
+                Attack();
+            }
+            swipeBox.enabled = false;
+        }
+        //animation.SetBool("IsHowl", true);
+        StartCoroutine("Phase1SubDelay");
     }
 
     private void Phase3()
     {
-        animation.SetTrigger("Swipe");
+        animation.SetBool("IsIdle", false);
+        animation.SetBool("IsHowl", true);
+        //targetScript2 s2 = gobject.GetComponent<Script2>()
+        PlayerController script = target.gameObject.GetComponent<PlayerController>();
+        script.walkingSpeed = 3f;
+        Debug.Log("Phase3");
+        tilesToDelete = GameObject.FindGameObjectsWithTag("Wave");
+
+        foreach (GameObject tile in tilesToDelete)
+        {
+            Destroy(tile);
+        }
+        //animation.SetTrigger("Swipe");
     }
     struct StructData
     {
@@ -328,7 +349,7 @@ public class CerberusAI : MonoBehaviour
     }
     IEnumerator releaseLava()
     {
-        if(tileNum == 48)
+        if(tileNum == 56 || (health < 0.50f * maxHealth))
         {
             tilesToDelete = GameObject.FindGameObjectsWithTag("Wave");
 
@@ -336,10 +357,15 @@ public class CerberusAI : MonoBehaviour
             {
                 Destroy(tile);
             }
+
+            tileNum = 1;
+            lavaFlow = false;
+            prepareLava();
             StopCoroutine("releaseLava");
+            StopAllCoroutines();
         }
 
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(.25f);
         //yield return new WaitForSeconds(lavaFallDelay);
         for (int col = 0; col < struct31List.Length; ++col)
         {
@@ -372,16 +398,20 @@ public class CerberusAI : MonoBehaviour
             for (int activeTile = 0; activeTile < struct31List[col].activeLavaPrefabs.Count; ++activeTile)
             {
                 tile = struct31List[col].activeLavaPrefabs[activeTile];
-                if (tile.transform.position.y + 29.71f < 0.01f)
+                if(tile != null)
                 {
-                    Destroy(tile);
-                    struct31List[col].activeLavaPrefabs.Remove(tile);
-                    //Debug.Log("Destroy!");
+                    if (tile.transform.position.y + 29.71f < 0.01f)
+                    {
+                        Destroy(tile);
+                        struct31List[col].activeLavaPrefabs.Remove(tile);
+                        //Debug.Log("Destroy!");
+                    }
+                    else
+                    {
+                        tile.transform.position = new Vector2(tile.transform.position.x, tile.transform.position.y - 1f);
+                    }
                 }
-                else
-                {
-                    tile.transform.position = new Vector2(tile.transform.position.x, tile.transform.position.y - 1f);
-                }
+
             }
         }
         ++tileNum;
@@ -451,14 +481,26 @@ public class CerberusAI : MonoBehaviour
             Destroy(this.gameObject);
             StartCoroutine(Wait());
             GameManager.Instance.startEndCutscene();
-
         }
     }
-
     IEnumerator Wait()
     {
-       
+
         yield return new WaitForSeconds(3f);
-        
+
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        //Debug.Log(collision.gameObject.name.ToString());
+        //Debug.Log(health.ToString());
+
+        if (collision.gameObject.name == "Bullet(Clone)")
+        {
+            takeDamage(PlayerController.Instance.turretDamage);
+        }
+        else if (collision.gameObject.tag == "Projectile")
+        {
+            takeDamage(PlayerController.Instance.attackDamage);
+        }
     }
 }
