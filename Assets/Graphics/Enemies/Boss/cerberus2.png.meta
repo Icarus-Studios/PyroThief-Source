@@ -1,0 +1,584 @@
+fileFormatVersion: 2
+guid: 4609539fd820a474fbbb505a3aa7a7d3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6392629065392923413
+    second: cerberus2_0
+  - first:
+      213: 265917264244815878
+    second: cerberus2_1
+  - first:
+      213: 8165168389983394224
+    second: cerberus2_2
+  - first:
+      213: -934529825892817982
+    second: cerberus2_3
+  - first:
+      213: -8276787827493513377
+    second: cerberus2_4
+  - first:
+      213: 6119689886295007949
+    second: cerberus2_5
+  - first:
+      213: -8604336808424653991
+    second: cerberus2_6
+  - first:
+      213: -8360739225132803131
+    second: cerberus2_7
+  - first:
+      213: -5021482987167718968
+    second: cerberus2_8
+  - first:
+      213: -8290649938935783193
+    second: cerberus2_9
+  - first:
+      213: -4954364243967335198
+    second: cerberus2_10
+  - first:
+      213: 6407429429213929215
+    second: cerberus2_11
+  - first:
+      213: 5073916325501318599
+    second: cerberus2_12
+  - first:
+      213: -1244194956941815151
+    second: cerberus2_13
+  - first:
+      213: 2132666471803065545
+    second: cerberus2_14
+  - first:
+      213: 8429721796155133153
+    second: cerberus2_15
+  - first:
+      213: 319758219500217011
+    second: cerberus2_16
+  - first:
+      213: 174914730844662457
+    second: cerberus2_17
+  - first:
+      213: 968963062314702742
+    second: cerberus2_18
+  - first:
+      213: -4920330489644763537
+    second: cerberus2_19
+  - first:
+      213: 9172959091588885270
+    second: cerberus2_20
+  - first:
+      213: 5356077434140578914
+    second: cerberus2_21
+  - first:
+      213: 4210466765313947487
+    second: cerberus2_22
+  - first:
+      213: -1664246536830091029
+    second: cerberus2_23
+  - first:
+      213: -8004192982867972957
+    second: cerberus2_24
+  - first:
+      213: -83576838437519693
+    second: cerberus2_25
+  - first:
+      213: 1255817950713982556
+    second: cerberus2_26
+  - first:
+      213: -7096637702241716640
+    second: cerberus2_27
+  - first:
+      213: -7945390669390006401
+    second: cerberus2_28
+  - first:
+      213: 617313466654668944
+    second: cerberus2_29
+  - first:
+      213: 8369289771584563477
+    second: cerberus2_30
+  - first:
+      213: 2656979434945437000
+    second: cerberus2_31
+  - first:
+      213: 4186452549070769188
+    second: cerberus2_32
+  - first:
+      213: -1895675640677268455
+    second: cerberus2_33
+  - first:
+      213: -1518426270641374176
+    second: cerberus2_34
+  - first:
+      213: 8832531230572569627
+    second: cerberus2_35
+  - first:
+      213: 2542618357080589176
+    second: cerberus2_36
+  - first:
+      213: 7521116548733964782
+    second: cerberus2_37
+  - first:
+      213: 6572381102984544922
+    second: cerberus2_38
+  - first:
+      213: 8034788871434272735
+    second: cerberus2_39
+  - first:
+      213: 3293844448079188421
+    second: cerberus2_40
+  - first:
+      213: -3492364844517770795
+    second: cerberus2_41
+  - first:
+      213: -80498388030359406
+    second: cerberus2_42
+  - first:
+      213: 2337153654558971379
+    second: cerberus2_43
+  - first:
+      213: 5755441711494523122
+    second: cerberus2_0
+  - first:
+      213: 6531105904870972320
+    second: cerberus2_1
+  - first:
+      213: -6445120963628393552
+    second: cerberus2_2
+  - first:
+      213: 6049873791152532072
+    second: cerberus2_3
+  - first:
+      213: -4626553972060776612
+    second: cerberus2_4
+  - first:
+      213: 433449630690877661
+    second: cerberus2_5
+  - first:
+      213: -8796800873590675442
+    second: cerberus2_6
+  - first:
+      213: 6650228357984019668
+    second: cerberus2_7
+  - first:
+      213: 138184482052554205
+    second: cerberus2_8
+  - first:
+      213: -954927739727395329
+    second: cerberus2_9
+  - first:
+      213: 8145680314417682302
+    second: cerberus2_10
+  - first:
+      213: -6916045080498189575
+    second: cerberus2_11
+  - first:
+      213: -6420482403590513049
+    second: cerberus2_12
+  - first:
+      213: 937416333077496742
+    second: cerberus2_13
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cerberus2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f8e8133ebf6fdf40800000000000000
+      internalID: 5755441711494523122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cerberus2_1
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 800
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab5a4a973623aa50800000000000000
+      internalID: 6531105904870972320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cerberus2_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb918c91a45e86a0800000000000000
+      internalID: -6445120963628393552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cerberus2_3
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 600
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86aa791d82875f350800000000000000
+      internalID: 6049873791152532072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cerberus2_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 600
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c571529ccad2bcfb0800000000000000
+      internalID: -4626553972060776612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cerberus2_5
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 600
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0aa51842ce30600800000000000000
+      internalID: 433449630690877661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cerberus2_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0828c1863c7be580800000000000000
+      internalID: -8796800873590675442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cerberus2_7
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 400
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4edd8057b5a4c50800000000000000
+      internalID: 6650228357984019668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cerberus2_8
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 400
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dddb636ed0eeae100800000000000000
+      internalID: 138184482052554205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cerberus2_9
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 400
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff5c167b74a6fb2f0800000000000000
+      internalID: -954927739727395329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cerberus2_10
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 400
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7712ca96154b0170800000000000000
+      internalID: 8145680314417682302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cerberus2_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa415e54a54500a0800000000000000
+      internalID: -6916045080498189575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cerberus2_12
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e5757654dd5e6a0800000000000000
+      internalID: -6420482403590513049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cerberus2_13
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a3cbb3303f520d00800000000000000
+      internalID: 937416333077496742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
