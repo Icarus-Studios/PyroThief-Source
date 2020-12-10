@@ -143,7 +143,7 @@ public class SoldierAI : MonoBehaviour
                 Debug.Log("Hitting player!");
                 GameManager.Instance.updateHP(-attackDamage);
                 Rigidbody2D rb = GameObject.Find("Promethesus").GetComponent<Rigidbody2D>();
-                if (facingInt == 1) rb.AddForce(new Vector2(0, 1) * 2000f);
+                if (facingInt == 1) rb.AddForce(new Vector2(0, 1) * 20);
                 else if (facingInt == 2) rb.AddForce(new Vector2(-1, 0) * 20f);
                 else if (facingInt == 3) rb.AddForce(new Vector2(0, -1) * 20f);
                 else if (facingInt == 4) rb.AddForce(new Vector2(1, 0) * 20f);

@@ -6,6 +6,7 @@ public class OST : MonoBehaviour
 {
     public AudioSource BattleTheme;
     public AudioSource Underworld;
+    public AudioSource BossTheme;
     public bool inUnderworld = false;
     public void PlayBattleTheme()
     {
@@ -15,6 +16,11 @@ public class OST : MonoBehaviour
     public void PlayUnderworld()
     {
         Underworld.Play();
+    }
+
+    public void PlayBossTheme()
+    {
+        BossTheme.Play();
     }
 
     public void switchMusic()
@@ -36,6 +42,14 @@ public class OST : MonoBehaviour
             PlayBattleTheme();
         }
     }
+
+    public void switchToBossMusic()
+    {
+        StartCoroutine(StartFade(Underworld, 2f, 0f));
+        StartCoroutine(StartFade(BattleTheme, 2f, 1f));
+        PlayBossTheme();
+    }
+    
 
     public static IEnumerator StartFade(AudioSource audioSource, float duration, float targetVolume)
     {

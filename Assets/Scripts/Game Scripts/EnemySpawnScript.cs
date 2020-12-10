@@ -50,7 +50,7 @@ public class EnemySpawnScript : MonoBehaviour
             {
                 if (roundNum >= (enemyRounds.Length - 1))
                 {
-                    Instantiate(reward, transform.position, Quaternion.identity);
+                    Instantiate(reward, new Vector3(transform.position.x, transform.position.y, 3), Quaternion.identity);
                     Destroy(this);
                 }
                 else

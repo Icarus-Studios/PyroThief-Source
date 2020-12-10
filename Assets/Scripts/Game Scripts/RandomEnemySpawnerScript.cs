@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class RandomEnemySpawnerScript : MonoBehaviour
 {
-
     public GameObject enemy;
     public GameObject reward;
     float randX;
